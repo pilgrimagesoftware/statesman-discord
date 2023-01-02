@@ -1,0 +1,27 @@
+name: Update Requirements
+
+on:
+    workflow_dispatch:
+    repository_dispatch:
+        types: []
+
+jobs:
+    update-reqs:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-python@v4
+              with:
+                  python-version: "3.10"
+            - name: update-reqs
+              run: |
+                  pip install -U wheel
+                  pip install -U setuptools
+                  python -m pip install -U pip-tools
+                  git config --global user.email "ci@pilgrimagesoftware.com"
+                  git config --global user.name "Pilgrimage Requirement Updater"
+                  git checkout develop
+                  scripts/update-requirements.sh
+                  git add requirements/*.txt
+                  git commit -m "Update requirements"
+                  git push origin
