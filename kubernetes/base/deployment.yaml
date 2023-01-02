@@ -36,7 +36,9 @@ spec:
             - configMapRef:
                 name: discord-env
             - secretRef:
-                name: credentials
+                name: common
+            - secretRef:
+                name: discord
           env: []
           resources:
             requests:
