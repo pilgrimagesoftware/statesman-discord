@@ -1,0 +1,6 @@
+pyyaml
+sentry-sdk==1.9.8
+python-dotenv
+jsonschema
+redis
+discord.py
