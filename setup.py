@@ -5,7 +5,7 @@ setup(
     name="statesman-discord",
     install_requires=[
         "pyyaml",
-        "sentry-sdk==1.9.8",
+        "sentry-sdk==1.12.1",
         "python-dotenv",
         "jsonschema",
         "redis",
