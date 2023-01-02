@@ -1,0 +1,9 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+    name: discord
+
+spec:
+    replicas: 2

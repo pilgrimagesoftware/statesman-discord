@@ -1,0 +1,60 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: discord
+
+spec:
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: statesman
+      version: v1
+      component: discord
+  template:
+    metadata:
+      labels:
+        app: statesman
+        version: v1
+        component: discord
+    spec:
+      serviceAccountName: discord
+      containers:
+        - name: bot
+          image: ghcr.io/pilgrimagesoftware/statesman-discord:latest
+          imagePullPolicy: Always
+          envFrom:
+            - configMapRef:
+                name: common
+            - configMapRef:
+                name: discord
+            - configMapRef:
+                name: discord-env
+            - secretRef:
+                name: credentials
+          env: []
+          resources:
+            requests:
+              cpu: "20m"
+              memory: "55Mi"
+            limits:
+              cpu: "50m"
+              memory: "200Mi"
+          # livenessProbe:
+          #   httpGet:
+          #     path: /_status/healthz
+          #     port: 5000
+          #   initialDelaySeconds: 90
+          #   timeoutSeconds: 10
+          # readinessProbe:
+          #   httpGet:
+          #     path: /_status/healthz
+          #     port: 5000
+          #   initialDelaySeconds: 30
+          #   timeoutSeconds: 10
+      restartPolicy: Always
