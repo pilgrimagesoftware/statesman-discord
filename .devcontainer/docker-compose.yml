@@ -15,7 +15,7 @@ services:
       - REDIS_HOST=redis
       - REDIS_PASSWORD=redis
 
-    hostname: vscode
+    hostname: statesman-discord
 
     volumes:
       - ..:/workspace
@@ -24,22 +24,22 @@ services:
     command: sleep infinity
 
     networks:
-      - statesman
+      - statesman-discord
 
   redis:
     image: redis:4
     restart: unless-stopped
 
-    ports:
-      - 6379:6379
-    expose:
-      - "6379"
+    # ports:
+    #   - 6379:6379
+    # expose:
+    #   - "6379"
 
     environment:
       - REDIS_PW=redis
 
     networks:
-      - statesman
+      - statesman-api
 
 networks:
-  statesman:
+  statesman-discord:
