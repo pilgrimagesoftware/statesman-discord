@@ -15,7 +15,6 @@ if ENV_FILE:
     load_dotenv(ENV_FILE)
 
 
-sentry_sdk.init(dsn=os.environ[constants.SENTRY_DSN],
-                environment=os.environ.get(constants.SENTRY_ENV) or 'Development',
-                integrations=[
-                    ])
+sentry_dsn = os.environ.get(constants.SENTRY_DSN)
+if sentry_dsn is not None:
+    sentry_sdk.init(dsn=sentry_dsn, environment=os.environ.get(constants.SENTRY_ENV, "Development"), integrations=[])
