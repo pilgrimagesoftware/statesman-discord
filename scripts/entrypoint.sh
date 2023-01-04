@@ -2,4 +2,4 @@
 
 set -e
 
-python main.py
+python -m statesman_discord.main
