@@ -11,5 +11,6 @@ pika
 python-dotenv
 pyyaml
 redis
+requests
 sentry-sdk[flask]==1.12.1
 uwsgi
