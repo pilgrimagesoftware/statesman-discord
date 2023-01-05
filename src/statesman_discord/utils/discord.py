@@ -11,7 +11,6 @@ import json
 import hmac, hashlib
 import os
 import logging
-from slacker import Slacker
 import requests
 from statesman_discord import constants
 from statesman_discord.common.exceptions import SignatureException
