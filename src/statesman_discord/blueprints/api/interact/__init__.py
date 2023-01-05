@@ -1,15 +1,14 @@
 __author__ = "Paul Schifferer <paul@schifferers.net>"
 """
-action.py
-- Action API
+interact
+- Interact API
 """
 
 
 import logging
 from datetime import datetime
-from flask import session, jsonify, request, current_app
+from flask import session, jsonify, request, current_app, Blueprint
 from werkzeug.exceptions import Forbidden, BadRequest, NotFound
-from statesman_discord.blueprints.api import blueprint
 from statesman_discord import constants
 from statesman_discord.controllers.interact import handle_action_request
 from statesman_discord.models import constants as model_constants
@@ -18,9 +17,12 @@ from statesman_discord.blueprints.api.exceptions import error_response
 from statesman_discord.common.exceptions import SignatureException
 
 
-@blueprint.route("/interact", methods=["POST"])
+blueprint = Blueprint("interact", __name__, url_prefix="/interact")
+
+
+@blueprint.route("/", methods=["POST"])
 def handle_interaction():
-    current_app.logger.debug("POST /interact: %s", request)
+    current_app.logger.debug("POST /interact/: %s", request)
 
     try:
         # handle_ssl_check(request)

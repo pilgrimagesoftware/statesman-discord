@@ -17,9 +17,6 @@ from statesman_discord.blueprints.api.exceptions import error_response
 from werkzeug.exceptions import Unauthorized, BadRequest, Forbidden
 
 
-blueprint = Blueprint("api", __name__)
-
-
 class UserAuthorizationException(Exception):
     def __init__(self, reason: str):
         self.reason = reason
@@ -118,5 +115,5 @@ def error_handler(ex):
     return response
 
 
-from statesman_discord.blueprints.api.interact import interact
-from statesman_discord.blueprints.api.verify import verify
+# from statesman_discord.blueprints.api.interact import interact
+# from statesman_discord.blueprints.api.verify import verify

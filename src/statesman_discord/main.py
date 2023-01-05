@@ -41,13 +41,17 @@ def create_app(app_name=constants.APPLICATION_NAME):
 
     app.executor = Executor(app)
 
-    from statesman_discord.blueprints.api import blueprint as api_blueprint
+    from statesman_discord.blueprints.api.interact import blueprint as interact_blueprint
 
-    app.register_blueprint(api_blueprint, url_prefix="/api/v1")
+    app.register_blueprint(interact_blueprint)
+
+    from statesman_discord.blueprints.api.verify import blueprint as verify_blueprint
+
+    app.register_blueprint(verify_blueprint)
 
     from statesman_discord.blueprints.health import blueprint as health_blueprint
 
-    app.register_blueprint(health_blueprint, url_prefix="/health")
+    app.register_blueprint(health_blueprint)
 
     print(app.url_map)
 
