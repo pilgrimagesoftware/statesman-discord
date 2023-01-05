@@ -8,7 +8,6 @@ import os
 from statesman_discord import constants
 from sentry_sdk.integrations.redis import RedisIntegration
 from sentry_sdk.integrations.flask import FlaskIntegration
-from sentry_sdk.integrations.sqlalchemy import SqlalchemyIntegration
 from dotenv import load_dotenv, find_dotenv
 
 
