@@ -107,12 +107,12 @@ def user_optional(f):
     return _get_user
 
 
-@blueprint.errorhandler(Exception)
-def error_handler(ex):
-    current_app.logger.exception(f"Exception caught: {ex}")
-    response = jsonify(message=str(ex))
-    response.status_code = ex.code if isinstance(ex, HTTPException) else 500
-    return response
+# @blueprint.errorhandler(Exception)
+# def error_handler(ex):
+#     current_app.logger.exception(f"Exception caught: {ex}")
+#     response = jsonify(message=str(ex))
+#     response.status_code = ex.code if isinstance(ex, HTTPException) else 500
+#     return response
 
 
 # from statesman_discord.blueprints.api.interact import interact
