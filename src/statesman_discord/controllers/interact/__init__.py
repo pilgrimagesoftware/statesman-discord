@@ -12,8 +12,8 @@ import logging
 import subprocess, shlex, threading
 import importlib
 from statesman_discord import constants
-from statesman_discord.utils.slack import send_message
-from statesman_discord.utils.slack import verify_signature
+from statesman_discord.utils.discord import send_message
+from statesman_discord.utils.discord import verify_signature
 
 
 def handle_action_request(request: object):

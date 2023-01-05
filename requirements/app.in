@@ -12,5 +12,4 @@ python-dotenv
 pyyaml
 redis
 sentry-sdk[flask]==1.12.1
-slacker
 uwsgi
