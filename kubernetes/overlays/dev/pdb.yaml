@@ -9,4 +9,6 @@ spec:
     minAvailable: 1
     selector:
         matchLabels:
+            app: statesman
+            version: v1
             component: discord

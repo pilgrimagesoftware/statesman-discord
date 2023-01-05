@@ -28,6 +28,9 @@ spec:
         - name: bot
           image: ghcr.io/pilgrimagesoftware/statesman-discord:latest
           imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
+              name: api
           envFrom:
             - configMapRef:
                 name: common
@@ -47,16 +50,16 @@ spec:
             limits:
               cpu: "50m"
               memory: "200Mi"
-          # livenessProbe:
-          #   httpGet:
-          #     path: /_status/healthz
-          #     port: 5000
-          #   initialDelaySeconds: 90
-          #   timeoutSeconds: 10
-          # readinessProbe:
-          #   httpGet:
-          #     path: /_status/healthz
-          #     port: 5000
-          #   initialDelaySeconds: 30
-          #   timeoutSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health/ping
+              port: 5000
+            initialDelaySeconds: 90
+            timeoutSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /health/ping
+              port: 5000
+            initialDelaySeconds: 30
+            timeoutSeconds: 10
       restartPolicy: Always
