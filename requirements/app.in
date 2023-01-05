@@ -4,3 +4,4 @@ python-dotenv
 jsonschema
 redis
 discord.py
+pika

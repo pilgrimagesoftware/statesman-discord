@@ -4,37 +4,51 @@ main.py
 - creates a Flask app instance and registers the database object
 """
 
-import os, sys
-import discord
-import logging
+
+from flask import Flask, session
+from flask_session import Session
+from statesman_discord import constants
 from logging.config import dictConfig
-from dotenv import load_dotenv, find_dotenv
+from statesman_discord.blueprints import error_page
+from werkzeug.exceptions import HTTPException
+from redis.client import Redis
+from sentry_sdk.integrations.wsgi import SentryWsgiMiddleware
+from flask_executor import Executor
 
 
-ENV_FILE = find_dotenv()
-if ENV_FILE:
-    load_dotenv(ENV_FILE)
+def create_app(app_name=constants.APPLICATION_NAME):
+    dictConfig(
+        {
+            "version": 1,
+            "formatters": {
+                "default": {
+                    "format": "[%(asctime)s] %(levelname)s %(module)s, line %(lineno)d: %(message)s",
+                }
+            },
+            "handlers": {"wsgi": {"class": "logging.StreamHandler", "stream": "ext://flask.logging.wsgi_errors_stream", "formatter": "default"}},
+            "root": {"level": "INFO", "handlers": ["wsgi"]},
+        }
+    )
 
-# dictConfig(
-#     {
-#         "version": 1,
-#         "formatters": {
-#             "default": {
-#                 "format": "[%(asctime)s] %(levelname)s %(module)s, line %(lineno)d: %(message)s",
-#             }
-#         },
-#         "handlers": {"console": {"class": "logging.StreamHandler", "stream": "ext://sys.stdout", "formatter": "default"}},
-#         "root": {"level": "INFO", "handlers": ["console"]},
-#     }
-# )
+    app = Flask(app_name)
+    app.config.from_object("statesman_discord.config.BaseConfig")
+    # env = DotEnv(app)
+    # cache.init_app(app)
 
-discord.utils.setup_logging()
+    app.session = Session(app)
 
-token = os.environ.get("DISCORD_TOKEN")
-if token is None:
-    logging.error("Environment variable 'DISCORD_TOKEN' is not set.")
-    sys.exit(1)
+    app.sentry = SentryWsgiMiddleware(app)
 
-from statesman_discord.bot import bot
+    app.executor = Executor(app)
 
-bot.run(token)
+    from statesman_discord.blueprints.api import blueprint as api_blueprint
+
+    app.register_blueprint(api_blueprint, url_prefix="/api/v1")
+
+    from statesman_discord.blueprints.health import blueprint as health_blueprint
+
+    app.register_blueprint(health_blueprint, url_prefix="/health")
+
+    print(app.url_map)
+
+    return app

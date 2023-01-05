@@ -2,4 +2,4 @@
 
 set -e
 
-python -m statesman_discord.main
+uwsgi --http :${PORT} --module wsgi:app --master --processes 4 --threads 2
