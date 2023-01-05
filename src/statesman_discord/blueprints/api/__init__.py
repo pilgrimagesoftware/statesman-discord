@@ -118,5 +118,5 @@ def error_handler(ex):
     return response
 
 
-from statesman_discord.blueprints.api.state import state
 from statesman_discord.blueprints.api.interact import interact
+from statesman_discord.blueprints.api.verify import verify
