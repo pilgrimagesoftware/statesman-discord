@@ -26,9 +26,13 @@ babel==2.11.0
 black==22.12.0
     # via -r requirements/dev.in
 blinker==1.5
-    # via -r requirements/tests.in
+    # via
+    #   -r requirements/tests.in
+    #   sentry-sdk
 build==0.9.0
     # via pip-tools
+cachelib==0.9.0
+    # via flask-session
 certifi==2022.12.7
     # via
     #   requests
@@ -40,6 +44,7 @@ charset-normalizer==2.1.1
 click==8.1.3
     # via
     #   black
+    #   flask
     #   pip-tools
     #   typer
 colorama==0.4.6
@@ -67,10 +72,34 @@ filelock==3.9.0
     # via
     #   tox
     #   virtualenv
+flask==2.2.2
+    # via
+    #   -r requirements/app.in
+    #   flask-dotenv
+    #   flask-executor
+    #   flask-inputs
+    #   flask-redis
+    #   flask-script
+    #   flask-session
+    #   sentry-sdk
+flask-dotenv==0.1.2
+    # via -r requirements/app.in
+flask-executor==1.0.0
+    # via -r requirements/app.in
+flask-inputs==0.3.0
+    # via -r requirements/app.in
+flask-redis==0.4.0
+    # via -r requirements/app.in
+flask-script==2.0.6
+    # via -r requirements/app.in
+flask-session==0.4.0
+    # via -r requirements/app.in
 frozenlist==1.3.3
     # via
     #   aiohttp
     #   aiosignal
+future==0.18.2
+    # via flask-inputs
 greenlet==1.1.3
     # via -r requirements/tests.in
 idna==3.4
@@ -81,12 +110,19 @@ imagesize==1.4.1
     # via sphinx
 iniconfig==1.1.1
     # via pytest
+itsdangerous==2.1.2
+    # via flask
 jinja2==3.1.2
-    # via sphinx
+    # via
+    #   flask
+    #   sphinx
 jsonschema==4.17.3
     # via -r requirements/app.in
 markupsafe==2.1.1
-    # via jinja2
+    # via
+    #   jinja2
+    #   werkzeug
+    #   wtforms
 multidict==6.0.4
     # via
     #   aiohttp
@@ -142,21 +178,27 @@ pytz==2022.7
 pyyaml==6.0
     # via -r requirements/app.in
 redis==4.4.0
-    # via -r requirements/app.in
+    # via
+    #   -r requirements/app.in
+    #   flask-redis
 requests==2.28.1
-    # via sphinx
+    # via
+    #   slacker
+    #   sphinx
 rich==12.6.0
     # via typer
 rstcheck==6.1.1
     # via -r requirements/docs.in
 rstcheck-core==1.0.3
     # via rstcheck
-sentry-sdk==1.12.1
+sentry-sdk[flask]==1.12.1
     # via -r requirements/app.in
 shellingham==1.5.0.post1
     # via typer
 six==1.16.0
     # via tox
+slacker==0.14.0
+    # via -r requirements/app.in
 snowballstemmer==2.2.0
     # via sphinx
 sphinx==6.0.0
@@ -204,10 +246,16 @@ urllib3==1.26.13
     # via
     #   requests
     #   sentry-sdk
+uwsgi==2.0.21
+    # via -r requirements/app.in
 virtualenv==20.17.1
     # via tox
+werkzeug==2.2.2
+    # via flask
 wheel==0.38.4
     # via pip-tools
+wtforms==3.0.1
+    # via flask-inputs
 yarl==1.8.2
     # via aiohttp
 
