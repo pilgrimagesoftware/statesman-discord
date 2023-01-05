@@ -182,7 +182,9 @@ redis==4.4.0
     #   -r requirements/app.in
     #   flask-redis
 requests==2.28.1
-    # via sphinx
+    # via
+    #   -r requirements/app.in
+    #   sphinx
 rich==12.6.0
     # via typer
 rstcheck==6.1.1
