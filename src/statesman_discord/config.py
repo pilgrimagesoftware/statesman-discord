@@ -27,3 +27,6 @@ class BaseConfig(object):
     EXECUTOR_TYPE = "thread"
     EXECUTOR_MAX_WORKERS = 5
     EXECUTOR_PROPAGATE_EXCEPTIONS = True
+    DISCORD_CLIENT_ID = os.environ[constants.DISCORD_CLIENT_ID]
+    DISCORD_CLIENT_SECRET = os.environ[constants.DISCORD_CLIENT_SECRET]
+    DISCORD_PUBLIC_KEY = os.environ[constants.DISCORD_PUBLIC_KEY]

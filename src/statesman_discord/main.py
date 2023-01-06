@@ -14,6 +14,7 @@ from werkzeug.exceptions import HTTPException
 from redis.client import Redis
 from sentry_sdk.integrations.wsgi import SentryWsgiMiddleware
 from flask_executor import Executor
+from flask_discord_interactions import DiscordInteractions
 
 
 def create_app(app_name=constants.APPLICATION_NAME):
@@ -41,9 +42,11 @@ def create_app(app_name=constants.APPLICATION_NAME):
 
     app.executor = Executor(app)
 
-    from statesman_discord.blueprints.api.interact import blueprint as interact_blueprint
-
-    app.register_blueprint(interact_blueprint)
+    app.discord = DiscordInteractions(app)
+    app.discord.set_route('/interact')
+    app.discord.update_commands(guild_id=os.environ[constants.DISCORD_SERVER_ID])
+    # from statesman_discord.blueprints.api.interact import blueprint as interact_blueprint
+    # app.register_blueprint(interact_blueprint)
 
     from statesman_discord.blueprints.api.verify import blueprint as verify_blueprint
 
