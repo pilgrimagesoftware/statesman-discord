@@ -29,6 +29,8 @@ certifi==2022.12.7
     # via
     #   requests
     #   sentry-sdk
+cffi==1.15.1
+    # via pynacl
 charset-normalizer==2.1.1
     # via
     #   aiohttp
@@ -116,6 +118,10 @@ pluggy==1.0.0
     #   tox
 py==1.11.0
     # via tox
+pycparser==2.21
+    # via cffi
+pynacl==1.5.0
+    # via -r requirements/app.in
 pyrsistent==0.19.3
     # via jsonschema
 pytest==7.2.0
