@@ -8,6 +8,7 @@ flask-script
 flask-session
 jsonschema
 pika
+pynacl
 python-dotenv
 pyyaml
 redis
