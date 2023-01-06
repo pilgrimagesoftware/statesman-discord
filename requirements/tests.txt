@@ -56,6 +56,7 @@ filelock==3.9.0
 flask==2.2.2
     # via
     #   -r requirements/app.in
+    #   flask-discord-interactions
     #   flask-dotenv
     #   flask-executor
     #   flask-inputs
@@ -63,6 +64,8 @@ flask==2.2.2
     #   flask-script
     #   flask-session
     #   sentry-sdk
+flask-discord-interactions==2.1.2
+    # via -r requirements/app.in
 flask-dotenv==0.1.2
     # via -r requirements/app.in
 flask-executor==1.0.0
@@ -119,7 +122,9 @@ py==1.11.0
 pycparser==2.21
     # via cffi
 pynacl==1.5.0
-    # via -r requirements/app.in
+    # via
+    #   -r requirements/app.in
+    #   flask-discord-interactions
 pyrsistent==0.19.3
     # via jsonschema
 pytest==7.2.0
@@ -137,7 +142,12 @@ redis==4.4.0
     #   -r requirements/app.in
     #   flask-redis
 requests==2.28.1
-    # via -r requirements/app.in
+    # via
+    #   -r requirements/app.in
+    #   flask-discord-interactions
+    #   requests-toolbelt
+requests-toolbelt==0.10.1
+    # via flask-discord-interactions
 sentry-sdk[flask]==1.12.1
     # via -r requirements/app.in
 six==1.16.0
