@@ -1,5 +1,5 @@
 __author__ = "Paul Schifferer <paul@schifferers.net>"
-__version__ = "1.0.11"
+__version__ = "1.0.12"
 """
 """
 
