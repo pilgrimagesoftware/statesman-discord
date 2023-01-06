@@ -15,6 +15,7 @@ from redis.client import Redis
 from sentry_sdk.integrations.wsgi import SentryWsgiMiddleware
 from flask_executor import Executor
 from flask_discord_interactions import DiscordInteractions
+import os
 
 
 def create_app(app_name=constants.APPLICATION_NAME):
