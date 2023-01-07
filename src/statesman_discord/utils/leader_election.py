@@ -22,13 +22,15 @@ class LeaderElection(object):
         if os.environ.get(constants.POD) is None:
             return
 
-        app.logger.info("Loading cluster config...")
+        self.logger = app.logger
+
+        self.logger.info("Loading cluster config...")
         config.load_incluster_config()
         self.candidate_id = os.environ[constants.POD]
         self.lock_name = os.environ.get(constants.LEADER_CONFIGMAP_NAME, f"{os.environ[constants.NAMESPACE]}-leader")
         self.lock_namespace = os.environ[constants.NAMESPACE]
 
-        app.logger.debug("Creating election config...")
+        self.logger.debug("Creating election config...")
         self.election_config = electionconfig.Config(
             ConfigMapLock(self.lock_name, self.lock_namespace, self.candidate_id),
             lease_duration=17,
@@ -41,19 +43,19 @@ class LeaderElection(object):
         # Enter leader election
         self.elect = leaderelection.LeaderElection(self.election_config)
 
-        app.logger.info("Starting election thread...")
-        election_thread = Thread(target=self.elect.run)
-        election_thread.setDaemon(True)
-        election_thread.start()
+        self.logger.info("Starting election thread...")
+        self.election_thread = Thread(target=self.elect.run)
+        self.election_thread.setDaemon(True)
+        self.election_thread.start()
 
     def _leader_callback(self):
-        self.app.logger.info("I am the leader; executing setup...")
+        self.logger.info("I am the leader; executing setup...")
 
         self.is_leader = True
 
         register_commands()
 
     def _follower_callback(self):
-        self.app.logger.info("I am not the leader.")
+        self.logger.info("I am not the leader.")
 
         self.is_leader = False
