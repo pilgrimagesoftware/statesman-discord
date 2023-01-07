@@ -10,6 +10,9 @@ resources:
   - service-entries.yaml
   - service.yaml
 
+generatorOptions:
+  disableNameSuffixHash: true
+
 configMapGenerator:
   - name: discord-files
     files:
