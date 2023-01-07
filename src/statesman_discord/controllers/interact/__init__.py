@@ -6,14 +6,11 @@ interact
 
 
 from flask import current_app
-import yaml, json
+import json
 import os
-import logging
-import subprocess, shlex, threading
-import importlib
 from statesman_discord import constants
-from statesman_discord.utils.discord import send_message
-from statesman_discord.utils.discord import verify_signature
+from statesman_discord.utils.discord.signature import verify_signature
+from statesman_discord.common.exceptions import SignatureException
 
 
 class PingHandled(Exception):

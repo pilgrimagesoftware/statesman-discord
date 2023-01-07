@@ -9,3 +9,8 @@ resources:
   - deployment.yaml
   - service-entries.yaml
   - service.yaml
+
+configMapGenerator:
+  - name: discord-files
+    files:
+      - discord-commands.json

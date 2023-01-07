@@ -11,7 +11,6 @@ from flask import session, jsonify, request, current_app, Blueprint
 from werkzeug.exceptions import Forbidden, BadRequest, NotFound
 from statesman_discord import constants
 from statesman_discord.controllers.interact import handle_action_request, handle_ping, PingHandled
-from statesman_discord.models import constants as model_constants
 from statesman_discord.blueprints.api import user_required, requires_auth
 from statesman_discord.blueprints.api.exceptions import error_response
 from statesman_discord.common.exceptions import SignatureException

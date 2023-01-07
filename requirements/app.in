@@ -1,6 +1,5 @@
 discord.py
 flask
-flask-discord-interactions
 flask-dotenv
 flask-executor
 flask-inputs

@@ -7,3 +7,4 @@ metadata:
 
 data:
   SESSION_TYPE: "redis"
+  DISCORD_COMMANDS_FILE_PATH: "/app/discord-commands.json"
