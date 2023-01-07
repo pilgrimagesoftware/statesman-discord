@@ -23,7 +23,9 @@ class BaseConfig(object):
     CACHE_REDIS_PASSWORD = os.environ.get(constants.REDIS_PW)
     CACHE_REDIS_DB = int(os.environ.get(constants.REDIS_DB, "7"))
     SESSION_TYPE = os.environ.get(constants.SESSION_TYPE, "redis")
-    SESSION_REDIS = redis.from_url(f"redis://{os.environ[constants.REDIS_HOST]}:6379")
+    SESSION_REDIS_PORT = int(os.environ.get(constants.REDIS_PORT, "6379"))
+    SESSION_REDIS = redis.from_url(f"redis://{os.environ[constants.REDIS_HOST]}:{SESSION_REDIS_PORT}")
+    RATELIMIT_STORAGE_URI = redis.from_url(f"redis://{os.environ[constants.REDIS_HOST]}:{SESSION_REDIS_PORT}")
     EXECUTOR_TYPE = "thread"
     EXECUTOR_MAX_WORKERS = 5
     EXECUTOR_PROPAGATE_EXCEPTIONS = True

@@ -15,7 +15,9 @@ from redis.client import Redis
 from sentry_sdk.integrations.wsgi import SentryWsgiMiddleware
 from flask_executor import Executor
 import os
-from statesman_discord.utils.leader import LeaderElection, leader_callback
+from statesman_discord.utils.leader_election import LeaderElection
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
 
 
 def create_app(app_name=constants.APPLICATION_NAME):
@@ -39,11 +41,13 @@ def create_app(app_name=constants.APPLICATION_NAME):
 
     app.session = Session(app)
 
+    app.limiter = Limiter(get_remote_address, app=app)
+
     app.sentry = SentryWsgiMiddleware(app)
 
     app.executor = Executor(app)
 
-    app.leader = LeaderElection(app, callback=leader_callback)
+    app.leader_election = LeaderElection(app)
 
     from statesman_discord.blueprints.api.interact import blueprint as interact_blueprint
 

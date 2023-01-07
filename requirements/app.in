@@ -3,11 +3,12 @@ flask
 flask-dotenv
 flask-executor
 flask-inputs
+flask-limiter[redis]
 flask-redis
 flask-script
 flask-session
 jsonschema
-leaderelection
+kubernetes
 pika
 pynacl
 python-dotenv
