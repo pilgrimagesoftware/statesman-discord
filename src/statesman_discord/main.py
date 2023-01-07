@@ -43,7 +43,7 @@ def create_app(app_name=constants.APPLICATION_NAME):
 
     app.executor = Executor(app)
 
-    app.leader = LeaderElection(callback=leader_callback)
+    app.leader = LeaderElection(app, callback=leader_callback)
 
     from statesman_discord.blueprints.api.interact import blueprint as interact_blueprint
 

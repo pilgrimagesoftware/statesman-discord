@@ -5,7 +5,6 @@ leader.py
 """
 
 from flask import current_app
-import logging
 from threading import Thread
 import time
 import os
@@ -15,14 +14,15 @@ from statesman_discord.utils.discord.setup import register_commands
 
 
 class LeaderElection(object):
-    def __init__(self, callback, *args, **kwargs):
+    def __init__(self, app, callback, *args, **kwargs):
         super(object, self).__init__(*args, **kwargs)
 
         if os.environ.get(constants.POD) is None:
-            logging.warn("Not running in a k8s cluster; not setting up leader election")
+            app.logger.warn("Not running in a k8s cluster; not setting up leader election")
             self.election = None
             return
 
+        self.app = app
         self.election = Elect(configmap=os.environ.get(constants.LEADER_CONFIGMAP_NAME, f"{os.environ[constants.NAMESPACE]}-leader"))
         self.is_leader = False
 
@@ -38,23 +38,23 @@ class LeaderElection(object):
 
     def am_i_leader(self):
         if self.election is None:
-            logging.debug("Leader election not setup.")
+            self.app.logger.debug("Leader election not setup.")
             return True
 
         return self.election.check_leader()
 
     def _watcher(self):
         while True:
-            logging.debug("Checking leader status...")
+            self.app.logger.debug("Checking leader status...")
             is_leader = self.am_i_leader()
-            logging.debug("Am I the leader? %s (was: %s)", is_leader, self.is_leader)
+            self.app.logger.debug("Am I the leader? %s (was: %s)", is_leader, self.is_leader)
             if is_leader != self.is_leader:
-                logging.info(f"Leader state changed from {self.is_leader} to {is_leader}.")
+                self.app.logger.info(f"Leader state changed from {self.is_leader} to {is_leader}.")
                 self.is_leader = is_leader
                 self.callback(is_leader)
 
             sleep_time = int(os.environ.get(constants.LEADER_WATCHER_SLEEP, 1))
-            logging.debug("Sleeping for %d seconds...", sleep_time)
+            self.app.logger.debug("Sleeping for %d seconds...", sleep_time)
             time.sleep(sleep_time)
 
 
