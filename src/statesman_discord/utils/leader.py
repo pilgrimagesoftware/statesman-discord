@@ -5,6 +5,7 @@ leader.py
 """
 
 from flask import current_app
+import logging
 from threading import Thread
 import time
 import os
@@ -18,7 +19,7 @@ class LeaderElection(object):
         super(object, self).__init__(*args, **kwargs)
 
         if os.environ.get(constants.POD) is None:
-            current_app.logger.warn("Not running in a k8s cluster; not setting up leader election")
+            logging.warn("Not running in a k8s cluster; not setting up leader election")
             self.election = None
             return
 
@@ -37,23 +38,23 @@ class LeaderElection(object):
 
     def am_i_leader(self):
         if self.election is None:
-            current_app.logger.debug("Leader election not setup.")
+            logging.debug("Leader election not setup.")
             return True
 
         return self.election.check_leader()
 
     def _watcher(self):
         while True:
-            current_app.logger.debug("Checking leader status...")
+            logging.debug("Checking leader status...")
             is_leader = self.am_i_leader()
-            current_app.logger.debug("Am I the leader? %s (was: %s)", is_leader, self.is_leader)
+            logging.debug("Am I the leader? %s (was: %s)", is_leader, self.is_leader)
             if is_leader != self.is_leader:
-                current_app.logger.info(f"Leader state changed from {self.is_leader} to {is_leader}.")
+                logging.info(f"Leader state changed from {self.is_leader} to {is_leader}.")
                 self.is_leader = is_leader
                 self.callback(is_leader)
 
             sleep_time = int(os.environ.get(constants.LEADER_WATCHER_SLEEP, 1))
-            current_app.logger.debug("Sleeping for %d seconds...", sleep_time)
+            logging.debug("Sleeping for %d seconds...", sleep_time)
             time.sleep(sleep_time)
 
 
