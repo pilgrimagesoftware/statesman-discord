@@ -20,8 +20,11 @@ blinker==1.5
     # via sentry-sdk
 cachelib==0.9.0
     # via flask-session
+cachetools==5.2.0
+    # via google-auth
 certifi==2022.12.7
     # via
+    #   kubernetes
     #   requests
     #   sentry-sdk
 cffi==1.15.1
@@ -37,7 +40,6 @@ discord-py==2.1.0
 flask==2.2.2
     # via
     #   -r requirements/app.in
-    #   flask-discord-interactions
     #   flask-dotenv
     #   flask-executor
     #   flask-inputs
@@ -45,8 +47,6 @@ flask==2.2.2
     #   flask-script
     #   flask-session
     #   sentry-sdk
-flask-discord-interactions==2.1.2
-    # via -r requirements/app.in
 flask-dotenv==0.1.2
     # via -r requirements/app.in
 flask-executor==1.0.0
@@ -65,6 +65,8 @@ frozenlist==1.3.3
     #   aiosignal
 future==0.18.2
     # via flask-inputs
+google-auth==2.15.0
+    # via kubernetes
 idna==3.4
     # via
     #   requests
@@ -75,6 +77,10 @@ jinja2==3.1.2
     # via flask
 jsonschema==4.17.3
     # via -r requirements/app.in
+kubernetes==25.3.0
+    # via leaderelection
+leaderelection==0.0.3
+    # via -r requirements/app.in
 markupsafe==2.1.1
     # via
     #   jinja2
@@ -84,20 +90,30 @@ multidict==6.0.4
     # via
     #   aiohttp
     #   yarl
+oauthlib==3.2.2
+    # via requests-oauthlib
 pika==1.3.1
     # via -r requirements/app.in
+pyasn1==0.4.8
+    # via
+    #   pyasn1-modules
+    #   rsa
+pyasn1-modules==0.2.8
+    # via google-auth
 pycparser==2.21
     # via cffi
 pynacl==1.5.0
-    # via
-    #   -r requirements/app.in
-    #   flask-discord-interactions
+    # via -r requirements/app.in
 pyrsistent==0.19.3
     # via jsonschema
+python-dateutil==2.8.2
+    # via kubernetes
 python-dotenv==0.21.0
     # via -r requirements/app.in
 pyyaml==6.0
-    # via -r requirements/app.in
+    # via
+    #   -r requirements/app.in
+    #   kubernetes
 redis==4.4.0
     # via
     #   -r requirements/app.in
@@ -105,23 +121,36 @@ redis==4.4.0
 requests==2.28.1
     # via
     #   -r requirements/app.in
-    #   flask-discord-interactions
-    #   requests-toolbelt
-requests-toolbelt==0.10.1
-    # via flask-discord-interactions
+    #   kubernetes
+    #   requests-oauthlib
+requests-oauthlib==1.3.1
+    # via kubernetes
+rsa==4.9
+    # via google-auth
 sentry-sdk[flask]==1.12.1
     # via -r requirements/app.in
+six==1.16.0
+    # via
+    #   google-auth
+    #   kubernetes
+    #   python-dateutil
 urllib3==1.26.13
     # via
+    #   kubernetes
     #   requests
     #   sentry-sdk
 uwsgi==2.0.21
     # via
     #   -r requirements/app.in
     #   -r requirements/deploy.in
+websocket-client==1.4.2
+    # via kubernetes
 werkzeug==2.2.2
     # via flask
 wtforms==3.0.1
     # via flask-inputs
 yarl==1.8.2
     # via aiohttp
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools

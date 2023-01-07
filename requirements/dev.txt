@@ -33,8 +33,11 @@ build==0.9.0
     # via pip-tools
 cachelib==0.9.0
     # via flask-session
+cachetools==5.2.0
+    # via google-auth
 certifi==2022.12.7
     # via
+    #   kubernetes
     #   requests
     #   sentry-sdk
 cffi==1.15.1
@@ -77,7 +80,6 @@ filelock==3.9.0
 flask==2.2.2
     # via
     #   -r requirements/app.in
-    #   flask-discord-interactions
     #   flask-dotenv
     #   flask-executor
     #   flask-inputs
@@ -85,8 +87,6 @@ flask==2.2.2
     #   flask-script
     #   flask-session
     #   sentry-sdk
-flask-discord-interactions==2.1.2
-    # via -r requirements/app.in
 flask-dotenv==0.1.2
     # via -r requirements/app.in
 flask-executor==1.0.0
@@ -105,13 +105,15 @@ frozenlist==1.3.3
     #   aiosignal
 future==0.18.2
     # via flask-inputs
+google-auth==2.15.0
+    # via kubernetes
 idna==3.4
     # via
     #   requests
     #   yarl
 imagesize==1.4.1
     # via sphinx
-iniconfig==1.1.1
+iniconfig==2.0.0
     # via pytest
 itsdangerous==2.1.2
     # via flask
@@ -120,6 +122,10 @@ jinja2==3.1.2
     #   flask
     #   sphinx
 jsonschema==4.17.3
+    # via -r requirements/app.in
+kubernetes==25.3.0
+    # via leaderelection
+leaderelection==0.0.3
     # via -r requirements/app.in
 markupsafe==2.1.1
     # via
@@ -132,6 +138,8 @@ multidict==6.0.4
     #   yarl
 mypy-extensions==0.4.3
     # via black
+oauthlib==3.2.2
+    # via requests-oauthlib
 packaging==22.0
     # via
     #   build
@@ -159,6 +167,12 @@ pluggy==1.0.0
     #   tox
 py==1.11.0
     # via tox
+pyasn1==0.4.8
+    # via
+    #   pyasn1-modules
+    #   rsa
+pyasn1-modules==0.2.8
+    # via google-auth
 pycparser==2.21
     # via cffi
 pydantic==1.10.4
@@ -169,9 +183,7 @@ pygments==2.14.0
     #   sphinx
     #   sphinx-tabs
 pynacl==1.5.0
-    # via
-    #   -r requirements/app.in
-    #   flask-discord-interactions
+    # via -r requirements/app.in
 pyrsistent==0.19.3
     # via jsonschema
 pytest==7.2.0
@@ -180,12 +192,16 @@ pytest==7.2.0
     #   pytest-cov
 pytest-cov==4.0.0
     # via -r requirements/tests.in
+python-dateutil==2.8.2
+    # via kubernetes
 python-dotenv==0.21.0
     # via -r requirements/app.in
 pytz==2022.7
     # via babel
 pyyaml==6.0
-    # via -r requirements/app.in
+    # via
+    #   -r requirements/app.in
+    #   kubernetes
 redis==4.4.0
     # via
     #   -r requirements/app.in
@@ -193,13 +209,15 @@ redis==4.4.0
 requests==2.28.1
     # via
     #   -r requirements/app.in
-    #   flask-discord-interactions
-    #   requests-toolbelt
+    #   kubernetes
+    #   requests-oauthlib
     #   sphinx
-requests-toolbelt==0.10.1
-    # via flask-discord-interactions
+requests-oauthlib==1.3.1
+    # via kubernetes
 rich==12.6.0
     # via typer
+rsa==4.9
+    # via google-auth
 rstcheck==6.1.1
     # via -r requirements/docs.in
 rstcheck-core==1.0.3
@@ -209,7 +227,11 @@ sentry-sdk[flask]==1.12.1
 shellingham==1.5.0.post1
     # via typer
 six==1.16.0
-    # via tox
+    # via
+    #   google-auth
+    #   kubernetes
+    #   python-dateutil
+    #   tox
 snowballstemmer==2.2.0
     # via sphinx
 sphinx==6.0.0
@@ -255,12 +277,15 @@ typing-extensions==4.4.0
     # via pydantic
 urllib3==1.26.13
     # via
+    #   kubernetes
     #   requests
     #   sentry-sdk
 uwsgi==2.0.21
     # via -r requirements/app.in
 virtualenv==20.17.1
     # via tox
+websocket-client==1.4.2
+    # via kubernetes
 werkzeug==2.2.2
     # via flask
 wheel==0.38.4
