@@ -4,6 +4,7 @@ kind: Kustomization
 
 resources:
   - service-account.yaml
+  - role.yaml
   - configmaps.yaml
   - deployment.yaml
   - service-entries.yaml

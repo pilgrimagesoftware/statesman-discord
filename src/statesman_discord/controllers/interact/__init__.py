@@ -19,6 +19,7 @@ from statesman_discord.utils.discord import verify_signature
 class PingHandled(Exception):
     pass
 
+
 class PayloadException(Exception):
     pass
 
@@ -56,11 +57,11 @@ def handle_ping(request: object):
     current_app.logger.debug("body: %s", body)
 
     msg = json.loads(body)
-    msg_type = msg.get('type')
+    msg_type = msg.get("type")
     if msg_type != 1:
         return
 
-    if msg.get('application_id') != os.environ[constants.DISCORD_APP_ID]:
+    if msg.get("application_id") != os.environ[constants.DISCORD_CLIENT_ID]:
         current_app.logger.warn("Application ID in incoming payload did not match ours.")
         raise PayloadException("'application_id' in payload did not match ours.")
 

@@ -8,6 +8,7 @@ flask-redis
 flask-script
 flask-session
 jsonschema
+leader-election
 pika
 pynacl
 python-dotenv

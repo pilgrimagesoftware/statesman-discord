@@ -29,7 +29,10 @@ def handle_interaction():
         return handle_action_request(request)
     except PingHandled:
         current_app.logger.info("Handled ping request.")
-        return jsonify({'type': 1}), 200
+        return jsonify({"type": 1}), 200
+    except SignatureException:
+        current_app.logger.info("Signature verification failed.")
+        return jsonify({}), 401
     except:
         current_app.logger.exception("Exception while processing interaction")
         response = {"response_type": "ephemeral", "text": "Sorry, that didn't work. Please try again."}
