@@ -14,8 +14,17 @@ from werkzeug.exceptions import HTTPException
 from redis.client import Redis
 from sentry_sdk.integrations.wsgi import SentryWsgiMiddleware
 from flask_executor import Executor
-import os
+import os, logging
 from statesman_discord.utils.leader_election import LeaderElection
+
+
+def _leaderelection_filter(level):
+    level = getattr(logging, level)
+
+    def filter(record):
+        return record.levelno <= level
+
+    return filter
 
 
 def create_app(app_name=constants.APPLICATION_NAME):
@@ -27,6 +36,7 @@ def create_app(app_name=constants.APPLICATION_NAME):
                     "format": "[%(asctime)s] %(levelname)s %(module)s, line %(lineno)d: %(message)s",
                 }
             },
+            "filters": {"leaderelection": {"()": "statesman_discord.main._leaderelection_filter", "level": "WARNING"}},
             "handlers": {"wsgi": {"class": "logging.StreamHandler", "stream": "ext://flask.logging.wsgi_errors_stream", "formatter": "default"}},
             "root": {"level": "INFO", "handlers": ["wsgi"]},
         }
