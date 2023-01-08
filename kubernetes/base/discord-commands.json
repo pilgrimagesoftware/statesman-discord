@@ -1,5 +1,5 @@
 {
-    "version": "20230108092900",
+    "version": "20230108100700",
     "commands": [
         {
             "name": "sb",
@@ -14,7 +14,7 @@
                         {
                             "name": "item",
                             "description": "The item to adjust",
-                            "type": 5,
+                            "type": 3,
                             "required": true
                         },
                         {
@@ -59,8 +59,8 @@
                         },
                         {
                             "name": "value",
-                            "description": "The value to add to the item",
-                            "type": 5,
+                            "description": "The value by which the item should be adjusted, according to the operator",
+                            "type": 4,
                             "required": true
                         }
                     ]
@@ -73,7 +73,7 @@
                         {
                             "name": "name",
                             "description": "The name of the collection to create",
-                            "type": 5,
+                            "type": 3,
                             "required": true
                         }
                     ]
@@ -91,13 +91,13 @@
                         {
                             "name": "item",
                             "description": "The name of the item",
-                            "type": 5,
+                            "type": 3,
                             "required": true
                         },
                         {
                             "name": "value",
                             "description": "The default value to set for the item",
-                            "type": 5,
+                            "type": 3,
                             "required": true
                         }
                     ]
@@ -115,13 +115,13 @@
                         {
                             "name": "item",
                             "description": "The name of the item to decrement",
-                            "type": 5,
+                            "type": 3,
                             "required": true
                         },
                         {
                             "name": "value",
                             "description": "The value by which to decrement the item",
-                            "type": 5,
+                            "type": 4,
                             "required": false
                         }
                     ]
@@ -134,13 +134,13 @@
                         {
                             "name": "item",
                             "description": "The name of the item to increment",
-                            "type": 5,
+                            "type": 3,
                             "required": true
                         },
                         {
                             "name": "value",
                             "description": "The value by which to increment the item",
-                            "type": 5,
+                            "type": 4,
                             "required": false
                         }
                     ]
@@ -153,13 +153,13 @@
                         {
                             "name": "item",
                             "description": "The item on which to set the label",
-                            "type": 5,
+                            "type": 3,
                             "required": true
                         },
                         {
                             "name": "label",
                             "description": "The label to set on the item",
-                            "type": 5,
+                            "type": 3,
                             "required": true
                         }
                     ]
@@ -180,27 +180,27 @@
                     "type": 1,
                     "options": [
                         {
-                            "name": "",
-                            "description": "",
-                            "type": 5,
+                            "name": "item",
+                            "description": "The name of the item to set",
+                            "type": 3,
                             "required": true
                         },
                         {
                             "name": "default",
                             "description": "The default value of the item",
-                            "type": 5,
+                            "type": 3,
                             "required": false
                         },
                         {
                             "name": "label",
                             "description": "The label of the item",
-                            "type": 5,
+                            "type": 3,
                             "required": false
                         },
                         {
                             "name": "permission",
                             "description": "The permissions of the item (unimplemented)",
-                            "type": 5,
+                            "type": 3,
                             "required": false,
                             "choices": [
                                 {
@@ -223,7 +223,7 @@
                         {
                             "name": "item",
                             "description": "The name of the item to remove",
-                            "type": 5,
+                            "type": 3,
                             "required": true
                         }
                     ]
@@ -236,7 +236,7 @@
                         {
                             "name": "name",
                             "description": "The name of the collection",
-                            "type": 5,
+                            "type": 3,
                             "required": true
                         }
                     ]
