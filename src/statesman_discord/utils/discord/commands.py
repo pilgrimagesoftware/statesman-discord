@@ -19,4 +19,4 @@ def register_command(command: object, token: str):
     headers = {"Authorization": f"Bot {token}"}
 
     r = requests.post(url, headers=headers, json=command)
-    logging.info("r: %s", r)
+    logging.info("response: code=%d, headers=%s, body=%s", r.status_code, r.headers, r.json())
