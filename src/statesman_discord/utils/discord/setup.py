@@ -18,7 +18,7 @@ def register_commands():
 
         k8v1 = client.CoreV1Api()
         cm = k8v1.read_namespaced_config_map(name=os.environ[constants.LEADER_CONFIGMAP_NAME], namespace=os.environ[constants.NAMESPACE])
-        cm_data = cm.data()
+        cm_data = cm.data
         logging.debug("cm_data: %s", cm_data)
         cm_version = int(cm_data.get(constants.LEADER_CONFIGMAP_KEY_COMMANDS_VERSION, "0"))
         logging.info("cm_version=%d", cm_version)
