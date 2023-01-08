@@ -17,7 +17,12 @@ def register_commands():
         command_data = json.load(f)
 
         k8v1 = client.CoreV1Api()
-        cm = k8v1.read_namespaced_config_map(name=os.environ[constants.LEADER_CONFIGMAP_NAME], namespace=os.environ[constants.NAMESPACE])
+        try:
+            cm = k8v1.read_namespaced_config_map(name=os.environ[constants.LEADER_CONFIGMAP_NAME], namespace=os.environ[constants.NAMESPACE])
+        except Exception as e:
+            logging.warn("Unable to read configmap {%s/%s}: %s", os.environ[constants.NAMESPACE], os.environ[constants.LEADER_CONFIGMAP_NAME], e)
+            return
+
         cm_data = cm.data or {}
         logging.debug("cm_data: %s", cm_data)
         cm_version = int(cm_data.get(constants.LEADER_CONFIGMAP_KEY_COMMANDS_VERSION, "0"))
@@ -40,4 +45,7 @@ def register_commands():
         # record command version in configmap
         logging.info("Updating leader configmap with latest version of commands: %d", file_version)
         cm_data[constants.LEADER_CONFIGMAP_KEY_COMMANDS_VERSION] = f"{file_version}"
-        k8v1.replace_namespaced_config_map(name=os.environ[constants.LEADER_CONFIGMAP_NAME], namespace=os.environ[constants.NAMESPACE], body=cm_data)
+        try:
+            k8v1.replace_namespaced_config_map(os.environ[constants.LEADER_CONFIGMAP_NAME], os.environ[constants.NAMESPACE], cm_data)
+        except Exception as e:
+            logging.warn("Unable to write configmap {%s/%s}: %s", os.environ[constants.NAMESPACE], os.environ[constants.LEADER_CONFIGMAP_NAME], e)
