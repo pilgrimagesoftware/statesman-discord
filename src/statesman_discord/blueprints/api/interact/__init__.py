@@ -18,7 +18,7 @@ blueprint = Blueprint("interact", __name__, url_prefix="/interact")
 
 
 @blueprint.route("/", methods=["POST"])
-@current_app.limiter.limit("1/second")
+# @current_app.limiter.limit("1/second")
 def handle_interaction():
     current_app.logger.debug("POST /interact/: %s", request)
 

@@ -31,7 +31,7 @@ def register_health_check_service_hook(name: str, callable) -> None:
 
 
 @blueprint.route("/status")
-@current_app.limiter.limit("1/second")
+# @current_app.limiter.limit("1/second")
 def health_check():
     r = {"services": {}, "environment": {}}
     build_info_path = os.environ.get(constants.BUILD_INFO_PATH)
