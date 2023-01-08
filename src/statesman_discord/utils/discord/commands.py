@@ -16,7 +16,7 @@ def register_command(command: object, token: str):
     url = _get_url()
     logging.debug("url: %s", url)
 
-    headers = {"Authorization": f"Bearer {token}"}
+    headers = {"Authorization": f"Bot {token}"}
 
     r = requests.post(url, headers=headers, json=command)
     logging.info("r: %s", r)
