@@ -11,6 +11,7 @@ import os, logging
 from statesman_discord import constants
 from statesman_discord.utils.discord.signature import verify_signature
 from statesman_discord.common.exceptions import SignatureException
+import pika
 
 
 class PingHandled(Exception):
@@ -45,6 +46,9 @@ def handle_action_request(request: object):
     verify_signature(signature, timestamp, body)
 
     # TODO: send message to API service
+    connection = pika.BlockingConnection(pika.ConnectionParameters(os.environ[constants.RABBITMQ_HOST], os.environ[constants.RABBITMQ_PORT], os.environ[constants.RABBITMQ_VHOST], pika.PlainCredentials(os.environ[constants.RABBITMQ_USER], os.environ[constants.RABBITMQ_PASSWORD])))
+    channel = connection.channel()
+    channel.basic_publish(exchange=os.environ[constants.RABBITMQ_EXCHANGE], routing_key=os.environ[constants.POD], body=body)
 
     return jsonify({"type": 5}), 200
 

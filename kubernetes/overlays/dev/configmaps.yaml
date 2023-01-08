@@ -19,3 +19,8 @@ data:
   DISCORD_SERVER_ID: "561332376995627033"
   LEADER_CONFIGMAP_NAME: "statesman-discord-leader"
   LEADER_WATCHER_SLEEP: "1"
+  RABBITMQ_HOST: ""
+  RABBITMQ_PORT: "5673"
+  RABBITMQ_VHOST: "/statesman"
+  RABBITMQ_EXCHANGE: "statesman"
+  RABBITMQ_USER: "statesman-discord"
