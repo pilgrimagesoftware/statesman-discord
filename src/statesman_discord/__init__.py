@@ -22,4 +22,8 @@ sentry_sdk.init(
     integrations=[
         FlaskIntegration(),
     ],
+    traces_sample_rate=1.0,
+    _experiments={
+        "profiles_sample_rate": 1.0,
+    },
 )
