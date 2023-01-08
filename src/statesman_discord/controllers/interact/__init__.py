@@ -44,7 +44,7 @@ def handle_action_request(request: object):
     # validate signature
     verify_signature(signature, timestamp, body)
 
-    # TODO
+    return {}, 201
 
 
 def handle_ping(request: object):

@@ -46,6 +46,6 @@ def register_commands():
         logging.info("Updating leader configmap with latest version of commands: %d", file_version)
         cm_data[constants.LEADER_CONFIGMAP_KEY_COMMANDS_VERSION] = f"{file_version}"
         try:
-            k8v1.replace_namespaced_config_map(os.environ[constants.LEADER_CONFIGMAP_NAME], os.environ[constants.NAMESPACE], cm_data)
+            k8v1.patch_namespaced_config_map(os.environ[constants.LEADER_CONFIGMAP_NAME], os.environ[constants.NAMESPACE], cm_data)
         except Exception as e:
             logging.warn("Unable to write configmap {%s/%s}: %s", os.environ[constants.NAMESPACE], os.environ[constants.LEADER_CONFIGMAP_NAME], e)
