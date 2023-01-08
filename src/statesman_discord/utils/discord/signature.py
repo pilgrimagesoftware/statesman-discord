@@ -6,7 +6,7 @@ signature.py
 
 
 from flask import current_app
-import os
+import os, logging
 from statesman_discord import constants
 from statesman_discord.common.exceptions import SignatureException
 from nacl.signing import VerifyKey
@@ -14,14 +14,14 @@ from nacl.exceptions import BadSignatureError
 
 
 def verify_signature(signature: str, timestamp: str, request_body: str):
-    current_app.logger.debug("signature: %s", signature)
+    logging.debug("signature: %s", signature)
 
-    current_app.logger.debug("request_body: %s", request_body)
+    logging.debug("request_body: %s", request_body)
     # our_sig = f'{constants.SLACK_SIGNATURE_VERSION}:{timestamp}:{request_body}'
-    # current_app.logger.debug("our_sig: %s", our_sig)
+    # logging.debug("our_sig: %s", our_sig)
 
     key = os.environ[constants.DISCORD_PUBLIC_KEY]
-    current_app.logger.debug("key: %s", key)
+    logging.debug("key: %s", key)
     verify_key = VerifyKey(bytes.fromhex(key))
 
     try:

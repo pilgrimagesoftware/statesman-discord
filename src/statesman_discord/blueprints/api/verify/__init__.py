@@ -22,13 +22,13 @@ blueprint = Blueprint("verify", __name__, url_prefix="/verify")
 
 @blueprint.route("/", methods=["POST"])
 def handle_verify():
-    current_app.logger.debug("POST /verify/: %s", request)
+    logging.debug("POST /verify/: %s", request)
 
     try:
         # handle_ssl_check(request)
         return handle_action_request(request)
     except:
-        current_app.logger.exception("Exception while processing verification")
+        logging.exception("Exception while processing verification")
         response = {"response_type": "ephemeral", "text": "Sorry, that didn't work. Please try again."}
 
         return response, 200

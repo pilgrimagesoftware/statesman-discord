@@ -7,7 +7,7 @@ Health endpoints.
 from flask import Blueprint, current_app, jsonify
 from werkzeug.exceptions import HTTPException
 import json
-import os
+import os, logging
 from statesman_discord import constants
 from statesman_discord.utils import SafeEncoder
 from statesman_discord.utils.limiter import limiter
