@@ -44,9 +44,10 @@ class LeaderElection(object):
         self.elect = leaderelection.LeaderElection(self.election_config)
 
         self.logger.info("Starting election thread...")
-        self.election_thread = Thread(target=self.elect.run)
-        self.election_thread.setDaemon(True)
-        self.election_thread.start()
+        self.elect.run()
+        # self.election_thread = Thread(target=self.elect.run)
+        # self.election_thread.setDaemon(True)
+        # self.election_thread.start()
 
     def _leader_callback(self):
         self.logger.info("I am the leader; executing setup...")
