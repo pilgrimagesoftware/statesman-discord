@@ -16,8 +16,6 @@ from sentry_sdk.integrations.wsgi import SentryWsgiMiddleware
 from flask_executor import Executor
 import os
 from statesman_discord.utils.leader_election import LeaderElection
-from flask_limiter import Limiter
-from flask_limiter.util import get_remote_address
 
 
 def create_app(app_name=constants.APPLICATION_NAME):
@@ -41,7 +39,9 @@ def create_app(app_name=constants.APPLICATION_NAME):
 
     app.session = Session(app)
 
-    app.limiter = Limiter(get_remote_address, app=app)
+    from statesman_discord.utils.limiter import limiter
+
+    limiter.init_app(app)
 
     app.sentry = SentryWsgiMiddleware(app)
 

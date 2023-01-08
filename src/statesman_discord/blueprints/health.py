@@ -10,6 +10,7 @@ import json
 import os
 from statesman_discord import constants
 from statesman_discord.utils import SafeEncoder
+from statesman_discord.utils.limiter import limiter
 
 
 blueprint = Blueprint("health", __name__, url_prefix="/health")
@@ -31,7 +32,7 @@ def register_health_check_service_hook(name: str, callable) -> None:
 
 
 @blueprint.route("/status")
-# @current_app.limiter.limit("1/second")
+@limiter.limit("1/second")
 def health_check():
     r = {"services": {}, "environment": {}}
     build_info_path = os.environ.get(constants.BUILD_INFO_PATH)

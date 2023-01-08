@@ -12,13 +12,14 @@ from statesman_discord.controllers.interact import handle_action_request, handle
 from statesman_discord.blueprints.api import user_required, requires_auth
 from statesman_discord.blueprints.api.exceptions import error_response
 from statesman_discord.common.exceptions import SignatureException
+from statesman_discord.utils.limiter import limiter
 
 
 blueprint = Blueprint("interact", __name__, url_prefix="/interact")
 
 
 @blueprint.route("/", methods=["POST"])
-# @current_app.limiter.limit("1/second")
+@limiter.limit("1/second")
 def handle_interaction():
     current_app.logger.debug("POST /interact/: %s", request)
 
