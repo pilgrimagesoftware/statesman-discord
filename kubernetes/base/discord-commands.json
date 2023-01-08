@@ -2,35 +2,244 @@
     "version": "20230107221400",
     "commands": [
         {
-            "name": "add",
+            "name": "sb",
             "type": 1,
-            "description": "Add a value to a state item",
+            "description": "Manipulate a state item",
             "options": [
                 {
-                    "name": "animal",
-                    "description": "The type of animal",
-                    "type": 3,
-                    "required": true,
-                    "choices": [
+                    "name": "adjust",
+                    "description": "Adjust an item by a value and operation",
+                    "type": 1,
+                    "options": [
                         {
-                            "name": "Dog",
-                            "value": "animal_dog"
+                            "name": "item",
+                            "description": "The item to adjust",
+                            "type": 5,
+                            "required": true
                         },
                         {
-                            "name": "Cat",
-                            "value": "animal_cat"
+                            "name": "operator",
+                            "description": "The operation to perform on the item",
+                            "type": 3,
+                            "required": true,
+                            "choices": [
+                                {
+                                    "name": "+",
+                                    "value": "+"
+                                },
+                                {
+                                    "name": "add",
+                                    "value": "add"
+                                },
+                                {
+                                    "name": "-",
+                                    "value": "-"
+                                },
+                                {
+                                    "name": "subtract",
+                                    "value": "subtract"
+                                },
+                                {
+                                    "name": "*",
+                                    "value": "*"
+                                },
+                                {
+                                    "name": "multiply",
+                                    "value": "multiply"
+                                },
+                                {
+                                    "name": "/",
+                                    "value": "/"
+                                },
+                                {
+                                    "name": "divide",
+                                    "value": "divide"
+                                }
+                            ]
                         },
                         {
-                            "name": "Penguin",
-                            "value": "animal_penguin"
+                            "name": "value",
+                            "description": "The value to add to the item",
+                            "type": 5,
+                            "required": true
                         }
                     ]
                 },
                 {
-                    "name": "only_smol",
-                    "description": "Whether to show only baby animals",
-                    "type": 5,
-                    "required": false
+                    "name": "create",
+                    "description": "Create a new state collection",
+                    "type": 1,
+                    "options": [
+                        {
+                            "name": "name",
+                            "description": "The name of the collection to create",
+                            "type": 5,
+                            "required": true
+                        }
+                    ]
+                },
+                {
+                    "name": "current",
+                    "description": "Gets the values of the items in the current state collection",
+                    "type": 1
+                },
+                {
+                    "name": "default",
+                    "description": "Sets the default value on an item",
+                    "type": 1,
+                    "options": [
+                        {
+                            "name": "item",
+                            "description": "The name of the item",
+                            "type": 5,
+                            "required": true
+                        },
+                        {
+                            "name": "value",
+                            "description": "The default value to set for the item",
+                            "type": 5,
+                            "required": true
+                        }
+                    ]
+                },
+                {
+                    "name": "help",
+                    "description": "Shows help for state manipulation commands",
+                    "type": 1
+                },
+                {
+                    "name": "decrement",
+                    "description": "Decrement the value of an item",
+                    "type": 1,
+                    "options": [
+                        {
+                            "name": "item",
+                            "description": "The name of the item to decrement",
+                            "type": 5,
+                            "required": true
+                        },
+                        {
+                            "name": "value",
+                            "description": "The value by which to decrement the item",
+                            "type": 5,
+                            "required": false
+                        }
+                    ]
+                },
+                {
+                    "name": "increment",
+                    "description": "Increment the value of an item",
+                    "type": 1,
+                    "options": [
+                        {
+                            "name": "item",
+                            "description": "The name of the item to increment",
+                            "type": 5,
+                            "required": true
+                        },
+                        {
+                            "name": "value",
+                            "description": "The value by which to increment the item",
+                            "type": 5,
+                            "required": false
+                        }
+                    ]
+                },
+                {
+                    "name": "label",
+                    "description": "Sets a human-readable label on an item",
+                    "type": 1,
+                    "options": [
+                        {
+                            "name": "item",
+                            "description": "The item on which to set the label",
+                            "type": 5,
+                            "required": true
+                        },
+                        {
+                            "name": "label",
+                            "description": "The label to set on the item",
+                            "type": 5,
+                            "required": true
+                        }
+                    ]
+                },
+                {
+                    "name": "list",
+                    "description": "List the collections that are available",
+                    "type": 1
+                },
+                {
+                    "name": "reset",
+                    "description": "Reset the current collection's item values to their defaults",
+                    "type": 1
+                },
+                {
+                    "name": "set",
+                    "description": "Sets or creates an item",
+                    "type": 1,
+                    "options": [
+                        {
+                            "name": "",
+                            "description": "",
+                            "type": 5,
+                            "required": true
+                        },
+                        {
+                            "name": "default",
+                            "description": "The default value of the item",
+                            "type": 5,
+                            "required": false
+                        },
+                        {
+                            "name": "label",
+                            "description": "The label of the item",
+                            "type": 5,
+                            "required": false
+                        },
+                        {
+                            "name": "permission",
+                            "description": "The permissions of the item (unimplemented)",
+                            "type": 5,
+                            "required": false,
+                            "choices": [
+                                {
+                                    "name": "read",
+                                    "value": "read"
+                                },
+                                {
+                                    "name": "write",
+                                    "value": "write"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "unset",
+                    "description": "Removes an item from the current collection",
+                    "type": 1,
+                    "options": [
+                        {
+                            "name": "item",
+                            "description": "The name of the item to remove",
+                            "type": 5,
+                            "required": true
+                        }
+                    ]
+                },
+                {
+                    "name": "use",
+                    "description": "Sets a collection as the current one",
+                    "type": 1,
+                    "options": [
+                        {
+                            "name": "name",
+                            "description": "The name of the collection",
+                            "type": 5,
+                            "required": true
+                        }
+                    ]
                 }
             ]
         }
