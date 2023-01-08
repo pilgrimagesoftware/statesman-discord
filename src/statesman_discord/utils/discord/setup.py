@@ -46,6 +46,7 @@ def register_commands():
         logging.info("Updating leader configmap with latest version of commands: %d", file_version)
         cm_data[constants.LEADER_CONFIGMAP_KEY_COMMANDS_VERSION] = f"{file_version}"
         cm.data = cm_data
+        logging.debug("cm: %s", cm)
         try:
             k8v1.replace_namespaced_config_map(os.environ[constants.LEADER_CONFIGMAP_NAME], os.environ[constants.NAMESPACE], cm)
         except Exception as e:
