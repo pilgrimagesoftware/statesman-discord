@@ -19,6 +19,7 @@ def register_commands():
         k8v1 = client.CoreV1Api()
         try:
             cm = k8v1.read_namespaced_config_map(name=os.environ[constants.LEADER_CONFIGMAP_NAME], namespace=os.environ[constants.NAMESPACE])
+            logging.debug("cm: %s", cm)
         except Exception as e:
             logging.warn("Unable to read configmap {%s/%s}: %s", os.environ[constants.NAMESPACE], os.environ[constants.LEADER_CONFIGMAP_NAME], e)
             return
@@ -48,6 +49,7 @@ def register_commands():
         cm.data = cm_data
         logging.debug("cm: %s", cm)
         try:
-            k8v1.replace_namespaced_config_map(os.environ[constants.LEADER_CONFIGMAP_NAME], os.environ[constants.NAMESPACE], cm)
+            resp = k8v1.replace_namespaced_config_map(os.environ[constants.LEADER_CONFIGMAP_NAME], os.environ[constants.NAMESPACE], cm)
+            logging.info("resp: %s", resp)
         except Exception as e:
             logging.warn("Unable to write configmap {%s/%s}: %s", os.environ[constants.NAMESPACE], os.environ[constants.LEADER_CONFIGMAP_NAME], e)
