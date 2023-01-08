@@ -5,7 +5,7 @@ interact
 """
 
 
-from flask import current_app
+from flask import current_app, jsonify
 import json
 import os, logging
 from statesman_discord import constants
@@ -44,7 +44,9 @@ def handle_action_request(request: object):
     # validate signature
     verify_signature(signature, timestamp, body)
 
-    return {}, 201
+    # TODO: send message to API service
+
+    return jsonify({"type": 5}), 200
 
 
 def handle_ping(request: object):
