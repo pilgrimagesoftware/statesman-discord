@@ -54,8 +54,6 @@ discord-py==2.1.0
     # via -r requirements/app.in
 distlib==0.3.6
     # via virtualenv
-exceptiongroup==1.1.0
-    # via pytest
 filelock==3.9.0
     # via
     #   tox
@@ -165,7 +163,7 @@ pyyaml==6.0
     # via
     #   -r requirements/app.in
     #   kubernetes
-redis==4.4.0
+redis==4.4.1
     # via
     #   -r requirements/app.in
     #   flask-redis
@@ -187,11 +185,6 @@ six==1.16.0
     #   google-auth
     #   kubernetes
     #   python-dateutil
-    #   tox
-tomli==2.0.1
-    # via
-    #   coverage
-    #   pytest
     #   tox
 tox==3.26.0
     # via -r requirements/tests.in
