@@ -24,3 +24,5 @@ data:
   RABBITMQ_VHOST: "/statesman"
   RABBITMQ_EXCHANGE: "statesman"
   RABBITMQ_USER: "statesman-discord"
+  RABBITMQ_QUEUE: discord
+  RABBITMQ_API_QUEUE: api

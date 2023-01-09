@@ -38,7 +38,7 @@ def create_app(app_name=constants.APPLICATION_NAME):
             },
             # "filters": {"leaderelection": {"()": "statesman_discord.main._leaderelection_filter", "level": "WARNING"}},
             "handlers": {"wsgi": {"class": "logging.StreamHandler", "stream": "ext://flask.logging.wsgi_errors_stream", "formatter": "default"}},
-            "root": {"level": "INFO", "handlers": ["wsgi"]},
+            "root": {"level": os.environ.get(constants.LOG_LEVEL, "INFO"), "handlers": ["wsgi"]},
         }
     )
 
@@ -70,6 +70,10 @@ def create_app(app_name=constants.APPLICATION_NAME):
     from statesman_discord.blueprints.health import blueprint as health_blueprint
 
     app.register_blueprint(health_blueprint)
+
+    from statesman_discord.messaging import channel
+
+    app.messaging_channel = channel
 
     print(app.url_map)
 

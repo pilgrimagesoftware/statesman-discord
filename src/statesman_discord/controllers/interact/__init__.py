@@ -11,6 +11,7 @@ import os, logging
 from statesman_discord import constants
 from statesman_discord.utils.discord.signature import verify_signature
 from statesman_discord.common.exceptions import SignatureException
+from statesman_discord.messaging import send_amqp_message
 import pika
 
 
@@ -45,10 +46,7 @@ def handle_action_request(request: object):
     # validate signature
     verify_signature(signature, timestamp, body)
 
-    # TODO: send message to API service
-    connection = pika.BlockingConnection(pika.ConnectionParameters(os.environ[constants.RABBITMQ_HOST], os.environ[constants.RABBITMQ_PORT], os.environ[constants.RABBITMQ_VHOST], pika.PlainCredentials(os.environ[constants.RABBITMQ_USER], os.environ[constants.RABBITMQ_PASSWORD])))
-    channel = connection.channel()
-    channel.basic_publish(exchange=os.environ[constants.RABBITMQ_EXCHANGE], routing_key=os.environ[constants.POD], body=body)
+    send_amqp_message(body)
 
     return jsonify({"type": 5}), 200
 
