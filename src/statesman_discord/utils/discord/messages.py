@@ -40,7 +40,7 @@ def handle_interaction_response(msg: dict):
 
     headers = {"Authorization": f"Bot {os.environ['DISCORD_TOKEN']}"}
     body = {
-        "content": msg["answer"],
+        "content": json.dumps(msg["answer"]),  # TODO: this isn't necessarily the right way to response, depends on the command
     }
 
     url = _get_interaction_response_url(msg["response_data"]["token"])
