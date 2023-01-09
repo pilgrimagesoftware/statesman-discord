@@ -44,7 +44,12 @@ def send_amqp_message(msg: dict):
             "token": msg["token"],
             "raw_data": msg["data"],
         },
-        "user": msg["member"]["user"],
+        "user": {
+            "service": "discord",
+            "org_id": msg["guild_id"],
+            "canonical_id": f"discord|{msg['member']['user']['id']}",
+            "data": msg["member"]["user"],
+        },
         "data": {"command": command},
     }
     body = json.dumps(body_data)
