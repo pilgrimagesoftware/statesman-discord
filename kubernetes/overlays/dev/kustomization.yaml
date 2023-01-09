@@ -11,6 +11,8 @@ resources:
   - hpa.yaml
   - pdb.yaml
   - middlewares.yaml
+  - destination-rules.yaml
+  - virtual-service.yaml
   - ingress.yaml
 patchesStrategicMerge:
   - replicas.yaml

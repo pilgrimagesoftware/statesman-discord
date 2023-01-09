@@ -19,4 +19,5 @@ spec:
           responseForwarding:
             flushInterval: 1ms
       middlewares:
+        - name: cors-headers
         - name: strip-discord-prefix
