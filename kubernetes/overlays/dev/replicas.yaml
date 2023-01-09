@@ -6,4 +6,4 @@ metadata:
     name: discord
 
 spec:
-    replicas: 3
+    replicas: 1
