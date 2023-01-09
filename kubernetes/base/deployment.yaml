@@ -62,13 +62,13 @@ spec:
             httpGet:
               path: /health/ping
               port: 5000
-            initialDelaySeconds: 90
+            initialDelaySeconds: 30
             timeoutSeconds: 10
           readinessProbe:
             httpGet:
               path: /health/ping
               port: 5000
-            initialDelaySeconds: 30
+            initialDelaySeconds: 90
             timeoutSeconds: 10
           volumeMounts:
             - name: discord-files
