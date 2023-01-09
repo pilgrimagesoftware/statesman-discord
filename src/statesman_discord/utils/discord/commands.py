@@ -26,6 +26,7 @@ def construct_command(msg: dict) -> str:
     logging.debug("msg: %s", msg)
 
     cmd = msg["data"]["name"]
+    logging.debug("cmd: %s", cmd)
     # TODO: check cmd
 
     parts = list(map(lambda x: x["name"], msg["data"]["options"]))

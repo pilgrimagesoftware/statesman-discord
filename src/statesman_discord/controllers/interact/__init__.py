@@ -46,7 +46,7 @@ def handle_action_request(request: object):
     # validate signature
     verify_signature(signature, timestamp, body)
 
-    send_amqp_message(body)
+    send_amqp_message(json.loads(body))
 
     return jsonify({"type": 5}), 200
 
