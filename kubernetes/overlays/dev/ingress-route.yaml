@@ -1,0 +1,21 @@
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+
+metadata:
+  name: discord
+
+spec:
+  entryPoints:
+    - web
+  routes:
+    - match: Host(`statesman.pilgrimagesoftare.com`) && (PathPrefix(`/api/0/discord/`) || PathPrefix(`/api/1/discord/`))
+      kind: Rule
+      services:
+        - name: discord
+          port: 5000
+          passHostHeader: true
+          responseForwarding:
+            flushInterval: 100ms
+      middlewares:
+        - name: cors-headers
