@@ -22,7 +22,7 @@ data:
   RABBITMQ_HOST: "rabbitmq.statesman.svc.cluster.local"
   RABBITMQ_PORT: "5672"
   RABBITMQ_VHOST: "statesman"
-  RABBITMQ_EXCHANGE: "statesman"
+  RABBITMQ_EXCHANGE: ""
   RABBITMQ_USER: "statesman-discord"
   RABBITMQ_QUEUE: discord
   RABBITMQ_API_QUEUE: api

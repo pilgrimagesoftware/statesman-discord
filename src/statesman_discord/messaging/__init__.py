@@ -28,9 +28,11 @@ def send_amqp_message(msg: object):
     Args:
         msg (_type_): _description_
     """
+    logging.debug("msg: %s", msg)
 
     body_data = {"sender": os.environ[constants.POD], "timestamp": time.time(), "response_queue": os.environ[constants.RABBITMQ_QUEUE], "data": msg}
     body = json.dumps(body_data)
+    logging.debug("body: %s", body)
     channel.basic_publish(exchange=os.environ[constants.RABBITMQ_EXCHANGE], routing_key=os.environ[constants.RABBITMQ_API_QUEUE], body=body)
 
 
