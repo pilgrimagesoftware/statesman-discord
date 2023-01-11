@@ -71,9 +71,9 @@ def create_app(app_name=constants.APPLICATION_NAME):
 
     app.register_blueprint(health_blueprint)
 
-    from statesman_discord.messaging import channel
+    from statesman_discord.messaging import consumer_thread
 
-    app.messaging_channel = channel
+    app.consumer_thread = consumer_thread
 
     print(app.url_map)
 

@@ -12,16 +12,6 @@ from statesman_discord.utils.discord.commands import construct_command
 from statesman_discord.utils.discord.messages import handle_interaction_response
 
 
-connection = pika.BlockingConnection(
-    pika.ConnectionParameters(
-        os.environ[constants.RABBITMQ_HOST],
-        os.environ[constants.RABBITMQ_PORT],
-        os.environ[constants.RABBITMQ_VHOST],
-        pika.PlainCredentials(os.environ[constants.RABBITMQ_USER], os.environ[constants.RABBITMQ_PASSWORD]),
-    )
-)
-
-
 def send_amqp_message(msg: dict):
     """_summary_
 
@@ -52,6 +42,14 @@ def send_amqp_message(msg: dict):
     }
     body = json.dumps(body_data)
     logging.debug("body: %s", body)
+    connection = pika.BlockingConnection(
+        pika.ConnectionParameters(
+            os.environ[constants.RABBITMQ_HOST],
+            os.environ[constants.RABBITMQ_PORT],
+            os.environ[constants.RABBITMQ_VHOST],
+            pika.PlainCredentials(os.environ[constants.RABBITMQ_USER], os.environ[constants.RABBITMQ_PASSWORD]),
+        )
+    )
     channel = connection.channel()
     try:
         channel.basic_publish(exchange=os.environ[constants.RABBITMQ_EXCHANGE], routing_key=os.environ[constants.RABBITMQ_API_QUEUE], body=body)
@@ -88,6 +86,14 @@ class MessageConsumer(Thread):
 
     def run(self):
         logging.info("Consumer thread started.")
+        connection = pika.BlockingConnection(
+            pika.ConnectionParameters(
+                os.environ[constants.RABBITMQ_HOST],
+                os.environ[constants.RABBITMQ_PORT],
+                os.environ[constants.RABBITMQ_VHOST],
+                pika.PlainCredentials(os.environ[constants.RABBITMQ_USER], os.environ[constants.RABBITMQ_PASSWORD]),
+            )
+        )
         channel = connection.channel()
         channel.basic_consume(queue=os.environ[constants.RABBITMQ_QUEUE], on_message_callback=self.message_callback, auto_ack=True)
         channel.start_consuming()
