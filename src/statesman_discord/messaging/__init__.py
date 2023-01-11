@@ -21,8 +21,6 @@ connection = pika.BlockingConnection(
     )
 )
 
-channel = connection.channel()
-
 
 def send_amqp_message(msg: dict):
     """_summary_
@@ -54,7 +52,13 @@ def send_amqp_message(msg: dict):
     }
     body = json.dumps(body_data)
     logging.debug("body: %s", body)
-    channel.basic_publish(exchange=os.environ[constants.RABBITMQ_EXCHANGE], routing_key=os.environ[constants.RABBITMQ_API_QUEUE], body=body)
+    channel = connection.channel()
+    try:
+        channel.basic_publish(exchange=os.environ[constants.RABBITMQ_EXCHANGE], routing_key=os.environ[constants.RABBITMQ_API_QUEUE], body=body)
+    except Exception as e:
+        logging.exception("Exception while attempting to publish message:", e)
+    finally:
+        channel.close()
 
 
 class MessageConsumer(Thread):
@@ -84,8 +88,10 @@ class MessageConsumer(Thread):
 
     def run(self):
         logging.info("Consumer thread started.")
+        channel = connection.channel()
         channel.basic_consume(queue=os.environ[constants.RABBITMQ_QUEUE], on_message_callback=self.message_callback, auto_ack=True)
         channel.start_consuming()
+        channel.close()
 
 
 consumer_thread = MessageConsumer()
