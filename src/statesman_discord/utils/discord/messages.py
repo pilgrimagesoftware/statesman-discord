@@ -13,15 +13,13 @@ from statesman_discord.common.exceptions import SignatureException
 from statesman_discord.utils.discord import _get_interaction_response_url
 
 
-def send_message(response_url: str, blocks: list, private: bool):
-    logging.debug("response_url: %s, blocks: %s, private: %s", response_url, blocks, private)
-
-    response_type = "in_channel" if not private else "ephemeral"
+def send_message(response_url: str, data: list, private: bool):
+    logging.debug("response_url: %s, data: %s, private: %s", response_url, data, private)
 
     body = json.dumps(
         {
-            "response_type": response_type,
-            "blocks": blocks,
+            "private": private,
+            "data": data,
         }
     )
     logging.debug("body: %s", body)
@@ -38,9 +36,19 @@ def send_message(response_url: str, blocks: list, private: bool):
 def handle_interaction_response(msg: dict):
     logging.debug("msg: %s", msg)
 
+    answer = msg.get("answer")
+    flags = 0
+    if answer is None:
+        content = "TBD"
+    else:
+        content = "\n".join(map(lambda m: m.get("text", ""), answer.get("data", [])))
+        if answer.get("private"):
+            flags |= constants.MSG_FLAG_EPHEMERAL
+
     headers = {"Authorization": f"Bot {os.environ['DISCORD_TOKEN']}"}
     body = {
-        "content": json.dumps(msg["answer"]),  # TODO: this isn't necessarily the right way to response, depends on the command
+        "flags": flags,
+        "content": content,
     }
 
     url = _get_interaction_response_url(msg["response_data"]["token"])
