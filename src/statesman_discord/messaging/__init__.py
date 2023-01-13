@@ -34,7 +34,7 @@ def send_amqp_message(msg: dict):
         },
         "user": {
             "service": "discord",
-            "org_id": msg["guild_id"],
+            "org_id": f"discord|{msg['guild_id']}",
             "canonical_id": f"discord|{msg['member']['user']['id']}",
             "data": msg["member"]["user"],
         },

@@ -41,9 +41,26 @@ def handle_interaction_response(msg: dict):
     if answer is None:
         content = "TBD"
     else:
-        content = "\n".join(map(lambda m: m.get("text", ""), answer.get("data", [])))
         if answer.get("private"):
             flags |= constants.MSG_FLAG_EPHEMERAL
+
+        contents = []
+        for datum in answer.get("data", []):
+            if datum.get("text"):
+                contents.append(datum["text"])
+            elif datum.get("type"):
+                thing = datum["type"]
+                if thing == "divider":
+                    contents.append("---")
+            elif datum.get("collection"):
+                creator_info = datum.get("creator")
+                if creator_info:
+                    creator = f"<@{creator_info.split('|',2)[-1]}>"
+                else:
+                    creator = "no one"
+                contents.append(f"*{datum['collection']}*\nCreated by {creator}")
+
+        content = "\n".join(contents)
 
     headers = {"Authorization": f"Bot {os.environ['DISCORD_TOKEN']}"}
     body = {
