@@ -5,7 +5,7 @@ interact
 """
 
 import pika
-import os, logging, time, json
+import os, logging, time, json, socket
 from statesman_discord import constants
 from threading import Thread
 from statesman_discord.utils.discord.commands import construct_command
@@ -24,7 +24,7 @@ def send_amqp_message(msg: dict):
     logging.debug("command: %s", command)
 
     body_data = {
-        "sender": os.environ[constants.POD],
+        "sender": os.environ.get(constants.POD, socket.gethostname()),
         "timestamp": time.time(),
         "response_data": {
             "queue": os.environ[constants.RABBITMQ_QUEUE],
