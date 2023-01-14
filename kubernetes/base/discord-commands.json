@@ -1,5 +1,5 @@
 {
-    "version": "20230108100700",
+    "version": "20230113202500",
     "commands": [
         {
             "name": "sb",
@@ -79,9 +79,17 @@
                     ]
                 },
                 {
-                    "name": "current",
-                    "description": "Gets the values of the items in the current state collection",
-                    "type": 1
+                    "name": "get",
+                    "description": "Gets the values of an item or all items in the current state collection",
+                    "type": 1,
+                    "options": [
+                        {
+                            "name": "item",
+                            "description": "The name of the item",
+                            "type": 3,
+                            "required": false
+                        }
+                    ]
                 },
                 {
                     "name": "default",
@@ -182,6 +190,12 @@
                         {
                             "name": "item",
                             "description": "The name of the item to set",
+                            "type": 3,
+                            "required": true
+                        },
+                        {
+                            "name": "value",
+                            "description": "The value of the item",
                             "type": 3,
                             "required": true
                         },
