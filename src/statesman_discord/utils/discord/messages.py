@@ -45,20 +45,38 @@ def handle_interaction_response(msg: dict):
             flags |= constants.MSG_FLAG_EPHEMERAL
 
         contents = []
-        for datum in answer.get("data", []):
+        for datum in answer.get("messages", []):
             if datum.get("text"):
                 contents.append(datum["text"])
             elif datum.get("type"):
                 thing = datum["type"]
                 if thing == "divider":
                     contents.append("---")
-            elif datum.get("collection"):
-                creator_info = datum.get("creator")
-                if creator_info:
-                    creator = f"<@{creator_info.split('|',2)[-1]}>"
-                else:
-                    creator = "no one"
-                contents.append(f"*{datum['collection']}*\nCreated by {creator}")
+            elif datum.get("items"):
+                for item in datum["items"]:
+                    if item.get("collection"):
+                        collection = item["collection"]
+                        name = collection["name"]
+                        creator_info = collection.get("creator")
+                        if creator_info:
+                            creator = f"<@{creator_info.split('|',2)[-1]}>"
+                        else:
+                            creator = "no one"
+                        contents.append(f"*{name}*\nCreated by {creator}")
+                    elif item.get("item"):
+                        state_item = item["item"]
+                        name = state_item["name"]
+                        label = state_item.get("label")
+                        value = state_item["value"]
+                        default = state_item.get("default")
+
+                        if label:
+                            content = f"*{label} ({name})* = {value}"
+                        else:
+                            content = f"*{name}* = {value}"
+                        if default:
+                            content += f" (default: {default})"
+                        contents.append(content)
 
         content = "\n".join(contents)
 
