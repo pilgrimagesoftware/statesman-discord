@@ -4,7 +4,6 @@ __author__ = "Paul Schifferer <paul@schifferers.net>"
 """
 
 
-from flask import current_app
 from statesman_discord import constants
 import os, logging
 

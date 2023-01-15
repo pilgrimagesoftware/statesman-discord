@@ -1,0 +1,47 @@
+---
+apiVersion: batch/v1
+kind: Job
+
+metadata:
+  name: update-discord-commands
+
+spec:
+  template:
+    metadata:
+      name: update-discord-commands
+    spec:
+      containers:
+        - name: updater
+          image: ghcr.io/pilgrimagesoftware/statesman-discord:latest
+          imagePullPolicy: Always
+          command:
+            - python3
+            - "-m"
+            - statesman_discord.utils.discord.update
+          envFrom:
+            - configMapRef:
+                name: common
+            - configMapRef:
+                name: discord
+            - configMapRef:
+                name: discord-env
+            - secretRef:
+                name: common
+            - secretRef:
+                name: discord
+          env: []
+          resources:
+            requests:
+              cpu: "20m"
+              memory: "55Mi"
+            limits:
+              cpu: "50m"
+              memory: "200Mi"
+          volumeMounts:
+            - name: discord-files
+              mountPath: "/app/discord-commands.json"
+              subPath: discord-commands.json
+      volumes:
+        - name: discord-files
+          configMap:
+            name: discord-files

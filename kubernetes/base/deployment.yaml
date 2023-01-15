@@ -70,12 +70,4 @@ spec:
               port: 5000
             initialDelaySeconds: 90
             timeoutSeconds: 10
-          volumeMounts:
-            - name: discord-files
-              mountPath: "/app/discord-commands.json"
-              subPath: discord-commands.json
-      volumes:
-        - name: discord-files
-          configMap:
-            name: discord-files
       restartPolicy: Always

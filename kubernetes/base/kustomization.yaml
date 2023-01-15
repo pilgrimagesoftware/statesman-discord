@@ -9,6 +9,7 @@ resources:
   - deployment.yaml
   - service-entries.yaml
   - service.yaml
+  - job.yaml
 
 generatorOptions:
   disableNameSuffixHash: true

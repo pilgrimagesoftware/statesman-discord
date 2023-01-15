@@ -15,7 +15,7 @@ from redis.client import Redis
 from sentry_sdk.integrations.wsgi import SentryWsgiMiddleware
 from flask_executor import Executor
 import os, logging
-from statesman_discord.utils.leader_election import LeaderElection
+# from statesman_discord.utils.leader_election import LeaderElection
 
 
 # def _leaderelection_filter(level):
@@ -57,7 +57,7 @@ def create_app(app_name=constants.APPLICATION_NAME):
 
     app.executor = Executor(app)
 
-    app.leader_election = LeaderElection()
+    # app.leader_election = LeaderElection()
 
     from statesman_discord.blueprints.api.interact import blueprint as interact_blueprint
 
