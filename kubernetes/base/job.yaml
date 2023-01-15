@@ -6,10 +6,12 @@ metadata:
   name: update-discord-commands
 
 spec:
+  ttlSecondsAfterFinished: 1800
   template:
     metadata:
       name: update-discord-commands
     spec:
+      restartPolicy: Never
       containers:
         - name: updater
           image: ghcr.io/pilgrimagesoftware/statesman-discord:latest
