@@ -8,7 +8,7 @@ metadata:
 data:
   DEBUG: "True"
   PORT: "5000"
-  LOG_LEVEL: DEBUG
+  LOG_LEVEL: INFO
   REDIS_HOST: redis.statesman.svc.cluster.local
   REDIS_PORT: "6379"
   REDIS_DB: "8"
