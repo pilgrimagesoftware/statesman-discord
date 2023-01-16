@@ -79,6 +79,8 @@ docutils==0.18.1
     #   rstcheck-core
     #   sphinx
     #   sphinx-tabs
+exceptiongroup==1.1.0
+    # via pytest
 filelock==3.9.0
     # via
     #   tox
@@ -134,7 +136,7 @@ jsonschema==4.17.3
     # via -r requirements/app.in
 kubernetes==25.3.0
     # via -r requirements/app.in
-limits==3.1.5
+limits==3.1.6
     # via flask-limiter
 markupsafe==2.1.1
     # via
@@ -274,6 +276,15 @@ sphinxcontrib-qthelp==1.0.3
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
+tomli==2.0.1
+    # via
+    #   black
+    #   build
+    #   coverage
+    #   pyproject-api
+    #   pyproject-hooks
+    #   pytest
+    #   tox
 tox==4.2.6
     # via -r requirements/tests.in
 typer[all]==0.7.0

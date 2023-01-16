@@ -113,7 +113,7 @@ jsonschema==4.17.3
     # via -r requirements/app.in
 kubernetes==25.3.0
     # via -r requirements/app.in
-limits==3.1.5
+limits==3.1.6
     # via flask-limiter
 markupsafe==2.1.1
     # via
