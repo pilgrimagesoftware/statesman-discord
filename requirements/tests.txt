@@ -194,7 +194,7 @@ six==1.16.0
     #   google-auth
     #   kubernetes
     #   python-dateutil
-tox==4.3.1
+tox==4.3.2
     # via -r requirements/tests.in
 typing-extensions==4.4.0
     # via
