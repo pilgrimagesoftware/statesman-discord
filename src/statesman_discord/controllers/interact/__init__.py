@@ -11,7 +11,7 @@ import os, logging
 from statesman_discord import constants
 from statesman_discord.utils.discord.signature import verify_signature
 from statesman_discord.common.exceptions import SignatureException
-from statesman_discord.messaging import send_amqp_message
+from statesman_discord.messaging.publisher import send_amqp_message
 import pika
 
 

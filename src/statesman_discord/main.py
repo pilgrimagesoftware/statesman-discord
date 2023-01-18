@@ -15,6 +15,7 @@ from redis.client import Redis
 from sentry_sdk.integrations.wsgi import SentryWsgiMiddleware
 from flask_executor import Executor
 import os, logging
+
 # from statesman_discord.utils.leader_election import LeaderElection
 
 
@@ -71,7 +72,7 @@ def create_app(app_name=constants.APPLICATION_NAME):
 
     app.register_blueprint(health_blueprint)
 
-    from statesman_discord.messaging import consumer_thread
+    from statesman_discord.messaging.consumer import consumer_thread
 
     app.consumer_thread = consumer_thread
 
