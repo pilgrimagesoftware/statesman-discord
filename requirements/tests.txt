@@ -196,8 +196,13 @@ six==1.16.0
     #   google-auth
     #   kubernetes
     #   python-dateutil
-tox==4.3.5
 tomli==2.0.1
+    # via
+    #   coverage
+    #   pyproject-api
+    #   pytest
+    #   tox
+tox==4.3.5
     # via -r requirements/tests.in
 typing-extensions==4.4.0
     # via
