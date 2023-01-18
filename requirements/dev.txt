@@ -138,7 +138,7 @@ kubernetes==25.3.0
     # via -r requirements/app.in
 limits==3.1.6
     # via flask-limiter
-markupsafe==2.1.1
+markupsafe==2.1.2
     # via
     #   jinja2
     #   werkzeug
@@ -196,7 +196,7 @@ pygments==2.14.0
     #   sphinx-tabs
 pynacl==1.5.0
     # via -r requirements/app.in
-pyproject-api==1.4.0
+pyproject-api==1.5.0
     # via tox
 pyproject-hooks==1.0.0
     # via build

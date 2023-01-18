@@ -105,7 +105,7 @@ kubernetes==25.3.0
     # via -r requirements/app.in
 limits==3.1.6
     # via flask-limiter
-markupsafe==2.1.1
+markupsafe==2.1.2
     # via
     #   jinja2
     #   werkzeug
