@@ -1,7 +1,7 @@
 __author__ = "Paul Schifferer <paul@schifferers.net>"
 """
 commands.py
-- Discord command functions
+- Command parsing functions
 """
 
 

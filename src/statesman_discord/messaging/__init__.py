@@ -8,7 +8,7 @@ import pika
 import os, logging, time, json, socket
 from statesman_discord import constants
 from threading import Thread
-from statesman_discord.utils.discord.commands import construct_command
+from statesman_discord.utils.commands import construct_command
 from statesman_discord.utils.discord.messages import handle_interaction_response
 
 
