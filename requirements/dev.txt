@@ -79,6 +79,8 @@ docutils==0.18.1
     #   rstcheck-core
     #   sphinx
     #   sphinx-tabs
+exceptiongroup==1.1.0
+    # via pytest
 filelock==3.9.0
     # via
     #   tox
@@ -275,10 +277,11 @@ sphinxcontrib-qthelp==1.0.3
 sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
 tox==4.3.5
+tomli==2.0.1
     # via -r requirements/tests.in
 typer[all]==0.7.0
     # via rstcheck
-types-docutils==0.19.1.1
+types-docutils==0.19.1.2
     # via rstcheck-core
 typing-extensions==4.4.0
     # via
