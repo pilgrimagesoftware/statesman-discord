@@ -68,8 +68,10 @@ def create_app(app_name=constants.APPLICATION_NAME):
 
     app.register_blueprint(verify_blueprint)
 
-    from statesman_discord.blueprints.health import blueprint as health_blueprint
+    from statesman_discord.blueprints.health import blueprint as health_blueprint, register_health_check_service_hook
+    from statesman_discord.messaging.healthcheck import health_check as messaging_health_check
 
+    register_health_check_service_hook("messaging", messaging_health_check)
     app.register_blueprint(health_blueprint)
 
     from statesman_discord.messaging.consumer import consumer_thread
