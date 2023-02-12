@@ -39,7 +39,7 @@ commonmark==0.9.1
     # via rich
 deprecated==1.2.13
     # via limits
-discord-py==2.1.0
+discord-py==2.1.1
     # via -r requirements/app.in
 flask==2.2.2
     # via
@@ -127,7 +127,7 @@ pyyaml==6.0
     # via
     #   -r requirements/app.in
     #   kubernetes
-redis==4.4.2
+redis==4.5.1
     # via
     #   -r requirements/app.in
     #   flask-redis
@@ -142,7 +142,7 @@ rich==12.6.0
     # via flask-limiter
 rsa==4.9
     # via google-auth
-sentry-sdk[flask]==1.14.0
+sentry-sdk[flask]==1.15.0
     # via -r requirements/app.in
 six==1.16.0
     # via
