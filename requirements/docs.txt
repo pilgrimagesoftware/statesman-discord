@@ -33,7 +33,7 @@ certifi==2022.12.7
     #   sentry-sdk
 cffi==1.15.1
     # via pynacl
-charset-normalizer==3.0.1
+charset-normalizer==3.1.0
     # via
     #   aiohttp
     #   requests
@@ -135,7 +135,7 @@ pyasn1-modules==0.2.8
     # via google-auth
 pycparser==2.21
     # via cffi
-pydantic==1.10.5
+pydantic==1.10.6
     # via rstcheck-core
 pygments==2.14.0
     # via
@@ -221,7 +221,7 @@ typing-extensions==4.5.0
     #   flask-limiter
     #   limits
     #   pydantic
-urllib3==1.26.14
+urllib3==1.26.15
     # via
     #   kubernetes
     #   requests
