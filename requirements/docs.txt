@@ -172,11 +172,11 @@ rich==12.6.0
     #   typer
 rsa==4.9
     # via google-auth
-rstcheck==6.1.1
+rstcheck==6.1.2
     # via -r requirements/docs.in
 rstcheck-core==1.0.3
     # via rstcheck
-sentry-sdk[flask]==1.16.0
+sentry-sdk[flask]==1.17.0
     # via -r requirements/app.in
 shellingham==1.5.0.post1
     # via typer
