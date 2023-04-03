@@ -19,7 +19,7 @@ attrs==22.2.0
     #   aiohttp
     #   jsonschema
     #   pytest
-blinker==1.5
+blinker==1.6
     # via
     #   -r requirements/tests.in
     #   sentry-sdk
@@ -58,8 +58,6 @@ discord-py==2.2.2
     # via -r requirements/app.in
 distlib==0.3.6
     # via virtualenv
-exceptiongroup==1.1.1
-    # via pytest
 filelock==3.10.7
     # via
     #   tox
@@ -200,16 +198,11 @@ six==1.16.0
     #   google-auth
     #   kubernetes
     #   python-dateutil
-tomli==2.0.1
-    # via
-    #   coverage
-    #   pyproject-api
-    #   pytest
-    #   tox
 tox==4.4.2
     # via -r requirements/tests.in
 typing-extensions==4.5.0
     # via
+    #   blinker
     #   flask-limiter
     #   limits
 urllib3==1.26.15

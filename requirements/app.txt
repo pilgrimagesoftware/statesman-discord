@@ -16,7 +16,7 @@ attrs==22.2.0
     # via
     #   aiohttp
     #   jsonschema
-blinker==1.5
+blinker==1.6
     # via sentry-sdk
 cachelib==0.10.2
     # via flask-session
@@ -155,6 +155,7 @@ six==1.16.0
     #   python-dateutil
 typing-extensions==4.5.0
     # via
+    #   blinker
     #   flask-limiter
     #   limits
 urllib3==1.26.15

@@ -20,7 +20,7 @@ attrs==22.2.0
     #   jsonschema
 babel==2.12.1
     # via sphinx
-blinker==1.5
+blinker==1.6
     # via sentry-sdk
 cachelib==0.10.2
     # via flask-session
@@ -220,6 +220,7 @@ types-docutils==0.19.1.7
     # via rstcheck-core
 typing-extensions==4.5.0
     # via
+    #   blinker
     #   flask-limiter
     #   limits
     #   pydantic
