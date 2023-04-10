@@ -1,45 +1,45 @@
----
-# See more at https://istio.io/docs/reference/config/networking/virtual-service/
-apiVersion: networking.istio.io/v1alpha3
-kind: VirtualService
+# ---
+# # See more at https://istio.io/docs/reference/config/networking/virtual-service/
+# apiVersion: networking.istio.io/v1alpha3
+# kind: VirtualService
 
-metadata:
-  name: discord-0
+# metadata:
+#   name: discord-0
 
-spec:
-  hosts:
-    - statesman.pilgrimagesoftware.com
-  gateways:
-    - gateway
-  http:
-    - match:
-        - uri:
-            prefix: /api/0/discord/
-      route:
-        - destination:
-            host: discord.statesman.svc.cluster.local
-            port:
-              number: 5000
+# spec:
+#   hosts:
+#     - statesman.pilgrimagesoftware.com
+#   gateways:
+#     - gateway
+#   http:
+#     - match:
+#         - uri:
+#             prefix: /api/0/discord/
+#       route:
+#         - destination:
+#             host: discord.statesman.svc.cluster.local
+#             port:
+#               number: 5000
 
----
-# See more at https://istio.io/docs/reference/config/networking/virtual-service/
-apiVersion: networking.istio.io/v1alpha3
-kind: VirtualService
+# ---
+# # See more at https://istio.io/docs/reference/config/networking/virtual-service/
+# apiVersion: networking.istio.io/v1alpha3
+# kind: VirtualService
 
-metadata:
-  name: discord-1
+# metadata:
+#   name: discord-1
 
-spec:
-  hosts:
-    - statesman.pilgrimagesoftware.com
-  gateways:
-    - gateway
-  http:
-    - match:
-        - uri:
-            prefix: /api/1/discord/
-      route:
-        - destination:
-            host: discord.statesman.svc.cluster.local
-            port:
-              number: 5000
+# spec:
+#   hosts:
+#     - statesman.pilgrimagesoftware.com
+#   gateways:
+#     - gateway
+#   http:
+#     - match:
+#         - uri:
+#             prefix: /api/1/discord/
+#       route:
+#         - destination:
+#             host: discord.statesman.svc.cluster.local
+#             port:
+#               number: 5000
