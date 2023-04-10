@@ -20,7 +20,7 @@ attrs==22.2.0
     #   jsonschema
 babel==2.12.1
     # via sphinx
-blinker==1.6
+blinker==1.6.1
     # via sentry-sdk
 cachelib==0.10.2
     # via flask-session

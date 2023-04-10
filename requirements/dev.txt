@@ -24,7 +24,7 @@ babel==2.12.1
     # via sphinx
 black==23.3.0
     # via -r requirements/dev.in
-blinker==1.6
+blinker==1.6.1
     # via
     #   -r requirements/tests.in
     #   sentry-sdk
@@ -78,8 +78,6 @@ docutils==0.18.1
     #   rstcheck-core
     #   sphinx
     #   sphinx-tabs
-exceptiongroup==1.1.1
-    # via pytest
 filelock==3.11.0
     # via
     #   tox
@@ -276,15 +274,6 @@ sphinxcontrib-qthelp==1.0.3
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
-tomli==2.0.1
-    # via
-    #   black
-    #   build
-    #   coverage
-    #   pyproject-api
-    #   pyproject-hooks
-    #   pytest
-    #   tox
 tox==4.4.2
     # via -r requirements/tests.in
 typer[all]==0.7.0
