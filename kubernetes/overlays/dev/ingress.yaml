@@ -1,23 +1,23 @@
----
-apiVersion: traefik.containo.us/v1alpha1
-kind: IngressRoute
+# ---
+# apiVersion: traefik.containo.us/v1alpha1
+# kind: IngressRoute
 
-metadata:
-  name: discord-v1
+# metadata:
+#   name: discord-v1
 
-spec:
-  entryPoints:
-    - web
-  routes:
-    - match: Host(`statesman.pilgrimagesoftware.com`) && (PathPrefix(`/api/0/discord`) || PathPrefix(`/api/1/discord`))
-      kind: Rule
-      services:
-        - kind: Service
-          name: discord-v1
-          port: 5000
-          passHostHeader: true
-          responseForwarding:
-            flushInterval: 1ms
-      middlewares:
-        - name: cors-headers
-        - name: strip-discord-prefix
+# spec:
+#   entryPoints:
+#     - web
+#   routes:
+#     - match: Host(`statesman.pilgrimagesoftware.com`) && (PathPrefix(`/api/0/discord`) || PathPrefix(`/api/1/discord`))
+#       kind: Rule
+#       services:
+#         - kind: Service
+#           name: discord-v1
+#           port: 5000
+#           passHostHeader: true
+#           responseForwarding:
+#             flushInterval: 1ms
+#       middlewares:
+#         - name: cors-headers
+#         - name: strip-discord-prefix

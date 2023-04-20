@@ -1,12 +1,12 @@
----
-apiVersion: traefik.containo.us/v1alpha1
-kind: Middleware
+# ---
+# apiVersion: traefik.containo.us/v1alpha1
+# kind: Middleware
 
-metadata:
-  name: strip-discord-prefix
+# metadata:
+#   name: strip-discord-prefix
 
-spec:
-  stripPrefix:
-    prefixes:
-      - /api/0/discord
-      - /api/1/discord
+# spec:
+#   stripPrefix:
+#     prefixes:
+#       - /api/0/discord
+#       - /api/1/discord
