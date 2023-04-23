@@ -14,7 +14,7 @@ async-timeout==4.0.2
     # via
     #   aiohttp
     #   redis
-attrs==22.2.0
+attrs==23.1.0
     # via
     #   aiohttp
     #   jsonschema
@@ -105,7 +105,7 @@ jsonschema==4.17.3
     # via -r requirements/app.in
 kubernetes==26.1.0
     # via -r requirements/app.in
-limits==3.3.1
+limits==3.4.0
     # via flask-limiter
 markupsafe==2.1.2
     # via
@@ -129,17 +129,17 @@ pallets-sphinx-themes==2.0.3
     # via -r requirements/docs.in
 pika==1.3.1
     # via -r requirements/app.in
-pyasn1==0.4.8
+pyasn1==0.5.0
     # via
     #   pyasn1-modules
     #   rsa
-pyasn1-modules==0.2.8
+pyasn1-modules==0.3.0
     # via google-auth
 pycparser==2.21
     # via cffi
 pydantic==1.10.7
     # via rstcheck-core
-pygments==2.15.0
+pygments==2.15.1
     # via
     #   rich
     #   sphinx
@@ -178,7 +178,7 @@ rstcheck==6.1.2
     # via -r requirements/docs.in
 rstcheck-core==1.0.3
     # via rstcheck
-sentry-sdk[flask]==1.19.1
+sentry-sdk[flask]==1.20.0
     # via -r requirements/app.in
 shellingham==1.5.0.post1
     # via typer
@@ -238,7 +238,7 @@ wrapt==1.15.0
     # via deprecated
 wtforms==3.0.1
     # via flask-inputs
-yarl==1.8.2
+yarl==1.9.1
     # via aiohttp
 
 # The following packages are considered to be unsafe in a requirements file:
