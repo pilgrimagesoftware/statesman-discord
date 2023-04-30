@@ -21,6 +21,7 @@ attrs==23.1.0
 blinker==1.6.2
     # via
     #   -r requirements/tests.in
+    #   flask
     #   sentry-sdk
 cachelib==0.10.2
     # via flask-session
@@ -45,7 +46,7 @@ click==8.1.3
     # via flask
 colorama==0.4.6
     # via tox
-coverage[toml]==7.2.3
+coverage[toml]==7.2.4
     # via
     #   coverage-badge
     #   pytest-cov
@@ -63,7 +64,7 @@ filelock==3.12.0
     # via
     #   tox
     #   virtualenv
-flask==2.2.3
+flask==2.3.1
     # via
     #   -r requirements/app.in
     #   flask-dotenv
@@ -139,7 +140,7 @@ packaging==23.1
     #   tox
 pika==1.3.1
     # via -r requirements/app.in
-platformdirs==3.2.0
+platformdirs==3.5.0
     # via
     #   tox
     #   virtualenv
@@ -181,18 +182,18 @@ redis==4.5.4
     # via
     #   -r requirements/app.in
     #   flask-redis
-requests==2.28.2
+requests==2.29.0
     # via
     #   -r requirements/app.in
     #   kubernetes
     #   requests-oauthlib
 requests-oauthlib==1.3.1
     # via kubernetes
-rich==13.3.4
+rich==13.3.5
     # via flask-limiter
 rsa==4.9
     # via google-auth
-sentry-sdk[flask]==1.20.0
+sentry-sdk[flask]==1.21.1
     # via -r requirements/app.in
 six==1.16.0
     # via
@@ -218,17 +219,17 @@ urllib3==1.26.15
     #   sentry-sdk
 uwsgi==2.0.21
     # via -r requirements/app.in
-virtualenv==20.22.0
+virtualenv==20.23.0
     # via tox
 websocket-client==1.5.1
     # via kubernetes
-werkzeug==2.2.3
+werkzeug==2.3.2
     # via flask
 wrapt==1.15.0
     # via deprecated
 wtforms==3.0.1
     # via flask-inputs
-yarl==1.9.1
+yarl==1.9.2
     # via aiohttp
 
 # The following packages are considered to be unsafe in a requirements file:
