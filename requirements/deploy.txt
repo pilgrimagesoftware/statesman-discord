@@ -17,9 +17,7 @@ attrs==23.1.0
     #   aiohttp
     #   jsonschema
 blinker==1.6.2
-    # via
-    #   flask
-    #   sentry-sdk
+    # via sentry-sdk
 cachelib==0.10.2
     # via flask-session
 cachetools==5.3.0
@@ -41,7 +39,7 @@ deprecated==1.2.13
     # via limits
 discord-py==2.2.2
     # via -r requirements/app.in
-flask==2.3.1
+flask==2.2.4
     # via
     #   -r requirements/app.in
     #   flask-dotenv
@@ -64,7 +62,7 @@ flask-redis==0.4.0
     # via -r requirements/app.in
 flask-script==2.0.6
     # via -r requirements/app.in
-flask-session==0.4.0
+flask-session==0.4.1
     # via -r requirements/app.in
 frozenlist==1.3.3
     # via
