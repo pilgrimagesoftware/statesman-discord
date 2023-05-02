@@ -40,10 +40,10 @@ click==8.1.3
 deprecated==1.2.13
     # via limits
 discord-py==2.2.2
-    # via -r requirements/app.in
-flask==2.3.1
+    # via -r app.in
+flask==2.3.2
     # via
-    #   -r requirements/app.in
+    #   -r app.in
     #   flask-dotenv
     #   flask-executor
     #   flask-inputs
@@ -53,19 +53,19 @@ flask==2.3.1
     #   flask-session
     #   sentry-sdk
 flask-dotenv==0.1.2
-    # via -r requirements/app.in
+    # via -r app.in
 flask-executor==1.0.0
-    # via -r requirements/app.in
+    # via -r app.in
 flask-inputs==0.3.0
-    # via -r requirements/app.in
+    # via -r app.in
 flask-limiter[redis]==3.3.0
-    # via -r requirements/app.in
+    # via -r app.in
 flask-redis==0.4.0
-    # via -r requirements/app.in
+    # via -r app.in
 flask-script==2.0.6
-    # via -r requirements/app.in
+    # via -r app.in
 flask-session==0.4.0
-    # via -r requirements/app.in
+    # via -r app.in
 frozenlist==1.3.3
     # via
     #   aiohttp
@@ -85,9 +85,9 @@ itsdangerous==2.1.2
 jinja2==3.1.2
     # via flask
 jsonschema==4.17.3
-    # via -r requirements/app.in
+    # via -r app.in
 kubernetes==26.1.0
-    # via -r requirements/app.in
+    # via -r app.in
 limits==3.4.0
     # via flask-limiter
 markdown-it-py==2.2.0
@@ -110,7 +110,7 @@ ordered-set==4.1.0
 packaging==23.1
     # via limits
 pika==1.3.1
-    # via -r requirements/app.in
+    # via -r app.in
 pyasn1==0.5.0
     # via
     #   pyasn1-modules
@@ -122,24 +122,24 @@ pycparser==2.21
 pygments==2.15.1
     # via rich
 pynacl==1.5.0
-    # via -r requirements/app.in
+    # via -r app.in
 pyrsistent==0.19.3
     # via jsonschema
 python-dateutil==2.8.2
     # via kubernetes
 python-dotenv==1.0.0
-    # via -r requirements/app.in
+    # via -r app.in
 pyyaml==6.0
     # via
-    #   -r requirements/app.in
+    #   -r app.in
     #   kubernetes
 redis==4.5.4
     # via
-    #   -r requirements/app.in
+    #   -r app.in
     #   flask-redis
 requests==2.29.0
     # via
-    #   -r requirements/app.in
+    #   -r app.in
     #   kubernetes
     #   requests-oauthlib
 requests-oauthlib==1.3.1
@@ -149,7 +149,7 @@ rich==13.3.5
 rsa==4.9
     # via google-auth
 sentry-sdk[flask]==1.21.1
-    # via -r requirements/app.in
+    # via -r app.in
 six==1.16.0
     # via
     #   google-auth
@@ -165,10 +165,10 @@ urllib3==1.26.15
     #   requests
     #   sentry-sdk
 uwsgi==2.0.21
-    # via -r requirements/app.in
+    # via -r app.in
 websocket-client==1.5.1
     # via kubernetes
-werkzeug==2.3.2
+werkzeug==2.3.3
     # via flask
 wrapt==1.15.0
     # via deprecated
