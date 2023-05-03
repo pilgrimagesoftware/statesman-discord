@@ -10,7 +10,7 @@ spec:
   hosts:
     - statesman.pilgrimagesoftware.com
   gateways:
-    - gateway
+    - statesman-gateway
   http:
     - match:
         - uri:
@@ -33,7 +33,7 @@ spec:
   hosts:
     - statesman.pilgrimagesoftware.com
   gateways:
-    - gateway
+    - statesman-gateway
   http:
     - match:
         - uri:
