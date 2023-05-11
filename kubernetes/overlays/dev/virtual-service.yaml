@@ -17,7 +17,7 @@ spec:
             prefix: /api/0/discord/
       route:
         - destination:
-            host: discord.statesman.svc.cluster.local
+            host: discord-v1.statesman.svc.cluster.local
             port:
               number: 5000
 
@@ -40,6 +40,6 @@ spec:
             prefix: /api/1/discord/
       route:
         - destination:
-            host: discord.statesman.svc.cluster.local
+            host: discord-v1.statesman.svc.cluster.local
             port:
               number: 5000

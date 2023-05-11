@@ -6,7 +6,7 @@ metadata:
   name: discord
 
 spec:
-  host: discord.statesman.svc.cluster.local
+  host: discord-v1.statesman.svc.cluster.local
   trafficPolicy:
     loadBalancer:
       simple: LEAST_CONN
