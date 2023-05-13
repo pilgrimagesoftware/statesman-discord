@@ -13,15 +13,13 @@ spec:
     type: RollingUpdate
   selector:
     matchLabels:
-      app: statesman
+      app: discord-receiver
       version: v1
-      component: discord
   template:
     metadata:
       labels:
-        app: statesman
+        app: discord-receiver
         version: v1
-        component: discord
     spec:
       serviceAccountName: discord
       containers:

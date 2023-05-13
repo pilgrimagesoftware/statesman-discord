@@ -7,9 +7,8 @@ metadata:
 
 spec:
     selector:
-        app: statesman
+        app: discord-receiver
         version: v1
-        component: discord
     type: ClusterIP
     ports:
         - name: api
