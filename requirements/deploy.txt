@@ -149,7 +149,7 @@ rich==13.4.1
     # via flask-limiter
 rsa==4.9
     # via google-auth
-sentry-sdk[flask]==1.25.0
+sentry-sdk[flask]==1.25.1
     # via -r requirements/app.in
 six==1.16.0
     # via
@@ -170,9 +170,9 @@ uwsgi==2.0.21
     # via
     #   -r requirements/app.in
     #   -r requirements/deploy.in
-websocket-client==1.5.2
+websocket-client==1.5.3
     # via kubernetes
-werkzeug==2.3.4
+werkzeug==2.3.6
     # via flask
 wrapt==1.15.0
     # via deprecated
