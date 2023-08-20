@@ -36,7 +36,7 @@ charset-normalizer==3.2.0
     # via
     #   aiohttp
     #   requests
-click==8.1.6
+click==8.1.7
     # via flask
 deprecated==1.2.14
     # via limits
@@ -184,7 +184,7 @@ uwsgi==2.0.22
     #   -r requirements/deploy.in
 websocket-client==1.6.1
     # via kubernetes
-werkzeug==2.3.6
+werkzeug==2.3.7
     # via flask
 wrapt==1.15.0
     # via deprecated

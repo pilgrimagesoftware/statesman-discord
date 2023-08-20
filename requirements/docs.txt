@@ -40,7 +40,7 @@ charset-normalizer==3.2.0
     # via
     #   aiohttp
     #   requests
-click==8.1.6
+click==8.1.7
     # via
     #   flask
     #   typer
@@ -195,7 +195,7 @@ rstcheck-core==1.0.3
     # via rstcheck
 sentry-sdk[flask]==1.29.2
     # via -r requirements/app.in
-shellingham==1.5.0.post1
+shellingham==1.5.3
     # via typer
 six==1.16.0
     # via
@@ -220,19 +220,19 @@ sphinx-issues==3.0.1
     # via -r requirements/docs.in
 sphinx-tabs==3.4.1
     # via -r requirements/docs.in
-sphinxcontrib-applehelp==1.0.6
+sphinxcontrib-applehelp==1.0.7
     # via sphinx
-sphinxcontrib-devhelp==1.0.4
+sphinxcontrib-devhelp==1.0.5
     # via sphinx
-sphinxcontrib-htmlhelp==2.0.3
+sphinxcontrib-htmlhelp==2.0.4
     # via sphinx
 sphinxcontrib-jsmath==1.0.1
     # via sphinx
 sphinxcontrib-log-cabinet==1.0.1
     # via -r requirements/docs.in
-sphinxcontrib-qthelp==1.0.5
+sphinxcontrib-qthelp==1.0.6
     # via sphinx
-sphinxcontrib-serializinghtml==1.1.7
+sphinxcontrib-serializinghtml==1.1.8
     # via sphinx
 typer[all]==0.7.0
     # via rstcheck
@@ -253,7 +253,7 @@ uwsgi==2.0.22
     # via -r requirements/app.in
 websocket-client==1.6.1
     # via kubernetes
-werkzeug==2.3.6
+werkzeug==2.3.7
     # via flask
 wrapt==1.15.0
     # via deprecated
