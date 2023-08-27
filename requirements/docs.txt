@@ -57,7 +57,7 @@ docutils==0.18.1
     #   rstcheck-core
     #   sphinx
     #   sphinx-tabs
-flask==2.3.2
+flask==2.3.3
     # via
     #   -r requirements/app.in
     #   flask-dotenv
@@ -74,7 +74,7 @@ flask-executor==1.0.0
     # via -r requirements/app.in
 flask-inputs==0.3.0
     # via -r requirements/app.in
-flask-limiter[redis]==3.3.1
+flask-limiter[redis]==3.4.1
     # via -r requirements/app.in
 flask-redis==0.4.0
     # via -r requirements/app.in
@@ -232,7 +232,7 @@ sphinxcontrib-log-cabinet==1.0.1
     # via -r requirements/docs.in
 sphinxcontrib-qthelp==1.0.6
     # via sphinx
-sphinxcontrib-serializinghtml==1.1.8
+sphinxcontrib-serializinghtml==1.1.9
     # via sphinx
 typer[all]==0.7.0
     # via rstcheck
@@ -251,7 +251,7 @@ urllib3==1.26.16
     #   sentry-sdk
 uwsgi==2.0.22
     # via -r requirements/app.in
-websocket-client==1.6.1
+websocket-client==1.6.2
     # via kubernetes
 werkzeug==2.3.7
     # via flask
