@@ -88,7 +88,7 @@ frozenlist==1.4.0
     #   aiosignal
 future==0.18.3
     # via flask-inputs
-google-auth==2.22.0
+google-auth==2.23.0
     # via kubernetes
 idna==3.4
     # via
@@ -189,7 +189,7 @@ rich==13.5.2
     # via
     #   flask-limiter
     #   typer
-rpds-py==0.10.2
+rpds-py==0.10.3
     # via
     #   jsonschema
     #   referencing
@@ -199,13 +199,12 @@ rstcheck==6.2.0
     # via -r requirements/docs.in
 rstcheck-core==1.1.1
     # via rstcheck
-sentry-sdk[flask]==1.30.0
+sentry-sdk[flask]==1.31.0
     # via -r requirements/app.in
 shellingham==1.5.3
     # via typer
 six==1.16.0
     # via
-    #   google-auth
     #   kubernetes
     #   python-dateutil
 snowballstemmer==2.2.0
@@ -257,7 +256,7 @@ urllib3==1.26.16
     #   sentry-sdk
 uwsgi==2.0.22
     # via -r requirements/app.in
-websocket-client==1.6.2
+websocket-client==1.6.3
     # via kubernetes
 werkzeug==2.3.7
     # via flask
