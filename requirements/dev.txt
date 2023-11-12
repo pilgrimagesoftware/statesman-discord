@@ -25,7 +25,7 @@ attrs==23.1.0
     #   referencing
 babel==2.13.1
     # via sphinx
-black==23.10.1
+black==23.11.0
     # via -r requirements/dev.in
 blinker==1.7.0
     # via
@@ -125,7 +125,7 @@ idna==3.4
     #   yarl
 imagesize==1.4.1
     # via sphinx
-importlib-resources==6.1.0
+importlib-resources==6.1.1
     # via limits
 iniconfig==2.0.0
     # via pytest
@@ -339,7 +339,7 @@ werkzeug==3.0.1
     # via flask
 wheel==0.41.3
     # via pip-tools
-wrapt==1.15.0
+wrapt==1.16.0
     # via deprecated
 wtforms==3.1.1
     # via flask-inputs

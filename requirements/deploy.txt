@@ -79,7 +79,7 @@ idna==3.4
     # via
     #   requests
     #   yarl
-importlib-resources==6.1.0
+importlib-resources==6.1.1
     # via limits
 itsdangerous==2.1.2
     # via flask
@@ -184,7 +184,7 @@ websocket-client==1.6.4
     # via kubernetes
 werkzeug==3.0.1
     # via flask
-wrapt==1.15.0
+wrapt==1.16.0
     # via deprecated
 wtforms==3.1.1
     # via flask-inputs
