@@ -86,7 +86,7 @@ frozenlist==1.4.0
     #   aiosignal
 future==0.18.3
     # via flask-inputs
-google-auth==2.24.0
+google-auth==2.25.2
     # via kubernetes
 idna==3.6
     # via
@@ -171,7 +171,7 @@ redis==5.0.1
     #   -r requirements/app.in
     #   flask-redis
     #   limits
-referencing==0.31.1
+referencing==0.32.0
     # via
     #   jsonschema
     #   jsonschema-specifications
@@ -241,7 +241,7 @@ typer[all]==0.9.0
     # via
     #   rstcheck
     #   typer
-typing-extensions==4.8.0
+typing-extensions==4.9.0
     # via
     #   flask-limiter
     #   limits
@@ -255,7 +255,7 @@ urllib3==1.26.18
     #   sentry-sdk
 uwsgi==2.0.23
     # via -r requirements/app.in
-websocket-client==1.6.4
+websocket-client==1.7.0
     # via kubernetes
 werkzeug==3.0.1
     # via flask
@@ -263,5 +263,5 @@ wrapt==1.16.0
     # via deprecated
 wtforms==3.1.1
     # via flask-inputs
-yarl==1.9.3
+yarl==1.9.4
     # via aiohttp
