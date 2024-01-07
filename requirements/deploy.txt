@@ -12,7 +12,7 @@ async-timeout==4.0.3
     # via
     #   aiohttp
     #   redis
-attrs==23.1.0
+attrs==23.2.0
     # via
     #   aiohttp
     #   jsonschema
@@ -71,7 +71,7 @@ frozenlist==1.4.1
     #   aiosignal
 future==0.18.3
     # via flask-inputs
-google-auth==2.25.2
+google-auth==2.26.1
     # via kubernetes
 idna==3.6
     # via
@@ -140,7 +140,7 @@ redis==5.0.1
     #   -r requirements/app.in
     #   flask-redis
     #   limits
-referencing==0.32.0
+referencing==0.32.1
     # via
     #   jsonschema
     #   jsonschema-specifications
@@ -184,7 +184,7 @@ werkzeug==3.0.1
     # via flask
 wrapt==1.16.0
     # via deprecated
-wtforms==3.1.1
+wtforms==3.1.2
     # via flask-inputs
 yarl==1.9.4
     # via aiohttp
