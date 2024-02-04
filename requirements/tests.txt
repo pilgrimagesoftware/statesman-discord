@@ -4,7 +4,7 @@
 #
 #    pip-compile requirements/tests.in
 #
-aiohttp==3.9.1
+aiohttp==3.9.3
     # via discord-py
 aiosignal==1.3.1
     # via aiohttp
@@ -30,7 +30,7 @@ cachetools==5.3.2
     # via
     #   google-auth
     #   tox
-certifi==2023.11.17
+certifi==2024.2.2
     # via
     #   kubernetes
     #   requests
@@ -118,7 +118,7 @@ limits[redis]==3.7.0
     # via flask-limiter
 markdown-it-py==3.0.0
     # via rich
-markupsafe==2.1.4
+markupsafe==2.1.5
     # via
     #   jinja2
     #   sentry-sdk
@@ -126,7 +126,7 @@ markupsafe==2.1.4
     #   wtforms
 mdurl==0.1.2
     # via markdown-it-py
-multidict==6.0.4
+multidict==6.0.5
     # via
     #   aiohttp
     #   yarl
@@ -144,7 +144,7 @@ packaging==23.2
     #   tox
 pika==1.3.2
     # via -r requirements/app.in
-platformdirs==4.1.0
+platformdirs==4.2.0
     # via
     #   tox
     #   virtualenv
@@ -185,7 +185,7 @@ redis==5.0.1
     #   -r requirements/app.in
     #   flask-redis
     #   limits
-referencing==0.32.1
+referencing==0.33.0
     # via
     #   jsonschema
     #   jsonschema-specifications
@@ -204,7 +204,7 @@ rpds-py==0.17.1
     #   referencing
 rsa==4.9
     # via google-auth
-sentry-sdk[flask]==1.39.2
+sentry-sdk[flask]==1.40.0
     # via -r requirements/app.in
 six==1.16.0
     # via
@@ -223,7 +223,7 @@ typing-extensions==4.9.0
     #   asgiref
     #   flask-limiter
     #   limits
-urllib3==2.1.0
+urllib3==2.2.0
     # via
     #   kubernetes
     #   requests
