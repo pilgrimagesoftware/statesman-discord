@@ -25,7 +25,7 @@ attrs==23.2.0
     #   referencing
 babel==2.14.0
     # via sphinx
-black==24.1.1
+black==24.2.0
     # via -r requirements/dev.in
 blinker==1.7.0
     # via
@@ -34,7 +34,7 @@ blinker==1.7.0
     #   sentry-sdk
 build==1.0.3
     # via pip-tools
-cachelib==0.11.0
+cachelib==0.12.0
     # via flask-session
 cachetools==5.3.2
     # via
@@ -101,7 +101,7 @@ flask-executor==1.0.0
     # via -r requirements/app.in
 flask-inputs==0.3.0
     # via -r requirements/app.in
-flask-limiter[redis]==3.5.0
+flask-limiter[redis]==3.5.1
     # via -r requirements/app.in
 flask-redis==0.4.0
     # via -r requirements/app.in
@@ -115,7 +115,7 @@ frozenlist==1.4.1
     #   aiosignal
 future==0.18.3
     # via flask-inputs
-google-auth==2.27.0
+google-auth==2.28.0
     # via kubernetes
 idna==3.6
     # via
@@ -139,7 +139,7 @@ jsonschema-specifications==2023.12.1
     # via jsonschema
 kubernetes==29.0.0
     # via -r requirements/app.in
-limits[redis]==3.7.0
+limits[redis]==3.9.0
     # via flask-limiter
 markdown-it-py==3.0.0
     # via rich
@@ -213,7 +213,7 @@ pyproject-api==1.6.1
     # via tox
 pyproject-hooks==1.0.0
     # via build
-pytest==8.0.0
+pytest==8.0.1
     # via
     #   -r requirements/tests.in
     #   pytest-cov
@@ -248,7 +248,7 @@ rich==13.7.0
     # via
     #   flask-limiter
     #   typer
-rpds-py==0.17.1
+rpds-py==0.18.0
     # via
     #   jsonschema
     #   referencing
@@ -258,7 +258,7 @@ rstcheck==6.2.0
     # via -r requirements/docs.in
 rstcheck-core==1.2.0
     # via rstcheck
-sentry-sdk[flask]==1.40.3
+sentry-sdk[flask]==1.40.4
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
@@ -305,9 +305,7 @@ tomli==2.0.1
 tox==4.4.2
     # via -r requirements/tests.in
 typer[all]==0.9.0
-    # via
-    #   rstcheck
-    #   typer
+    # via rstcheck
 typing-extensions==4.9.0
     # via
     #   asgiref
