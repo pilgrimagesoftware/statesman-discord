@@ -94,7 +94,7 @@ idna==3.6
     #   yarl
 imagesize==1.4.1
     # via sphinx
-importlib-resources==6.1.3
+importlib-resources==6.3.1
     # via limits
 itsdangerous==2.1.2
     # via flask
@@ -147,7 +147,7 @@ pyasn1-modules==0.3.0
     # via google-auth
 pycparser==2.21
     # via cffi
-pydantic==2.6.3
+pydantic==2.6.4
     # via rstcheck-core
 pydantic-core==2.16.3
     # via pydantic
@@ -166,12 +166,12 @@ pyyaml==6.0.1
     # via
     #   -r requirements/app.in
     #   kubernetes
-redis==5.0.2
+redis==5.0.3
     # via
     #   -r requirements/app.in
     #   flask-redis
     #   limits
-referencing==0.33.0
+referencing==0.34.0
     # via
     #   jsonschema
     #   jsonschema-specifications
@@ -181,7 +181,7 @@ requests==2.31.0
     #   kubernetes
     #   requests-oauthlib
     #   sphinx
-requests-oauthlib==1.3.1
+requests-oauthlib==1.4.0
     # via kubernetes
 rich==13.7.1
     # via
@@ -197,7 +197,7 @@ rstcheck==6.2.0
     # via -r requirements/docs.in
 rstcheck-core==1.2.0
     # via rstcheck
-sentry-sdk[flask]==1.41.0
+sentry-sdk[flask]==1.42.0
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
