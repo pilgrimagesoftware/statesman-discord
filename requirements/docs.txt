@@ -27,8 +27,6 @@ blinker==1.7.0
     # via
     #   flask
     #   sentry-sdk
-cachelib==0.12.0
-    # via flask-session
 cachetools==5.3.3
     # via google-auth
 certifi==2024.2.2
@@ -78,7 +76,7 @@ flask-redis==0.4.0
     # via -r requirements/app.in
 flask-script==2.0.6
     # via -r requirements/app.in
-flask-session==0.6.0
+flask-session==0.7.0
     # via -r requirements/app.in
 frozenlist==1.4.1
     # via
@@ -86,7 +84,7 @@ frozenlist==1.4.1
     #   aiosignal
 future==1.0.0
     # via flask-inputs
-google-auth==2.28.2
+google-auth==2.29.0
     # via kubernetes
 idna==3.6
     # via
@@ -94,7 +92,7 @@ idna==3.6
     #   yarl
 imagesize==1.4.1
     # via sphinx
-importlib-resources==6.3.1
+importlib-resources==6.4.0
     # via limits
 itsdangerous==2.1.2
     # via flask
@@ -108,7 +106,7 @@ jsonschema-specifications==2023.12.1
     # via jsonschema
 kubernetes==29.0.0
     # via -r requirements/app.in
-limits[redis]==3.10.0
+limits[redis]==3.10.1
     # via flask-limiter
 markdown-it-py==3.0.0
     # via rich
@@ -120,6 +118,8 @@ markupsafe==2.1.5
     #   wtforms
 mdurl==0.1.2
     # via markdown-it-py
+msgspec==0.18.6
+    # via flask-session
 multidict==6.0.5
     # via
     #   aiohttp
@@ -130,7 +130,7 @@ oauthlib==3.2.2
     #   requests-oauthlib
 ordered-set==4.1.0
     # via flask-limiter
-packaging==23.2
+packaging==24.0
     # via
     #   limits
     #   pallets-sphinx-themes
@@ -181,7 +181,7 @@ requests==2.31.0
     #   kubernetes
     #   requests-oauthlib
     #   sphinx
-requests-oauthlib==1.4.0
+requests-oauthlib==2.0.0
     # via kubernetes
 rich==13.7.1
     # via
@@ -193,11 +193,11 @@ rpds-py==0.18.0
     #   referencing
 rsa==4.9
     # via google-auth
-rstcheck==6.2.0
+rstcheck==6.2.1
     # via -r requirements/docs.in
-rstcheck-core==1.2.0
+rstcheck-core==1.2.1
     # via rstcheck
-sentry-sdk[flask]==1.42.0
+sentry-sdk[flask]==1.43.0
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
@@ -232,7 +232,7 @@ sphinxcontrib-qthelp==1.0.7
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.10
     # via sphinx
-typer[all]==0.9.0
+typer[all]==0.10.0
     # via rstcheck
 typing-extensions==4.10.0
     # via
