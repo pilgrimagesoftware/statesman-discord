@@ -43,7 +43,7 @@ charset-normalizer==3.3.2
 click==8.1.7
     # via
     #   flask
-    #   typer-slim
+    #   typer
 deprecated==1.2.14
     # via limits
 discord-py==2.3.2
@@ -186,7 +186,7 @@ requests-oauthlib==2.0.0
 rich==13.7.1
     # via
     #   flask-limiter
-    #   typer-slim
+    #   typer
 rpds-py==0.18.0
     # via
     #   jsonschema
@@ -197,10 +197,10 @@ rstcheck==6.2.1
     # via -r requirements/docs.in
 rstcheck-core==1.2.1
     # via rstcheck
-sentry-sdk[flask]==1.44.0
+sentry-sdk[flask]==1.44.1
     # via -r requirements/app.in
 shellingham==1.5.4
-    # via typer-slim
+    # via typer
 six==1.16.0
     # via
     #   kubernetes
@@ -232,21 +232,15 @@ sphinxcontrib-qthelp==1.0.7
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.10
     # via sphinx
-typer[all]==0.12.0
+typer[all]==0.12.1
     # via rstcheck
-typer-cli==0.12.0
-    # via typer
-typer-slim[standard]==0.12.0
-    # via
-    #   typer
-    #   typer-cli
-typing-extensions==4.10.0
+typing-extensions==4.11.0
     # via
     #   flask-limiter
     #   limits
     #   pydantic
     #   pydantic-core
-    #   typer-slim
+    #   typer
 urllib3==2.2.1
     # via
     #   kubernetes
@@ -256,7 +250,7 @@ uwsgi==2.0.24
     # via -r requirements/app.in
 websocket-client==1.7.0
     # via kubernetes
-werkzeug==3.0.1
+werkzeug==3.0.2
     # via flask
 wrapt==1.16.0
     # via deprecated
