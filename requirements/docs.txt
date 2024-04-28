@@ -23,7 +23,7 @@ attrs==23.2.0
     #   referencing
 babel==2.14.0
     # via sphinx
-blinker==1.7.0
+blinker==1.8.0
     # via
     #   flask
     #   sentry-sdk
@@ -70,7 +70,7 @@ flask-executor==1.0.0
     # via -r requirements/app.in
 flask-inputs==0.3.0
     # via -r requirements/app.in
-flask-limiter[redis]==3.5.1
+flask-limiter[redis]==3.6.0
     # via -r requirements/app.in
 flask-redis==0.4.0
     # via -r requirements/app.in
@@ -147,9 +147,9 @@ pyasn1-modules==0.4.0
     # via google-auth
 pycparser==2.22
     # via cffi
-pydantic==2.7.0
+pydantic==2.7.1
     # via rstcheck-core
-pydantic-core==2.18.1
+pydantic-core==2.18.2
     # via pydantic
 pygments==2.17.2
     # via
@@ -166,12 +166,12 @@ pyyaml==6.0.1
     # via
     #   -r requirements/app.in
     #   kubernetes
-redis==5.0.3
+redis==5.0.4
     # via
     #   -r requirements/app.in
     #   flask-redis
     #   limits
-referencing==0.34.0
+referencing==0.35.0
     # via
     #   jsonschema
     #   jsonschema-specifications
@@ -197,7 +197,7 @@ rstcheck==6.2.1
     # via -r requirements/docs.in
 rstcheck-core==1.2.1
     # via rstcheck
-sentry-sdk[flask]==1.45.0
+sentry-sdk[flask]==2.0.1
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
@@ -248,7 +248,7 @@ urllib3==2.2.1
     #   sentry-sdk
 uwsgi==2.0.25.1
     # via -r requirements/app.in
-websocket-client==1.7.0
+websocket-client==1.8.0
     # via kubernetes
 werkzeug==3.0.2
     # via flask
