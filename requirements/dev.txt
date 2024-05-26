@@ -10,7 +10,7 @@ aiosignal==1.3.1
     # via aiohttp
 alabaster==0.7.16
     # via sphinx
-annotated-types==0.6.0
+annotated-types==0.7.0
     # via pydantic
 asgiref==3.8.1
     # via -r requirements/tests.in
@@ -99,7 +99,7 @@ flask-executor==1.0.0
     # via -r requirements/app.in
 flask-inputs==0.3.0
     # via -r requirements/app.in
-flask-limiter[redis]==3.6.0
+flask-limiter[redis]==3.7.0
     # via -r requirements/app.in
 flask-redis==0.4.0
     # via -r requirements/app.in
@@ -213,7 +213,7 @@ pyproject-api==1.6.1
     # via tox
 pyproject-hooks==1.1.0
     # via build
-pytest==8.2.0
+pytest==8.2.1
     # via
     #   -r requirements/tests.in
     #   pytest-cov
@@ -236,7 +236,7 @@ referencing==0.35.1
     # via
     #   jsonschema
     #   jsonschema-specifications
-requests==2.31.0
+requests==2.32.2
     # via
     #   -r requirements/app.in
     #   kubernetes
@@ -258,7 +258,7 @@ rstcheck==6.2.1
     # via -r requirements/docs.in
 rstcheck-core==1.2.1
     # via rstcheck
-sentry-sdk[flask]==2.2.0
+sentry-sdk[flask]==2.3.1
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
@@ -305,7 +305,7 @@ tox==4.4.2
     # via -r requirements/tests.in
 typer[all]==0.12.3
     # via rstcheck
-typing-extensions==4.11.0
+typing-extensions==4.12.0
     # via
     #   asgiref
     #   black
