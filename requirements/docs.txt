@@ -84,7 +84,7 @@ frozenlist==1.4.1
     #   aiosignal
 future==1.0.0
     # via flask-inputs
-google-auth==2.29.0
+google-auth==2.30.0
     # via kubernetes
 idna==3.7
     # via
@@ -104,7 +104,7 @@ jsonschema==4.22.0
     # via -r requirements/app.in
 jsonschema-specifications==2023.12.1
     # via jsonschema
-kubernetes==29.0.0
+kubernetes==30.1.0
     # via -r requirements/app.in
 limits[redis]==3.12.0
     # via flask-limiter
@@ -147,9 +147,9 @@ pyasn1-modules==0.4.0
     # via google-auth
 pycparser==2.22
     # via cffi
-pydantic==2.7.2
+pydantic==2.7.3
     # via rstcheck-core
-pydantic-core==2.18.3
+pydantic-core==2.18.4
     # via pydantic
 pygments==2.18.0
     # via
@@ -166,7 +166,7 @@ pyyaml==6.0.1
     # via
     #   -r requirements/app.in
     #   kubernetes
-redis==5.0.4
+redis==5.0.5
     # via
     #   -r requirements/app.in
     #   flask-redis
@@ -197,7 +197,7 @@ rstcheck==6.2.1
     # via -r requirements/docs.in
 rstcheck-core==1.2.1
     # via rstcheck
-sentry-sdk[flask]==2.3.1
+sentry-sdk[flask]==2.5.1
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
@@ -234,7 +234,7 @@ sphinxcontrib-serializinghtml==1.1.10
     # via sphinx
 typer[all]==0.12.3
     # via rstcheck
-typing-extensions==4.12.1
+typing-extensions==4.12.2
     # via
     #   flask-limiter
     #   limits
