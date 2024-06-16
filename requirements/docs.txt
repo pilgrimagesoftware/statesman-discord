@@ -130,7 +130,7 @@ oauthlib==3.2.2
     #   requests-oauthlib
 ordered-set==4.1.0
     # via flask-limiter
-packaging==24.0
+packaging==24.1
     # via
     #   limits
     #   pallets-sphinx-themes
@@ -147,7 +147,7 @@ pyasn1-modules==0.4.0
     # via google-auth
 pycparser==2.22
     # via cffi
-pydantic==2.7.3
+pydantic==2.7.4
     # via rstcheck-core
 pydantic-core==2.18.4
     # via pydantic
@@ -166,7 +166,7 @@ pyyaml==6.0.1
     # via
     #   -r requirements/app.in
     #   kubernetes
-redis==5.0.5
+redis==5.0.6
     # via
     #   -r requirements/app.in
     #   flask-redis
