@@ -40,7 +40,7 @@ cachetools==5.3.3
     # via
     #   google-auth
     #   tox
-certifi==2024.6.2
+certifi==2024.7.4
     # via
     #   kubernetes
     #   requests
@@ -113,7 +113,7 @@ frozenlist==1.4.1
     #   aiosignal
 future==1.0.0
     # via flask-inputs
-google-auth==2.30.0
+google-auth==2.31.0
     # via kubernetes
 idna==3.7
     # via
@@ -198,9 +198,9 @@ pyasn1-modules==0.4.0
     # via google-auth
 pycparser==2.22
     # via cffi
-pydantic==2.7.4
+pydantic==2.8.2
     # via rstcheck-core
-pydantic-core==2.18.4
+pydantic-core==2.20.1
     # via pydantic
 pygments==2.18.0
     # via
