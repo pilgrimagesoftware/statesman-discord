@@ -71,7 +71,7 @@ frozenlist==1.4.1
     #   aiosignal
 future==1.0.0
     # via flask-inputs
-google-auth==2.31.0
+google-auth==2.32.0
     # via kubernetes
 idna==3.7
     # via
@@ -83,7 +83,7 @@ itsdangerous==2.2.0
     # via flask
 jinja2==3.1.4
     # via flask
-jsonschema==4.22.0
+jsonschema==4.23.0
     # via -r requirements/app.in
 jsonschema-specifications==2023.12.1
     # via jsonschema
@@ -155,13 +155,13 @@ requests-oauthlib==2.0.0
     # via kubernetes
 rich==13.7.1
     # via flask-limiter
-rpds-py==0.18.1
+rpds-py==0.19.0
     # via
     #   jsonschema
     #   referencing
 rsa==4.9
     # via google-auth
-sentry-sdk[flask]==2.7.1
+sentry-sdk[flask]==2.9.0
     # via -r requirements/app.in
 six==1.16.0
     # via
