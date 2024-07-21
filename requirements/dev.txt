@@ -36,7 +36,7 @@ build==1.2.1
     # via pip-tools
 cachelib==0.13.0
     # via flask-session
-cachetools==5.3.3
+cachetools==5.4.0
     # via
     #   google-auth
     #   tox
@@ -99,7 +99,7 @@ flask-executor==1.0.0
     # via -r requirements/app.in
 flask-inputs==0.3.0
     # via -r requirements/app.in
-flask-limiter[redis]==3.7.0
+flask-limiter[redis]==3.8.0
     # via -r requirements/app.in
 flask-redis==0.4.0
     # via -r requirements/app.in
@@ -213,7 +213,7 @@ pyproject-api==1.7.1
     # via tox
 pyproject-hooks==1.1.0
     # via build
-pytest==8.2.2
+pytest==8.3.1
     # via
     #   -r requirements/tests.in
     #   pytest-cov
@@ -258,7 +258,7 @@ rstcheck==6.2.4
     # via -r requirements/docs.in
 rstcheck-core==1.2.1
     # via rstcheck
-sentry-sdk[flask]==2.9.0
+sentry-sdk[flask]==2.10.0
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
@@ -283,13 +283,13 @@ sphinxcontrib-applehelp==1.0.8
     # via sphinx
 sphinxcontrib-devhelp==1.0.6
     # via sphinx
-sphinxcontrib-htmlhelp==2.0.5
+sphinxcontrib-htmlhelp==2.0.6
     # via sphinx
 sphinxcontrib-jsmath==1.0.1
     # via sphinx
 sphinxcontrib-log-cabinet==1.0.1
     # via -r requirements/docs.in
-sphinxcontrib-qthelp==1.0.7
+sphinxcontrib-qthelp==1.0.8
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.10
     # via sphinx
