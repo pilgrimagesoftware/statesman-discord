@@ -213,7 +213,7 @@ pyproject-api==1.7.1
     # via tox
 pyproject-hooks==1.1.0
     # via build
-pytest==8.3.1
+pytest==8.3.2
     # via
     #   -r requirements/tests.in
     #   pytest-cov
@@ -248,7 +248,7 @@ rich==13.7.1
     # via
     #   flask-limiter
     #   typer
-rpds-py==0.19.0
+rpds-py==0.19.1
     # via
     #   jsonschema
     #   referencing
@@ -258,7 +258,7 @@ rstcheck==6.2.4
     # via -r requirements/docs.in
 rstcheck-core==1.2.1
     # via rstcheck
-sentry-sdk[flask]==2.10.0
+sentry-sdk[flask]==2.11.0
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
