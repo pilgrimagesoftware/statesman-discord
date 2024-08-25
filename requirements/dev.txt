@@ -4,9 +4,9 @@
 #
 #    pip-compile requirements/dev.in
 #
-aiohappyeyeballs==2.3.7
+aiohappyeyeballs==2.4.0
     # via aiohttp
-aiohttp==3.10.4
+aiohttp==3.10.5
     # via discord-py
 aiosignal==1.3.1
     # via aiohttp
@@ -38,7 +38,7 @@ build==1.2.1
     # via pip-tools
 cachelib==0.13.0
     # via flask-session
-cachetools==5.4.0
+cachetools==5.5.0
     # via
     #   google-auth
     #   tox
@@ -115,15 +115,15 @@ frozenlist==1.4.1
     #   aiosignal
 future==1.0.0
     # via flask-inputs
-google-auth==2.33.0
+google-auth==2.34.0
     # via kubernetes
-idna==3.7
+idna==3.8
     # via
     #   requests
     #   yarl
 imagesize==1.4.1
     # via sphinx
-importlib-resources==6.4.3
+importlib-resources==6.4.4
     # via limits
 iniconfig==2.0.0
     # via pytest
@@ -305,7 +305,7 @@ tomli==2.0.1
     #   tox
 tox==4.4.2
     # via -r requirements/tests.in
-typer==0.12.4
+typer==0.12.5
     # via rstcheck
 typing-extensions==4.12.2
     # via
@@ -327,7 +327,7 @@ virtualenv==20.26.3
     # via tox
 websocket-client==1.8.0
     # via kubernetes
-werkzeug==3.0.3
+werkzeug==3.0.4
     # via flask
 wheel==0.44.0
     # via pip-tools
