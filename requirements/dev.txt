@@ -42,7 +42,7 @@ cachetools==5.5.0
     # via
     #   google-auth
     #   tox
-certifi==2024.7.4
+certifi==2024.8.30
     # via
     #   kubernetes
     #   requests
@@ -246,7 +246,7 @@ requests==2.32.3
     #   sphinx
 requests-oauthlib==2.0.0
     # via kubernetes
-rich==13.7.1
+rich==13.8.0
     # via
     #   flask-limiter
     #   typer
@@ -335,7 +335,7 @@ wrapt==1.16.0
     # via deprecated
 wtforms==3.1.2
     # via flask-inputs
-yarl==1.9.4
+yarl==1.9.6
     # via aiohttp
 
 # The following packages are considered to be unsafe in a requirements file:
