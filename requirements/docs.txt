@@ -38,7 +38,7 @@ certifi==2024.8.30
     #   kubernetes
     #   requests
     #   sentry-sdk
-cffi==1.17.0
+cffi==1.17.1
     # via pynacl
 charset-normalizer==3.3.2
     # via requests
@@ -149,9 +149,9 @@ pyasn1-modules==0.4.0
     # via google-auth
 pycparser==2.22
     # via cffi
-pydantic==2.8.2
+pydantic==2.9.0
     # via rstcheck-core
-pydantic-core==2.20.1
+pydantic-core==2.23.2
     # via pydantic
 pygments==2.18.0
     # via
@@ -243,6 +243,8 @@ typing-extensions==4.12.2
     #   pydantic
     #   pydantic-core
     #   typer
+tzdata==2024.1
+    # via pydantic
 urllib3==2.2.2
     # via
     #   kubernetes
@@ -258,5 +260,5 @@ wrapt==1.16.0
     # via deprecated
 wtforms==3.1.2
     # via flask-inputs
-yarl==1.9.6
+yarl==1.10.0
     # via aiohttp
