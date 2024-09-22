@@ -55,6 +55,8 @@ docutils==0.19
     #   rstcheck-core
     #   sphinx
     #   sphinx-tabs
+durationpy==0.7
+    # via kubernetes
 flask==2.3.3
     # via
     #   -r requirements/app.in
@@ -86,9 +88,9 @@ frozenlist==1.4.1
     #   aiosignal
 future==1.0.0
     # via flask-inputs
-google-auth==2.34.0
+google-auth==2.35.0
     # via kubernetes
-idna==3.9
+idna==3.10
     # via
     #   requests
     #   yarl
@@ -106,7 +108,7 @@ jsonschema==4.23.0
     # via -r requirements/app.in
 jsonschema-specifications==2023.12.1
     # via jsonschema
-kubernetes==30.1.0
+kubernetes==31.0.0
     # via -r requirements/app.in
 limits[redis]==3.13.0
     # via flask-limiter
@@ -149,9 +151,9 @@ pyasn1-modules==0.4.1
     # via google-auth
 pycparser==2.22
     # via cffi
-pydantic==2.9.1
+pydantic==2.9.2
     # via rstcheck-core
-pydantic-core==2.23.3
+pydantic-core==2.23.4
     # via pydantic
 pygments==2.18.0
     # via
