@@ -4,9 +4,9 @@
 #
 #    pip-compile requirements/dev.in
 #
-aiohappyeyeballs==2.4.2
+aiohappyeyeballs==2.4.3
     # via aiohttp
-aiohttp==3.10.8
+aiohttp==3.10.9
     # via discord-py
 aiosignal==1.3.1
     # via aiohttp
@@ -78,7 +78,7 @@ docutils==0.19
     #   rstcheck-core
     #   sphinx
     #   sphinx-tabs
-durationpy==0.7
+durationpy==0.9
     # via kubernetes
 exceptiongroup==1.2.2
     # via pytest
@@ -215,7 +215,7 @@ pynacl==1.5.0
     # via -r requirements/app.in
 pyproject-api==1.8.0
     # via tox
-pyproject-hooks==1.1.0
+pyproject-hooks==1.2.0
     # via build
 pytest==8.3.3
     # via
@@ -231,7 +231,7 @@ pyyaml==6.0.2
     # via
     #   -r requirements/app.in
     #   kubernetes
-redis==5.1.0
+redis==5.1.1
     # via
     #   -r requirements/app.in
     #   flask-redis
@@ -248,7 +248,7 @@ requests==2.32.3
     #   sphinx
 requests-oauthlib==2.0.0
     # via kubernetes
-rich==13.8.1
+rich==13.9.2
     # via
     #   flask-limiter
     #   typer
@@ -262,7 +262,7 @@ rstcheck==6.2.4
     # via -r requirements/docs.in
 rstcheck-core==1.2.1
     # via rstcheck
-sentry-sdk[flask]==2.14.0
+sentry-sdk[flask]==2.15.0
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
@@ -297,7 +297,7 @@ sphinxcontrib-qthelp==2.0.0
     # via sphinx
 sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
-tomli==2.0.1
+tomli==2.0.2
     # via
     #   black
     #   build
@@ -318,6 +318,7 @@ typing-extensions==4.12.2
     #   multidict
     #   pydantic
     #   pydantic-core
+    #   rich
     #   typer
 urllib3==2.2.3
     # via
