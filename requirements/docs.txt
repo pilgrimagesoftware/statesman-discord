@@ -82,7 +82,7 @@ flask-script==2.0.6
     # via -r requirements/app.in
 flask-session==0.8.0
     # via -r requirements/app.in
-frozenlist==1.4.1
+frozenlist==1.5.0
     # via
     #   aiohttp
     #   aiosignal
@@ -139,7 +139,7 @@ packaging==24.1
     #   limits
     #   pallets-sphinx-themes
     #   sphinx
-pallets-sphinx-themes==2.2.0
+pallets-sphinx-themes==2.3.0
     # via -r requirements/docs.in
 pika==1.3.2
     # via -r requirements/app.in
@@ -172,7 +172,7 @@ pyyaml==6.0.2
     # via
     #   -r requirements/app.in
     #   kubernetes
-redis==5.1.1
+redis==5.2.0
     # via
     #   -r requirements/app.in
     #   flask-redis
@@ -189,7 +189,7 @@ requests==2.32.3
     #   sphinx
 requests-oauthlib==2.0.0
     # via kubernetes
-rich==13.9.2
+rich==13.9.3
     # via
     #   flask-limiter
     #   typer
@@ -257,15 +257,15 @@ urllib3==2.2.3
     #   kubernetes
     #   requests
     #   sentry-sdk
-uwsgi==2.0.27
+uwsgi==2.0.28
     # via -r requirements/app.in
 websocket-client==1.8.0
     # via kubernetes
-werkzeug==3.0.4
+werkzeug==3.0.6
     # via flask
 wrapt==1.16.0
     # via deprecated
-wtforms==3.1.2
+wtforms==3.2.1
     # via flask-inputs
-yarl==1.15.5
+yarl==1.16.0
     # via aiohttp
