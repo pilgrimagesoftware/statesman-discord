@@ -250,11 +250,11 @@ requests==2.32.3
     #   sphinx
 requests-oauthlib==2.0.0
     # via kubernetes
-rich==13.9.3
+rich==13.9.4
     # via
     #   flask-limiter
     #   typer
-rpds-py==0.20.0
+rpds-py==0.20.1
     # via
     #   jsonschema
     #   referencing
@@ -332,11 +332,11 @@ urllib3==2.2.3
     #   sentry-sdk
 uwsgi==2.0.28
     # via -r requirements/app.in
-virtualenv==20.27.0
+virtualenv==20.27.1
     # via tox
 websocket-client==1.8.0
     # via kubernetes
-werkzeug==3.0.6
+werkzeug==3.1.1
     # via flask
 wheel==0.44.0
     # via pip-tools
@@ -344,7 +344,7 @@ wrapt==1.16.0
     # via deprecated
 wtforms==3.2.1
     # via flask-inputs
-yarl==1.16.0
+yarl==1.17.1
     # via aiohttp
 
 # The following packages are considered to be unsafe in a requirements file:
