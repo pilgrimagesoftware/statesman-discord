@@ -25,7 +25,7 @@ attrs==24.2.0
     #   referencing
 babel==2.16.0
     # via sphinx
-blinker==1.8.2
+blinker==1.9.0
     # via
     #   flask
     #   sentry-sdk
@@ -49,7 +49,7 @@ click==8.1.7
 deprecated==1.2.14
     # via limits
 discord-py==2.4.0
-    # via -r requirements/app.in
+    # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 docutils==0.19
     # via
     #   rstcheck-core
@@ -59,7 +59,7 @@ durationpy==0.9
     # via kubernetes
 flask==2.3.3
     # via
-    #   -r requirements/app.in
+    #   -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
     #   flask-dotenv
     #   flask-executor
     #   flask-inputs
@@ -69,26 +69,26 @@ flask==2.3.3
     #   flask-session
     #   sentry-sdk
 flask-dotenv==0.1.2
-    # via -r requirements/app.in
+    # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 flask-executor==1.0.0
-    # via -r requirements/app.in
+    # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 flask-inputs==0.3.0
-    # via -r requirements/app.in
+    # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 flask-limiter[redis]==3.8.0
-    # via -r requirements/app.in
+    # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 flask-redis==0.4.0
-    # via -r requirements/app.in
+    # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 flask-script==2.0.6
-    # via -r requirements/app.in
+    # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 flask-session==0.8.0
-    # via -r requirements/app.in
+    # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 frozenlist==1.5.0
     # via
     #   aiohttp
     #   aiosignal
 future==1.0.0
     # via flask-inputs
-google-auth==2.35.0
+google-auth==2.36.0
     # via kubernetes
 idna==3.10
     # via
@@ -105,11 +105,11 @@ jinja2==3.1.4
     #   flask
     #   sphinx
 jsonschema==4.23.0
-    # via -r requirements/app.in
+    # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 jsonschema-specifications==2024.10.1
     # via jsonschema
 kubernetes==31.0.0
-    # via -r requirements/app.in
+    # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 limits[redis]==3.13.0
     # via flask-limiter
 markdown-it-py==3.0.0
@@ -134,7 +134,7 @@ oauthlib==3.2.2
     #   requests-oauthlib
 ordered-set==4.1.0
     # via flask-limiter
-packaging==24.1
+packaging==24.2
     # via
     #   limits
     #   pallets-sphinx-themes
@@ -142,7 +142,7 @@ packaging==24.1
 pallets-sphinx-themes==2.3.0
     # via -r requirements/docs.in
 pika==1.3.2
-    # via -r requirements/app.in
+    # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 propcache==0.2.0
     # via yarl
 pyasn1==0.6.1
@@ -163,18 +163,18 @@ pygments==2.18.0
     #   sphinx
     #   sphinx-tabs
 pynacl==1.5.0
-    # via -r requirements/app.in
+    # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 python-dateutil==2.9.0.post0
     # via kubernetes
 python-dotenv==1.0.1
-    # via -r requirements/app.in
+    # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 pyyaml==6.0.2
     # via
-    #   -r requirements/app.in
+    #   -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
     #   kubernetes
 redis==5.2.0
     # via
-    #   -r requirements/app.in
+    #   -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
     #   flask-redis
     #   limits
 referencing==0.35.1
@@ -183,7 +183,7 @@ referencing==0.35.1
     #   jsonschema-specifications
 requests==2.32.3
     # via
-    #   -r requirements/app.in
+    #   -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
     #   kubernetes
     #   requests-oauthlib
     #   sphinx
@@ -193,7 +193,7 @@ rich==13.9.4
     # via
     #   flask-limiter
     #   typer
-rpds-py==0.20.1
+rpds-py==0.21.0
     # via
     #   jsonschema
     #   referencing
@@ -203,8 +203,8 @@ rstcheck==6.2.4
     # via -r requirements/docs.in
 rstcheck-core==1.2.1
     # via rstcheck
-sentry-sdk[flask]==2.17.0
-    # via -r requirements/app.in
+sentry-sdk[flask]==2.18.0
+    # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 shellingham==1.5.4
     # via typer
 six==1.16.0
@@ -241,7 +241,7 @@ sphinxcontrib-qthelp==2.0.0
     # via sphinx
 sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
-typer==0.12.5
+typer==0.13.0
     # via rstcheck
 typing-extensions==4.12.2
     # via
@@ -258,10 +258,10 @@ urllib3==2.2.3
     #   requests
     #   sentry-sdk
 uwsgi==2.0.28
-    # via -r requirements/app.in
+    # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 websocket-client==1.8.0
     # via kubernetes
-werkzeug==3.1.1
+werkzeug==3.1.3
     # via flask
 wrapt==1.16.0
     # via deprecated
