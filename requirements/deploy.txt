@@ -6,7 +6,7 @@
 #
 aiohappyeyeballs==2.4.4
     # via aiohttp
-aiohttp==3.11.8
+aiohttp==3.11.10
     # via discord-py
 aiosignal==1.3.1
     # via aiohttp
@@ -119,7 +119,7 @@ packaging==24.2
     # via limits
 pika==1.3.2
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
-propcache==0.2.0
+propcache==0.2.1
     # via
     #   aiohttp
     #   yarl
@@ -143,7 +143,7 @@ pyyaml==6.0.2
     # via
     #   -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
     #   kubernetes
-redis==5.2.0
+redis==5.2.1
     # via
     #   -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
     #   flask-redis
@@ -161,15 +161,15 @@ requests-oauthlib==2.0.0
     # via kubernetes
 rich==13.9.4
     # via flask-limiter
-rpds-py==0.21.0
+rpds-py==0.22.3
     # via
     #   jsonschema
     #   referencing
 rsa==4.9
     # via google-auth
-sentry-sdk[flask]==2.19.0
+sentry-sdk[flask]==2.19.2
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
-six==1.16.0
+six==1.17.0
     # via
     #   kubernetes
     #   python-dateutil
@@ -196,5 +196,5 @@ wrapt==1.17.0
     # via deprecated
 wtforms==3.2.1
     # via flask-inputs
-yarl==1.18.0
+yarl==1.18.3
     # via aiohttp
