@@ -14,7 +14,7 @@ async-timeout==5.0.1
     # via
     #   aiohttp
     #   redis
-attrs==24.3.0
+attrs==25.1.0
     # via
     #   aiohttp
     #   jsonschema
@@ -25,7 +25,7 @@ blinker==1.9.0
     #   sentry-sdk
 cachelib==0.13.0
     # via flask-session
-cachetools==5.5.0
+cachetools==5.5.1
     # via google-auth
 certifi==2024.12.14
     # via
@@ -38,7 +38,7 @@ charset-normalizer==3.4.1
     # via requests
 click==8.1.8
     # via flask
-deprecated==1.2.15
+deprecated==1.2.17
     # via limits
 discord-py==2.4.0
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
@@ -75,7 +75,7 @@ frozenlist==1.5.0
     #   aiosignal
 future==1.0.0
     # via flask-inputs
-google-auth==2.37.0
+google-auth==2.38.0
     # via kubernetes
 idna==3.10
     # via
@@ -89,7 +89,7 @@ jsonschema==4.23.0
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 jsonschema-specifications==2024.10.1
     # via jsonschema
-kubernetes==31.0.0
+kubernetes==32.0.0
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 limits[redis]==4.0.1
     # via flask-limiter
@@ -148,7 +148,7 @@ redis==5.2.1
     #   -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
     #   flask-redis
     #   limits
-referencing==0.36.1
+referencing==0.36.2
     # via
     #   jsonschema
     #   jsonschema-specifications
