@@ -47,7 +47,7 @@ click==8.1.8
     # via flask
 colorama==0.4.6
     # via tox
-coverage[toml]==7.6.11
+coverage[toml]==7.6.12
     # via
     #   coverage-badge
     #   pytest-cov
@@ -212,7 +212,7 @@ rpds-py==0.22.3
     #   referencing
 rsa==4.9
     # via google-auth
-sentry-sdk[flask]==2.20.0
+sentry-sdk[flask]==2.21.0
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 six==1.17.0
     # via
@@ -241,7 +241,7 @@ urllib3==2.3.0
     #   sentry-sdk
 uwsgi==2.0.28
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
-virtualenv==20.29.1
+virtualenv==20.29.2
     # via tox
 websocket-client==1.8.0
     # via kubernetes
