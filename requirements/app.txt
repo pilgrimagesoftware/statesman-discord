@@ -25,7 +25,7 @@ blinker==1.9.0
     #   sentry-sdk
 cachelib==0.13.0
     # via flask-session
-cachetools==5.5.1
+cachetools==5.5.2
     # via google-auth
 certifi==2025.1.31
     # via
@@ -40,7 +40,7 @@ click==8.1.8
     # via flask
 deprecated==1.2.18
     # via limits
-discord-py==2.4.0
+discord-py==2.5.0
     # via -r requirements/app.in
 durationpy==0.9
     # via kubernetes
@@ -89,7 +89,7 @@ jsonschema==4.23.0
     # via -r requirements/app.in
 jsonschema-specifications==2024.10.1
     # via jsonschema
-kubernetes==32.0.0
+kubernetes==32.0.1
     # via -r requirements/app.in
 limits[redis]==4.0.1
     # via flask-limiter
@@ -119,7 +119,7 @@ packaging==24.2
     # via limits
 pika==1.3.2
     # via -r requirements/app.in
-propcache==0.2.1
+propcache==0.3.0
     # via
     #   aiohttp
     #   yarl
@@ -161,13 +161,13 @@ requests-oauthlib==2.0.0
     # via kubernetes
 rich==13.9.4
     # via flask-limiter
-rpds-py==0.22.3
+rpds-py==0.23.1
     # via
     #   jsonschema
     #   referencing
 rsa==4.9
     # via google-auth
-sentry-sdk[flask]==2.21.0
+sentry-sdk[flask]==2.22.0
     # via -r requirements/app.in
 six==1.17.0
     # via
