@@ -4,7 +4,7 @@
 #
 #    pip-compile requirements/docs.in
 #
-aiohappyeyeballs==2.4.6
+aiohappyeyeballs==2.5.0
     # via aiohttp
 aiohttp==3.11.13
     # via discord-py
@@ -48,7 +48,7 @@ click==8.1.8
     #   typer
 deprecated==1.2.18
     # via limits
-discord-py==2.5.0
+discord-py==2.5.2
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 docutils==0.19
     # via
@@ -98,7 +98,7 @@ imagesize==1.4.1
     # via sphinx
 itsdangerous==2.2.0
     # via flask
-jinja2==3.1.5
+jinja2==3.1.6
     # via
     #   flask
     #   sphinx
@@ -108,7 +108,7 @@ jsonschema-specifications==2024.10.1
     # via jsonschema
 kubernetes==32.0.1
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
-limits[redis]==4.0.1
+limits[redis]==4.1
     # via flask-limiter
 markdown-it-py==3.0.0
     # via rich

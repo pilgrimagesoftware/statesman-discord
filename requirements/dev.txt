@@ -4,7 +4,7 @@
 #
 #    pip-compile requirements/dev.in
 #
-aiohappyeyeballs==2.4.6
+aiohappyeyeballs==2.5.0
     # via aiohttp
 aiohttp==3.11.13
     # via discord-py
@@ -69,7 +69,7 @@ coverage-badge==1.1.0
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/tests.in
 deprecated==1.2.18
     # via limits
-discord-py==2.5.0
+discord-py==2.5.2
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 distlib==0.3.9
     # via virtualenv
@@ -129,7 +129,7 @@ iniconfig==2.0.0
     # via pytest
 itsdangerous==2.2.0
     # via flask
-jinja2==3.1.5
+jinja2==3.1.6
     # via
     #   flask
     #   sphinx
@@ -139,7 +139,7 @@ jsonschema-specifications==2024.10.1
     # via jsonschema
 kubernetes==32.0.1
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
-limits[redis]==4.0.1
+limits[redis]==4.1
     # via flask-limiter
 markdown-it-py==3.0.0
     # via rich
@@ -219,7 +219,7 @@ pyproject-api==1.9.0
     # via tox
 pyproject-hooks==1.2.0
     # via build
-pytest==8.3.4
+pytest==8.3.5
     # via
     #   -r /home/runner/work/statesman-discord/statesman-discord/requirements/tests.in
     #   pytest-cov
@@ -333,7 +333,7 @@ urllib3==2.3.0
     #   sentry-sdk
 uwsgi==2.0.28
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
-virtualenv==20.29.2
+virtualenv==20.29.3
     # via tox
 websocket-client==1.8.0
     # via kubernetes
