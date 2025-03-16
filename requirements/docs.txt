@@ -4,7 +4,7 @@
 #
 #    pip-compile requirements/docs.in
 #
-aiohappyeyeballs==2.5.0
+aiohappyeyeballs==2.6.1
     # via aiohttp
 aiohttp==3.11.13
     # via discord-py
@@ -18,7 +18,7 @@ async-timeout==5.0.1
     # via
     #   aiohttp
     #   redis
-attrs==25.1.0
+attrs==25.3.0
     # via
     #   aiohttp
     #   jsonschema
@@ -74,7 +74,7 @@ flask-executor==1.0.0
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 flask-inputs==0.3.0
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
-flask-limiter[redis]==3.10.1
+flask-limiter[redis]==3.12
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 flask-redis==0.4.0
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
@@ -108,7 +108,7 @@ jsonschema-specifications==2024.10.1
     # via jsonschema
 kubernetes==32.0.1
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
-limits[redis]==4.1
+limits[redis]==4.4.1
     # via flask-limiter
 markdown-it-py==3.0.0
     # via rich
@@ -245,7 +245,6 @@ typer==0.15.2
     # via rstcheck
 typing-extensions==4.12.2
     # via
-    #   flask-limiter
     #   limits
     #   multidict
     #   pydantic
