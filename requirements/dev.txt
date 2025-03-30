@@ -192,7 +192,7 @@ pluggy==1.5.0
     # via
     #   pytest
     #   tox
-propcache==0.3.0
+propcache==0.3.1
     # via
     #   aiohttp
     #   yarl
@@ -200,13 +200,13 @@ pyasn1==0.6.1
     # via
     #   pyasn1-modules
     #   rsa
-pyasn1-modules==0.4.1
+pyasn1-modules==0.4.2
     # via google-auth
 pycparser==2.22
     # via cffi
-pydantic==2.10.6
+pydantic==2.11.1
     # via rstcheck-core
-pydantic-core==2.27.2
+pydantic-core==2.33.0
     # via pydantic
 pygments==2.19.1
     # via
@@ -227,7 +227,7 @@ pytest-cov==4.0.0
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/tests.in
 python-dateutil==2.9.0.post0
     # via kubernetes
-python-dotenv==1.0.1
+python-dotenv==1.1.0
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 pyyaml==6.0.2
     # via
@@ -254,7 +254,7 @@ rich==13.9.4
     # via
     #   flask-limiter
     #   typer
-rpds-py==0.23.1
+rpds-py==0.24.0
     # via
     #   jsonschema
     #   referencing
@@ -264,7 +264,7 @@ rstcheck==6.2.4
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/docs.in
 rstcheck-core==1.2.1
     # via rstcheck
-sentry-sdk[flask]==2.24.0
+sentry-sdk[flask]==2.24.1
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 shellingham==1.5.4
     # via typer
@@ -314,7 +314,7 @@ tox==4.4.2
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/tests.in
 typer==0.15.2
     # via rstcheck
-typing-extensions==4.12.2
+typing-extensions==4.13.0
     # via
     #   asgiref
     #   black
@@ -325,6 +325,9 @@ typing-extensions==4.12.2
     #   referencing
     #   rich
     #   typer
+    #   typing-inspection
+typing-inspection==0.4.0
+    # via pydantic
 urllib3==2.3.0
     # via
     #   kubernetes

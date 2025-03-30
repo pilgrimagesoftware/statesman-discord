@@ -156,7 +156,7 @@ pluggy==1.5.0
     # via
     #   pytest
     #   tox
-propcache==0.3.0
+propcache==0.3.1
     # via
     #   aiohttp
     #   yarl
@@ -164,7 +164,7 @@ pyasn1==0.6.1
     # via
     #   pyasn1-modules
     #   rsa
-pyasn1-modules==0.4.1
+pyasn1-modules==0.4.2
     # via google-auth
 pycparser==2.22
     # via cffi
@@ -182,7 +182,7 @@ pytest-cov==4.0.0
     # via -r requirements/tests.in
 python-dateutil==2.9.0.post0
     # via kubernetes
-python-dotenv==1.0.1
+python-dotenv==1.1.0
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 pyyaml==6.0.2
     # via
@@ -206,13 +206,13 @@ requests-oauthlib==2.0.0
     # via kubernetes
 rich==13.9.4
     # via flask-limiter
-rpds-py==0.23.1
+rpds-py==0.24.0
     # via
     #   jsonschema
     #   referencing
 rsa==4.9
     # via google-auth
-sentry-sdk[flask]==2.24.0
+sentry-sdk[flask]==2.24.1
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 six==1.17.0
     # via
@@ -226,7 +226,7 @@ tomli==2.2.1
     #   tox
 tox==4.4.2
     # via -r requirements/tests.in
-typing-extensions==4.12.2
+typing-extensions==4.13.0
     # via
     #   asgiref
     #   limits
