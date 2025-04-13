@@ -91,7 +91,7 @@ jsonschema-specifications==2024.10.1
     # via jsonschema
 kubernetes==32.0.1
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
-limits[redis]==4.6
+limits[redis]==4.7.3
     # via flask-limiter
 markdown-it-py==3.0.0
     # via rich
@@ -105,7 +105,7 @@ mdurl==0.1.2
     # via markdown-it-py
 msgspec==0.19.0
     # via flask-session
-multidict==6.3.2
+multidict==6.4.3
     # via
     #   aiohttp
     #   yarl
@@ -173,18 +173,18 @@ six==1.17.0
     # via
     #   kubernetes
     #   python-dateutil
-typing-extensions==4.13.1
+typing-extensions==4.13.2
     # via
     #   limits
     #   multidict
     #   referencing
     #   rich
-urllib3==2.3.0
+urllib3==2.4.0
     # via
     #   kubernetes
     #   requests
     #   sentry-sdk
-uwsgi==2.0.28
+uwsgi==2.0.29
     # via
     #   -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
     #   -r requirements/deploy.in
