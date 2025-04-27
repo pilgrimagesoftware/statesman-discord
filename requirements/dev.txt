@@ -6,7 +6,7 @@
 #
 aiohappyeyeballs==2.6.1
     # via aiohttp
-aiohttp==3.11.17
+aiohttp==3.11.18
     # via discord-py
 aiosignal==1.3.2
     # via aiohttp
@@ -42,7 +42,7 @@ cachetools==5.5.2
     # via
     #   google-auth
     #   tox
-certifi==2025.1.31
+certifi==2025.4.26
     # via
     #   kubernetes
     #   requests
@@ -135,11 +135,11 @@ jinja2==3.1.6
     #   sphinx
 jsonschema==4.23.0
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
-jsonschema-specifications==2024.10.1
+jsonschema-specifications==2025.4.1
     # via jsonschema
 kubernetes==32.0.1
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
-limits[redis]==5.0.0
+limits[redis]==5.1.0
     # via flask-limiter
 markdown-it-py==3.0.0
     # via rich
@@ -157,7 +157,7 @@ multidict==6.4.3
     # via
     #   aiohttp
     #   yarl
-mypy-extensions==1.0.0
+mypy-extensions==1.1.0
     # via black
 oauthlib==3.2.2
     # via
@@ -165,7 +165,7 @@ oauthlib==3.2.2
     #   requests-oauthlib
 ordered-set==4.1.0
     # via flask-limiter
-packaging==24.2
+packaging==25.0
     # via
     #   black
     #   build
@@ -264,7 +264,7 @@ rstcheck==6.2.4
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/docs.in
 rstcheck-core==1.2.1
     # via rstcheck
-sentry-sdk[flask]==2.26.1
+sentry-sdk[flask]==2.27.0
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 shellingham==1.5.4
     # via typer
