@@ -41,7 +41,7 @@ cffi==1.17.1
     # via pynacl
 chardet==5.2.0
     # via tox
-charset-normalizer==3.4.1
+charset-normalizer==3.4.2
     # via requests
 click==8.1.8
     # via flask
@@ -170,6 +170,8 @@ pycparser==2.22
     # via cffi
 pygments==2.19.1
     # via rich
+pyjwt==2.9.0
+    # via redis
 pynacl==1.5.0
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 pyproject-api==1.9.0
@@ -188,7 +190,7 @@ pyyaml==6.0.2
     # via
     #   -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
     #   kubernetes
-redis==5.2.1
+redis==5.3.0
     # via
     #   -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
     #   flask-redis
