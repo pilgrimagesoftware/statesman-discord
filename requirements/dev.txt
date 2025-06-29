@@ -153,7 +153,7 @@ mdurl==0.1.2
     # via markdown-it-py
 msgspec==0.19.0
     # via flask-session
-multidict==6.5.0
+multidict==6.6.2
     # via
     #   aiohttp
     #   yarl
@@ -230,7 +230,7 @@ pytest-cov==4.0.0
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/tests.in
 python-dateutil==2.9.0.post0
     # via kubernetes
-python-dotenv==1.1.0
+python-dotenv==1.1.1
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 pyyaml==6.0.2
     # via
@@ -267,7 +267,7 @@ rstcheck==6.2.5
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/docs.in
 rstcheck-core==1.2.2
     # via rstcheck
-sentry-sdk[flask]==2.30.0
+sentry-sdk[flask]==2.32.0
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 shellingham==1.5.4
     # via typer
