@@ -6,7 +6,7 @@
 #
 aiohappyeyeballs==2.6.1
     # via aiohttp
-aiohttp==3.12.13
+aiohttp==3.12.14
     # via discord-py
 aiosignal==1.4.0
     # via aiohttp
@@ -27,7 +27,7 @@ cachelib==0.13.0
     # via flask-session
 cachetools==5.5.2
     # via google-auth
-certifi==2025.6.15
+certifi==2025.7.9
     # via
     #   kubernetes
     #   requests

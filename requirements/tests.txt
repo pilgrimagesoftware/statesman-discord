@@ -6,11 +6,11 @@
 #
 aiohappyeyeballs==2.6.1
     # via aiohttp
-aiohttp==3.12.13
+aiohttp==3.12.14
     # via discord-py
 aiosignal==1.4.0
     # via aiohttp
-asgiref==3.9.0
+asgiref==3.9.1
     # via -r requirements/tests.in
 async-timeout==5.0.1
     # via
@@ -32,7 +32,7 @@ cachetools==5.5.2
     # via
     #   google-auth
     #   tox
-certifi==2025.6.15
+certifi==2025.7.9
     # via
     #   kubernetes
     #   requests
