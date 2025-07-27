@@ -162,7 +162,7 @@ pygments==2.19.2
     #   rich
     #   sphinx
     #   sphinx-tabs
-pyjwt==2.9.0
+pyjwt==2.10.1
     # via redis
 pynacl==1.5.0
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
@@ -174,7 +174,7 @@ pyyaml==6.0.2
     # via
     #   -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
     #   kubernetes
-redis==5.3.0
+redis==5.3.1
     # via
     #   -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
     #   flask-redis
@@ -205,7 +205,7 @@ rstcheck==6.2.5
     # via -r requirements/docs.in
 rstcheck-core==1.2.2
     # via rstcheck
-sentry-sdk[flask]==2.33.0
+sentry-sdk[flask]==2.33.2
     # via -r /home/runner/work/statesman-discord/statesman-discord/requirements/app.in
 shellingham==1.5.4
     # via typer
