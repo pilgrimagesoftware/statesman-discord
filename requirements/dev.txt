@@ -51,7 +51,7 @@ cffi==1.17.1
     # via pynacl
 chardet==5.2.0
     # via tox
-charset-normalizer==3.4.2
+charset-normalizer==3.4.3
     # via requests
 click==8.2.1
     # via
@@ -61,7 +61,7 @@ click==8.2.1
     #   typer
 colorama==0.4.6
     # via tox
-coverage[toml]==7.10.1
+coverage[toml]==7.10.2
     # via
     #   coverage-badge
     #   pytest-cov
@@ -139,7 +139,7 @@ jsonschema-specifications==2025.4.1
     # via jsonschema
 kubernetes==33.1.0
     # via -r requirements/app.in
-limits[redis]==5.4.0
+limits[redis]==5.5.0
     # via flask-limiter
 markdown-it-py==3.0.0
     # via rich
@@ -214,8 +214,6 @@ pygments==2.19.2
     #   rich
     #   sphinx
     #   sphinx-tabs
-pyjwt==2.10.1
-    # via redis
 pynacl==1.5.0
     # via -r requirements/app.in
 pyproject-api==1.9.1
@@ -236,7 +234,7 @@ pyyaml==6.0.2
     # via
     #   -r requirements/app.in
     #   kubernetes
-redis==5.3.1
+redis==6.4.0
     # via
     #   -r requirements/app.in
     #   flask-redis
@@ -257,7 +255,7 @@ rich==13.9.4
     # via
     #   flask-limiter
     #   typer
-rpds-py==0.26.0
+rpds-py==0.27.0
     # via
     #   jsonschema
     #   referencing
@@ -340,7 +338,7 @@ urllib3==2.5.0
     #   sentry-sdk
 uwsgi==2.0.30
     # via -r requirements/app.in
-virtualenv==20.32.0
+virtualenv==20.33.1
     # via tox
 websocket-client==1.8.0
     # via kubernetes
