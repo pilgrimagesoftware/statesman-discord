@@ -48,7 +48,7 @@ click==8.2.1
     #   typer
 deprecated==1.2.18
     # via limits
-discord-py==2.5.2
+discord-py==2.6.0
     # via -r requirements/app.in
 docutils==0.19
     # via
@@ -102,7 +102,7 @@ jinja2==3.1.6
     # via
     #   flask
     #   sphinx
-jsonschema==4.25.0
+jsonschema==4.25.1
     # via -r requirements/app.in
 jsonschema-specifications==2025.4.1
     # via jsonschema
@@ -181,7 +181,7 @@ referencing==0.36.2
     # via
     #   jsonschema
     #   jsonschema-specifications
-requests==2.32.4
+requests==2.32.5
     # via
     #   -r requirements/app.in
     #   kubernetes
@@ -241,7 +241,7 @@ sphinxcontrib-qthelp==2.0.0
     # via sphinx
 sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
-typer==0.16.0
+typer==0.16.1
     # via rstcheck
 typing-extensions==4.14.1
     # via

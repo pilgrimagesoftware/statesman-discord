@@ -61,7 +61,7 @@ click==8.2.1
     #   typer
 colorama==0.4.6
     # via tox
-coverage[toml]==7.10.4
+coverage[toml]==7.10.5
     # via
     #   coverage-badge
     #   pytest-cov
@@ -69,7 +69,7 @@ coverage-badge==1.1.0
     # via -r requirements/tests.in
 deprecated==1.2.18
     # via limits
-discord-py==2.5.2
+discord-py==2.6.0
     # via -r requirements/app.in
 distlib==0.4.0
     # via virtualenv
@@ -133,7 +133,7 @@ jinja2==3.1.6
     # via
     #   flask
     #   sphinx
-jsonschema==4.25.0
+jsonschema==4.25.1
     # via -r requirements/app.in
 jsonschema-specifications==2025.4.1
     # via jsonschema
@@ -243,7 +243,7 @@ referencing==0.36.2
     # via
     #   jsonschema
     #   jsonschema-specifications
-requests==2.32.4
+requests==2.32.5
     # via
     #   -r requirements/app.in
     #   kubernetes
@@ -313,7 +313,7 @@ tomli==2.2.1
     #   tox
 tox==4.4.2
     # via -r requirements/tests.in
-typer==0.16.0
+typer==0.16.1
     # via rstcheck
 typing-extensions==4.14.1
     # via
