@@ -48,7 +48,7 @@ click==8.2.1
     #   typer
 deprecated==1.2.18
     # via limits
-discord-py==2.6.2
+discord-py==2.6.3
     # via -r requirements/app.in
 docutils==0.19
     # via
@@ -203,7 +203,7 @@ rstcheck==6.2.5
     # via -r requirements/docs.in
 rstcheck-core==1.2.2
     # via rstcheck
-sentry-sdk[flask]==2.35.1
+sentry-sdk[flask]==2.37.0
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
@@ -241,7 +241,7 @@ sphinxcontrib-qthelp==2.0.0
     # via sphinx
 sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
-typer==0.17.3
+typer==0.17.4
     # via rstcheck
 typing-extensions==4.15.0
     # via
