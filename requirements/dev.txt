@@ -311,7 +311,7 @@ tomli==2.2.1
     #   pyproject-api
     #   pytest
     #   tox
-tox==4.4.2
+tox==4.27.0
     # via -r requirements/tests.in
 typer==0.17.4
     # via rstcheck
@@ -327,6 +327,7 @@ typing-extensions==4.15.0
     #   pydantic-core
     #   referencing
     #   rich
+    #   tox
     #   typer
     #   typing-inspection
     #   virtualenv

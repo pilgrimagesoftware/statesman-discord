@@ -226,7 +226,7 @@ tomli==2.2.1
     #   pyproject-api
     #   pytest
     #   tox
-tox==4.4.2
+tox==4.27.0
     # via -r requirements/tests.in
 typing-extensions==4.15.0
     # via
@@ -237,6 +237,7 @@ typing-extensions==4.15.0
     #   multidict
     #   referencing
     #   rich
+    #   tox
     #   virtualenv
 urllib3==2.5.0
     # via
