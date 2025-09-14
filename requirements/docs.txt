@@ -38,7 +38,7 @@ certifi==2025.8.3
     #   kubernetes
     #   requests
     #   sentry-sdk
-cffi==1.17.1
+cffi==2.0.0
     # via pynacl
 charset-normalizer==3.4.3
     # via requests
@@ -74,7 +74,7 @@ flask-executor==1.0.0
     # via -r requirements/app.in
 flask-inputs==0.3.0
     # via -r requirements/app.in
-flask-limiter[redis]==3.12
+flask-limiter[redis]==3.13
     # via -r requirements/app.in
 flask-redis==0.4.0
     # via -r requirements/app.in
@@ -151,9 +151,9 @@ pyasn1==0.6.1
     #   rsa
 pyasn1-modules==0.4.2
     # via google-auth
-pycparser==2.22
+pycparser==2.23
     # via cffi
-pydantic==2.11.7
+pydantic==2.11.9
     # via rstcheck-core
 pydantic-core==2.33.2
     # via pydantic
@@ -162,7 +162,7 @@ pygments==2.19.2
     #   rich
     #   sphinx
     #   sphinx-tabs
-pynacl==1.5.0
+pynacl==1.6.0
     # via -r requirements/app.in
 python-dateutil==2.9.0.post0
     # via kubernetes
@@ -189,7 +189,7 @@ requests==2.32.5
     #   sphinx
 requests-oauthlib==2.0.0
     # via kubernetes
-rich==13.9.4
+rich==14.1.0
     # via
     #   flask-limiter
     #   typer
@@ -203,7 +203,7 @@ rstcheck==6.2.5
     # via -r requirements/docs.in
 rstcheck-core==1.2.2
     # via rstcheck
-sentry-sdk[flask]==2.37.0
+sentry-sdk[flask]==2.37.1
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
@@ -246,12 +246,12 @@ typer==0.17.4
 typing-extensions==4.15.0
     # via
     #   aiosignal
+    #   flask-limiter
     #   limits
     #   multidict
     #   pydantic
     #   pydantic-core
     #   referencing
-    #   rich
     #   typer
     #   typing-inspection
 typing-inspection==0.4.1
