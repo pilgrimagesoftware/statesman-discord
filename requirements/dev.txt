@@ -101,7 +101,7 @@ flask-dotenv==0.1.2
     # via -r requirements/app.in
 flask-executor==1.0.0
     # via -r requirements/app.in
-flask-inputs==0.3.0
+flask-inputs==1.0.0
     # via -r requirements/app.in
 flask-limiter[redis]==3.13
     # via -r requirements/app.in
@@ -268,7 +268,7 @@ rstcheck==6.2.5
     # via -r requirements/docs.in
 rstcheck-core==1.2.2
     # via rstcheck
-sentry-sdk[flask]==2.37.1
+sentry-sdk[flask]==2.38.0
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
