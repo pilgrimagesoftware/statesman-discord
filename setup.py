@@ -5,7 +5,7 @@ setup(
     name="statesman-discord",
     install_requires=[
         "discord.py",
-        "flask<3.0",
+        "flask<4.0",
         "flask-dotenv",
         "flask-executor",
         "flask-inputs",
