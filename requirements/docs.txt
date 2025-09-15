@@ -57,7 +57,7 @@ docutils==0.19
     #   sphinx-tabs
 durationpy==0.10
     # via kubernetes
-flask==2.3.3
+flask==3.1.2
     # via
     #   -r requirements/app.in
     #   flask-dotenv
@@ -114,6 +114,7 @@ markdown-it-py==4.0.0
     # via rich
 markupsafe==3.0.2
     # via
+    #   flask
     #   jinja2
     #   sentry-sdk
     #   werkzeug
