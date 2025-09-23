@@ -51,7 +51,7 @@ coverage[toml]==7.10.6
     # via
     #   coverage-badge
     #   pytest-cov
-coverage-badge==1.1.0
+coverage-badge==1.1.2
     # via -r requirements/tests.in
 deprecated==1.2.18
     # via limits
