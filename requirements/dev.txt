@@ -10,11 +10,11 @@ aiohttp==3.12.15
     # via discord-py
 aiosignal==1.4.0
     # via aiohttp
-alabaster==0.7.16
+alabaster==1.0.0
     # via sphinx
 annotated-types==0.7.0
     # via pydantic
-asgiref==3.9.1
+asgiref==3.9.2
     # via -r requirements/tests.in
 async-timeout==5.0.1
     # via
@@ -61,7 +61,7 @@ click==8.3.0
     #   typer
 colorama==0.4.6
     # via tox
-coverage[toml]==7.10.6
+coverage[toml]==7.10.7
     # via
     #   coverage-badge
     #   pytest-cov
@@ -321,7 +321,7 @@ tomli==2.2.1
     #   tox
 tox==4.27.0
     # via -r requirements/tests.in
-typer==0.19.1
+typer==0.19.2
     # via rstcheck
 typing-extensions==4.15.0
     # via

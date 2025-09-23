@@ -10,7 +10,7 @@ aiohttp==3.12.15
     # via discord-py
 aiosignal==1.4.0
     # via aiohttp
-asgiref==3.9.1
+asgiref==3.9.2
     # via -r requirements/tests.in
 async-timeout==5.0.1
     # via
@@ -47,7 +47,7 @@ click==8.3.0
     # via flask
 colorama==0.4.6
     # via tox
-coverage[toml]==7.10.6
+coverage[toml]==7.10.7
     # via
     #   coverage-badge
     #   pytest-cov
@@ -260,3 +260,6 @@ wtforms==3.2.1
     # via flask-inputs
 yarl==1.20.1
     # via aiohttp
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools

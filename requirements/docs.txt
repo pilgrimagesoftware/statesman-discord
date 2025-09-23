@@ -10,7 +10,7 @@ aiohttp==3.12.15
     # via discord-py
 aiosignal==1.4.0
     # via aiohttp
-alabaster==0.7.16
+alabaster==1.0.0
     # via sphinx
 annotated-types==0.7.0
     # via pydantic
@@ -244,7 +244,7 @@ sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
 tomli==2.2.1
     # via sphinx
-typer==0.19.1
+typer==0.19.2
     # via rstcheck
 typing-extensions==4.15.0
     # via
