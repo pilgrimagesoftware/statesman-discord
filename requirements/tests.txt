@@ -10,7 +10,7 @@ aiohttp==3.12.15
     # via discord-py
 aiosignal==1.4.0
     # via aiohttp
-asgiref==3.9.2
+asgiref==3.10.0
     # via -r requirements/tests.in
 attrs==25.3.0
     # via
