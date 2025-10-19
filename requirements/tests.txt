@@ -6,7 +6,7 @@
 #
 aiohappyeyeballs==2.6.1
     # via aiohttp
-aiohttp==3.13.0
+aiohttp==3.13.1
     # via discord-py
 aiosignal==1.4.0
     # via aiohttp
@@ -24,7 +24,7 @@ blinker==1.9.0
     #   sentry-sdk
 cachelib==0.13.0
     # via flask-session
-cachetools==6.2.0
+cachetools==6.2.1
     # via
     #   google-auth
     #   tox
@@ -37,13 +37,13 @@ cffi==2.0.0
     # via pynacl
 chardet==5.2.0
     # via tox
-charset-normalizer==3.4.3
+charset-normalizer==3.4.4
     # via requests
 click==8.3.0
     # via flask
 colorama==0.4.6
     # via tox
-coverage[toml]==7.10.7
+coverage[toml]==7.11.0
     # via
     #   coverage-badge
     #   pytest-cov
@@ -94,11 +94,11 @@ future==1.0.0
     # via flask-inputs
 google-auth==2.41.1
     # via kubernetes
-idna==3.10
+idna==3.11
     # via
     #   requests
     #   yarl
-iniconfig==2.1.0
+iniconfig==2.3.0
     # via pytest
 itsdangerous==2.2.0
     # via flask
@@ -189,7 +189,7 @@ redis==6.4.0
     #   -r requirements/app.in
     #   flask-redis
     #   limits
-referencing==0.36.2
+referencing==0.37.0
     # via
     #   jsonschema
     #   jsonschema-specifications
@@ -208,7 +208,7 @@ rpds-py==0.27.1
     #   referencing
 rsa==4.9.1
     # via google-auth
-sentry-sdk[flask]==2.41.0
+sentry-sdk[flask]==2.42.0
     # via -r requirements/app.in
 six==1.17.0
     # via

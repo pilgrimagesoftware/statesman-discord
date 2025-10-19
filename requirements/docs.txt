@@ -6,7 +6,7 @@
 #
 aiohappyeyeballs==2.6.1
     # via aiohttp
-aiohttp==3.13.0
+aiohttp==3.13.1
     # via discord-py
 aiosignal==1.4.0
     # via aiohttp
@@ -27,7 +27,7 @@ blinker==1.9.0
     #   sentry-sdk
 cachelib==0.13.0
     # via flask-session
-cachetools==6.2.0
+cachetools==6.2.1
     # via google-auth
 certifi==2025.10.5
     # via
@@ -36,7 +36,7 @@ certifi==2025.10.5
     #   sentry-sdk
 cffi==2.0.0
     # via pynacl
-charset-normalizer==3.4.3
+charset-normalizer==3.4.4
     # via requests
 click==8.3.0
     # via
@@ -86,7 +86,7 @@ future==1.0.0
     # via flask-inputs
 google-auth==2.41.1
     # via kubernetes
-idna==3.10
+idna==3.11
     # via
     #   requests
     #   yarl
@@ -148,9 +148,9 @@ pyasn1-modules==0.4.2
     # via google-auth
 pycparser==2.23
     # via cffi
-pydantic==2.12.0
+pydantic==2.12.3
     # via rstcheck-core
-pydantic-core==2.41.1
+pydantic-core==2.41.4
     # via pydantic
 pygments==2.19.2
     # via
@@ -172,7 +172,7 @@ redis==6.4.0
     #   -r requirements/app.in
     #   flask-redis
     #   limits
-referencing==0.36.2
+referencing==0.37.0
     # via
     #   jsonschema
     #   jsonschema-specifications
@@ -200,7 +200,7 @@ rstcheck==6.2.5
     # via -r requirements/docs.in
 rstcheck-core==1.2.2
     # via rstcheck
-sentry-sdk[flask]==2.41.0
+sentry-sdk[flask]==2.42.0
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
