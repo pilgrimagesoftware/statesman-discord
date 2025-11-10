@@ -170,7 +170,7 @@ pynacl==1.6.0
     # via -r requirements/app.in
 pyproject-api==1.10.0
     # via tox
-pytest==8.4.2
+pytest==9.0.0
     # via
     #   -r requirements/tests.in
     #   pytest-cov
