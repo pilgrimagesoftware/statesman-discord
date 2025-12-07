@@ -57,7 +57,7 @@ flask-executor==1.0.0
     # via -r requirements/app.in
 flask-inputs==1.0.0
     # via -r requirements/app.in
-flask-limiter[redis]==4.0.0
+flask-limiter[redis]==4.1.1
     # via -r requirements/app.in
 flask-redis==0.4.0
     # via -r requirements/app.in
@@ -89,8 +89,6 @@ kubernetes==34.1.0
     # via -r requirements/app.in
 limits[redis]==5.6.0
     # via flask-limiter
-markdown-it-py==4.0.0
-    # via rich
 markupsafe==3.0.3
     # via
     #   flask
@@ -98,8 +96,6 @@ markupsafe==3.0.3
     #   sentry-sdk
     #   werkzeug
     #   wtforms
-mdurl==0.1.2
-    # via markdown-it-py
 msgspec==0.20.0
     # via flask-session
 multidict==6.7.0
@@ -126,8 +122,6 @@ pyasn1-modules==0.4.2
     # via google-auth
 pycparser==2.23
     # via cffi
-pygments==2.19.2
-    # via rich
 pynacl==1.6.1
     # via -r requirements/app.in
 python-dateutil==2.9.0.post0
@@ -154,15 +148,13 @@ requests==2.32.5
     #   requests-oauthlib
 requests-oauthlib==2.0.0
     # via kubernetes
-rich==14.2.0
-    # via flask-limiter
-rpds-py==0.29.0
+rpds-py==0.30.0
     # via
     #   jsonschema
     #   referencing
 rsa==4.9.1
     # via google-auth
-sentry-sdk[flask]==2.46.0
+sentry-sdk[flask]==2.47.0
     # via -r requirements/app.in
 six==1.17.0
     # via
