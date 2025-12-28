@@ -303,7 +303,7 @@ sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
 tox==4.32.0
     # via -r requirements/tests.in
-typer==0.20.1
+typer==0.21.0
     # via rstcheck
 typing-extensions==4.15.0
     # via
