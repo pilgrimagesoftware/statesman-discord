@@ -25,9 +25,7 @@ blinker==1.9.0
 cachelib==0.13.0
     # via flask-session
 cachetools==6.2.4
-    # via
-    #   google-auth
-    #   tox
+    # via tox
 certifi==2026.1.4
     # via
     #   kubernetes
@@ -57,7 +55,7 @@ distlib==0.4.0
     # via virtualenv
 durationpy==0.10
     # via kubernetes
-filelock==3.20.2
+filelock==3.20.3
     # via
     #   tox
     #   virtualenv
@@ -92,7 +90,7 @@ frozenlist==1.8.0
     #   aiosignal
 future==1.0.0
     # via flask-inputs
-google-auth==2.45.0
+google-auth==2.47.0
     # via kubernetes
 idna==3.11
     # via
@@ -104,7 +102,7 @@ itsdangerous==2.2.0
     # via flask
 jinja2==3.1.6
     # via flask
-jsonschema==4.25.1
+jsonschema==4.26.0
     # via -r requirements/app.in
 jsonschema-specifications==2025.9.1
     # via jsonschema
@@ -200,13 +198,13 @@ rpds-py==0.30.0
     #   referencing
 rsa==4.9.1
     # via google-auth
-sentry-sdk[flask]==2.48.0
+sentry-sdk[flask]==2.49.0
     # via -r requirements/app.in
 six==1.17.0
     # via
     #   kubernetes
     #   python-dateutil
-tox==4.33.0
+tox==4.34.1
     # via -r requirements/tests.in
 typing-extensions==4.15.0
     # via
@@ -221,11 +219,11 @@ urllib3==2.3.0
     #   sentry-sdk
 uwsgi==2.0.31
     # via -r requirements/app.in
-virtualenv==20.35.4
+virtualenv==20.36.1
     # via tox
 websocket-client==1.9.0
     # via kubernetes
-werkzeug==3.1.4
+werkzeug==3.1.5
     # via flask
 wrapt==2.0.1
     # via deprecated

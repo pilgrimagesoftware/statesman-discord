@@ -27,8 +27,6 @@ blinker==1.9.0
     #   sentry-sdk
 cachelib==0.13.0
     # via flask-session
-cachetools==6.2.4
-    # via google-auth
 certifi==2026.1.4
     # via
     #   kubernetes
@@ -84,7 +82,7 @@ frozenlist==1.8.0
     #   aiosignal
 future==1.0.0
     # via flask-inputs
-google-auth==2.45.0
+google-auth==2.47.0
     # via kubernetes
 idna==3.11
     # via
@@ -98,7 +96,7 @@ jinja2==3.1.6
     # via
     #   flask
     #   sphinx
-jsonschema==4.25.1
+jsonschema==4.26.0
     # via -r requirements/app.in
 jsonschema-specifications==2025.9.1
     # via jsonschema
@@ -198,7 +196,7 @@ rstcheck==6.2.5
     # via -r requirements/docs.in
 rstcheck-core==1.2.2
     # via rstcheck
-sentry-sdk[flask]==2.48.0
+sentry-sdk[flask]==2.49.0
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
@@ -236,7 +234,7 @@ sphinxcontrib-qthelp==2.0.0
     # via sphinx
 sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
-typer==0.21.0
+typer==0.21.1
     # via rstcheck
 typing-extensions==4.15.0
     # via
@@ -259,7 +257,7 @@ uwsgi==2.0.31
     # via -r requirements/app.in
 websocket-client==1.9.0
     # via kubernetes
-werkzeug==3.1.4
+werkzeug==3.1.5
     # via flask
 wrapt==2.0.1
     # via deprecated
