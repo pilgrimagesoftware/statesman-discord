@@ -154,7 +154,7 @@ oauthlib==3.3.1
     # via requests-oauthlib
 ordered-set==4.1.0
     # via flask-limiter
-packaging==25.0
+packaging==26.0
     # via
     #   black
     #   build
@@ -164,6 +164,7 @@ packaging==25.0
     #   pytest
     #   sphinx
     #   tox
+    #   wheel
 pallets-sphinx-themes==2.3.0
     # via -r requirements/docs.in
 pathspec==1.0.3
@@ -186,7 +187,7 @@ propcache==0.4.1
     # via
     #   aiohttp
     #   yarl
-pycparser==2.23
+pycparser==3.0
     # via cffi
 pydantic==2.12.5
     # via rstcheck-core
@@ -216,7 +217,7 @@ python-dateutil==2.9.0.post0
     # via kubernetes
 python-dotenv==1.2.1
     # via -r requirements/app.in
-pytokens==0.3.0
+pytokens==0.4.0
     # via black
 pyyaml==6.0.3
     # via
@@ -239,7 +240,7 @@ requests==2.32.5
     #   sphinx
 requests-oauthlib==2.0.0
     # via kubernetes
-rich==14.2.0
+rich==14.3.1
     # via typer
 roman-numerals==4.1.0
     # via sphinx
@@ -251,7 +252,7 @@ rstcheck==6.2.5
     # via -r requirements/docs.in
 rstcheck-core==1.2.2
     # via rstcheck
-sentry-sdk[flask]==2.49.0
+sentry-sdk[flask]==2.50.0
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
@@ -318,7 +319,7 @@ websocket-client==1.9.0
     # via kubernetes
 werkzeug==3.1.5
     # via flask
-wheel==0.45.1
+wheel==0.46.3
     # via pip-tools
 wrapt==2.0.1
     # via deprecated

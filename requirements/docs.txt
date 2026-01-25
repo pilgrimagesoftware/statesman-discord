@@ -123,7 +123,7 @@ oauthlib==3.3.1
     # via requests-oauthlib
 ordered-set==4.1.0
     # via flask-limiter
-packaging==25.0
+packaging==26.0
     # via
     #   limits
     #   pallets-sphinx-themes
@@ -136,7 +136,7 @@ propcache==0.4.1
     # via
     #   aiohttp
     #   yarl
-pycparser==2.23
+pycparser==3.0
     # via cffi
 pydantic==2.12.5
     # via rstcheck-core
@@ -174,7 +174,7 @@ requests==2.32.5
     #   sphinx
 requests-oauthlib==2.0.0
     # via kubernetes
-rich==14.2.0
+rich==14.3.1
     # via typer
 roman-numerals==4.1.0
     # via sphinx
@@ -186,7 +186,7 @@ rstcheck==6.2.5
     # via -r requirements/docs.in
 rstcheck-core==1.2.2
     # via rstcheck
-sentry-sdk[flask]==2.49.0
+sentry-sdk[flask]==2.50.0
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
