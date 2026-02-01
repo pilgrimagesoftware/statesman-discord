@@ -115,7 +115,7 @@ mdurl==0.1.2
     # via markdown-it-py
 msgspec==0.20.0
     # via flask-session
-multidict==6.7.0
+multidict==6.7.1
     # via
     #   aiohttp
     #   yarl
@@ -186,7 +186,7 @@ rstcheck==6.2.5
     # via -r requirements/docs.in
 rstcheck-core==1.2.2
     # via rstcheck
-sentry-sdk[flask]==2.50.0
+sentry-sdk[flask]==2.51.0
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
@@ -249,7 +249,7 @@ websocket-client==1.9.0
     # via kubernetes
 werkzeug==3.1.5
     # via flask
-wrapt==2.0.1
+wrapt==2.1.0
     # via deprecated
 wtforms==3.2.1
     # via flask-inputs
