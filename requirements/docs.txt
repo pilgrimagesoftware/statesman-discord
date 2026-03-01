@@ -29,7 +29,7 @@ blinker==1.9.0
     #   sentry-sdk
 cachelib==0.13.0
     # via flask-session
-certifi==2026.1.4
+certifi==2026.2.25
     # via
     #   kubernetes
     #   requests
@@ -44,7 +44,7 @@ click==8.3.1
     #   typer
 deprecated==1.3.1
     # via limits
-discord-py==2.6.4
+discord-py==2.7.0
     # via -r requirements/app.in
 docutils==0.22.4
     # via
@@ -130,7 +130,7 @@ packaging==26.0
     #   limits
     #   pallets-sphinx-themes
     #   sphinx
-pallets-sphinx-themes==2.3.0
+pallets-sphinx-themes==2.5.0
     # via -r requirements/docs.in
 pika==1.3.2
     # via -r requirements/app.in
@@ -159,7 +159,7 @@ pyyaml==6.0.3
     # via
     #   -r requirements/app.in
     #   kubernetes
-redis==7.2.0
+redis==7.2.1
     # via
     #   -r requirements/app.in
     #   flask-redis
