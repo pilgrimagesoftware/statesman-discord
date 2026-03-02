@@ -4,4 +4,4 @@ blinker
 coverage-badge==1.1.2
 pytest
 pytest-cov
-tox~=4.0
+tox~=4.47

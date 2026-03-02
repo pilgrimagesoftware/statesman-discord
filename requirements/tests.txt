@@ -196,7 +196,7 @@ six==1.17.0
     # via
     #   kubernetes
     #   python-dateutil
-tox==4.46.3
+tox==4.47.0
     # via -r requirements/tests.in
 typing-extensions==4.15.0
     # via
