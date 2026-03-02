@@ -219,7 +219,7 @@ python-dateutil==2.9.0.post0
     # via kubernetes
 python-discovery==1.1.0
     # via virtualenv
-python-dotenv==1.2.1
+python-dotenv==1.2.2
     # via -r requirements/app.in
 pytokens==0.4.1
     # via black
