@@ -35,12 +35,12 @@ click==8.3.1
 deprecated==1.3.1
     # via limits
 discord-py==2.7.1
-    # via -r requirements/app.in
+    # via -r app.in
 durationpy==0.10
     # via kubernetes
 flask==3.1.3
     # via
-    #   -r requirements/app.in
+    #   -r app.in
     #   flask-dotenv
     #   flask-executor
     #   flask-inputs
@@ -50,19 +50,19 @@ flask==3.1.3
     #   flask-session
     #   sentry-sdk
 flask-dotenv==0.1.2
-    # via -r requirements/app.in
+    # via -r app.in
 flask-executor==1.0.0
-    # via -r requirements/app.in
+    # via -r app.in
 flask-inputs==1.0.0
-    # via -r requirements/app.in
+    # via -r app.in
 flask-limiter[redis]==4.1.1
-    # via -r requirements/app.in
+    # via -r app.in
 flask-redis==0.4.0
-    # via -r requirements/app.in
+    # via -r app.in
 flask-script==2.0.6
-    # via -r requirements/app.in
+    # via -r app.in
 flask-session==0.8.0
-    # via -r requirements/app.in
+    # via -r app.in
 frozenlist==1.8.0
     # via
     #   aiohttp
@@ -78,11 +78,11 @@ itsdangerous==2.2.0
 jinja2==3.1.6
     # via flask
 jsonschema==4.26.0
-    # via -r requirements/app.in
+    # via -r app.in
 jsonschema-specifications==2025.9.1
     # via jsonschema
 kubernetes==35.0.0
-    # via -r requirements/app.in
+    # via -r app.in
 limits[redis]==5.8.0
     # via flask-limiter
 markupsafe==3.0.3
@@ -105,7 +105,7 @@ ordered-set==4.1.0
 packaging==26.0
     # via limits
 pika==1.3.2
-    # via -r requirements/app.in
+    # via -r app.in
 propcache==0.4.1
     # via
     #   aiohttp
@@ -113,27 +113,27 @@ propcache==0.4.1
 pycparser==3.0
     # via cffi
 pynacl==1.6.2
-    # via -r requirements/app.in
+    # via -r app.in
 python-dateutil==2.9.0.post0
     # via kubernetes
 python-dotenv==1.2.2
-    # via -r requirements/app.in
+    # via -r app.in
 pyyaml==6.0.3
     # via
-    #   -r requirements/app.in
+    #   -r app.in
     #   kubernetes
 redis==7.3.0
     # via
-    #   -r requirements/app.in
+    #   -r app.in
     #   flask-redis
     #   limits
 referencing==0.37.0
     # via
     #   jsonschema
     #   jsonschema-specifications
-requests==2.32.5
+requests==2.33.0
     # via
-    #   -r requirements/app.in
+    #   -r app.in
     #   kubernetes
     #   requests-oauthlib
 requests-oauthlib==2.0.0
@@ -143,7 +143,7 @@ rpds-py==0.30.0
     #   jsonschema
     #   referencing
 sentry-sdk[flask]==2.55.0
-    # via -r requirements/app.in
+    # via -r app.in
 six==1.17.0
     # via
     #   kubernetes
@@ -160,7 +160,7 @@ urllib3==2.6.3
     #   requests
     #   sentry-sdk
 uwsgi==2.0.31
-    # via -r requirements/app.in
+    # via -r app.in
 websocket-client==1.9.0
     # via kubernetes
 werkzeug==3.1.6
