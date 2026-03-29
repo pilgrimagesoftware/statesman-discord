@@ -6,7 +6,7 @@
 #
 aiohappyeyeballs==2.6.1
     # via aiohttp
-aiohttp==3.13.3
+aiohttp==3.13.4
     # via discord-py
 aiosignal==1.4.0
     # via aiohttp
@@ -159,7 +159,7 @@ pyyaml==6.0.3
     # via
     #   -r requirements/app.in
     #   kubernetes
-redis==7.3.0
+redis==7.4.0
     # via
     #   -r requirements/app.in
     #   flask-redis
@@ -168,7 +168,7 @@ referencing==0.37.0
     # via
     #   jsonschema
     #   jsonschema-specifications
-requests==2.32.5
+requests==2.33.0
     # via
     #   -r requirements/app.in
     #   kubernetes
@@ -188,7 +188,7 @@ rstcheck==6.2.5
     # via -r requirements/docs.in
 rstcheck-core==1.2.2
     # via rstcheck
-sentry-sdk[flask]==2.55.0
+sentry-sdk[flask]==2.56.0
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
@@ -248,7 +248,7 @@ uwsgi==2.0.31
     # via -r requirements/app.in
 websocket-client==1.9.0
     # via kubernetes
-werkzeug==3.1.6
+werkzeug==3.1.7
     # via flask
 wrapt==2.1.2
     # via deprecated
