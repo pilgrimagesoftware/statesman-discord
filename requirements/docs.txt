@@ -6,7 +6,7 @@
 #
 aiohappyeyeballs==2.6.1
     # via aiohttp
-aiohttp==3.13.4
+aiohttp==3.13.5
     # via discord-py
 aiosignal==1.4.0
     # via aiohttp
@@ -36,9 +36,9 @@ certifi==2026.2.25
     #   sentry-sdk
 cffi==2.0.0
     # via pynacl
-charset-normalizer==3.4.6
+charset-normalizer==3.4.7
     # via requests
-click==8.3.1
+click==8.3.2
     # via
     #   flask
     #   typer
@@ -144,7 +144,7 @@ pydantic==2.12.5
     # via rstcheck-core
 pydantic-core==2.41.5
     # via pydantic
-pygments==2.19.2
+pygments==2.20.0
     # via
     #   rich
     #   sphinx
@@ -168,7 +168,7 @@ referencing==0.37.0
     # via
     #   jsonschema
     #   jsonschema-specifications
-requests==2.33.0
+requests==2.33.1
     # via
     #   -r requirements/app.in
     #   kubernetes
@@ -188,7 +188,7 @@ rstcheck==6.2.5
     # via -r requirements/docs.in
 rstcheck-core==1.2.2
     # via rstcheck
-sentry-sdk[flask]==2.56.0
+sentry-sdk[flask]==2.57.0
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
@@ -248,7 +248,7 @@ uwsgi==2.0.31
     # via -r requirements/app.in
 websocket-client==1.9.0
     # via kubernetes
-werkzeug==3.1.7
+werkzeug==3.1.8
     # via flask
 wrapt==2.1.2
     # via deprecated
