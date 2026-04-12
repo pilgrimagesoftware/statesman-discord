@@ -92,7 +92,7 @@ markupsafe==3.0.3
     #   sentry-sdk
     #   werkzeug
     #   wtforms
-msgspec==0.20.0
+msgspec==0.21.0
     # via flask-session
 multidict==6.7.1
     # via

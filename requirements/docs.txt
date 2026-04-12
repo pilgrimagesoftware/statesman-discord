@@ -115,7 +115,7 @@ markupsafe==3.0.3
     #   wtforms
 mdurl==0.1.2
     # via markdown-it-py
-msgspec==0.20.0
+msgspec==0.21.0
     # via flask-session
 multidict==6.7.1
     # via
@@ -176,7 +176,7 @@ requests==2.33.1
     #   sphinx
 requests-oauthlib==2.0.0
     # via kubernetes
-rich==14.3.3
+rich==14.3.4
     # via typer
 roman-numerals==4.1.0
     # via sphinx

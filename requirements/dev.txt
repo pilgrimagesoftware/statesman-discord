@@ -32,7 +32,7 @@ blinker==1.9.0
     #   -r requirements/tests.in
     #   flask
     #   sentry-sdk
-build==1.4.2
+build==1.4.3
     # via pip-tools
 cachelib==0.13.0
     # via flask-session
@@ -143,7 +143,7 @@ markupsafe==3.0.3
     #   wtforms
 mdurl==0.1.2
     # via markdown-it-py
-msgspec==0.20.0
+msgspec==0.21.0
     # via flask-session
 multidict==6.7.1
     # via
@@ -174,7 +174,7 @@ pika==1.3.2
     # via -r requirements/app.in
 pip-tools==7.5.3
     # via -r requirements/dev.in
-platformdirs==4.9.4
+platformdirs==4.9.6
     # via
     #   black
     #   python-discovery
@@ -209,7 +209,7 @@ pyproject-hooks==1.2.0
     # via
     #   build
     #   pip-tools
-pytest==9.0.2
+pytest==9.0.3
     # via
     #   -r requirements/tests.in
     #   pytest-cov
@@ -217,7 +217,7 @@ pytest-cov==7.1.0
     # via -r requirements/tests.in
 python-dateutil==2.9.0.post0
     # via kubernetes
-python-discovery==1.2.1
+python-discovery==1.2.2
     # via
     #   tox
     #   virtualenv
@@ -246,7 +246,7 @@ requests==2.33.1
     #   sphinx
 requests-oauthlib==2.0.0
     # via kubernetes
-rich==14.3.3
+rich==14.3.4
     # via typer
 roman-numerals==4.1.0
     # via sphinx
@@ -298,7 +298,7 @@ sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
 tomli-w==1.2.0
     # via tox
-tox==4.52.0
+tox==4.52.1
     # via -r requirements/tests.in
 typer==0.24.1
     # via rstcheck
@@ -320,7 +320,7 @@ urllib3==2.6.3
     #   sentry-sdk
 uwsgi==2.0.31
     # via -r requirements/app.in
-virtualenv==21.2.0
+virtualenv==21.2.1
     # via tox
 websocket-client==1.9.0
     # via kubernetes

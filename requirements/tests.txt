@@ -114,7 +114,7 @@ markupsafe==3.0.3
     #   sentry-sdk
     #   werkzeug
     #   wtforms
-msgspec==0.20.0
+msgspec==0.21.0
     # via flask-session
 multidict==6.7.1
     # via
@@ -132,7 +132,7 @@ packaging==26.0
     #   tox
 pika==1.3.2
     # via -r requirements/app.in
-platformdirs==4.9.4
+platformdirs==4.9.6
     # via
     #   python-discovery
     #   tox
@@ -154,7 +154,7 @@ pynacl==1.6.2
     # via -r requirements/app.in
 pyproject-api==1.10.0
     # via tox
-pytest==9.0.2
+pytest==9.0.3
     # via
     #   -r requirements/tests.in
     #   pytest-cov
@@ -162,7 +162,7 @@ pytest-cov==7.1.0
     # via -r requirements/tests.in
 python-dateutil==2.9.0.post0
     # via kubernetes
-python-discovery==1.2.1
+python-discovery==1.2.2
     # via
     #   tox
     #   virtualenv
@@ -200,7 +200,7 @@ six==1.17.0
     #   python-dateutil
 tomli-w==1.2.0
     # via tox
-tox==4.52.0
+tox==4.52.1
     # via -r requirements/tests.in
 typing-extensions==4.15.0
     # via
@@ -215,7 +215,7 @@ urllib3==2.6.3
     #   sentry-sdk
 uwsgi==2.0.31
     # via -r requirements/app.in
-virtualenv==21.2.0
+virtualenv==21.2.1
     # via tox
 websocket-client==1.9.0
     # via kubernetes
