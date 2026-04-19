@@ -115,7 +115,7 @@ markupsafe==3.0.3
     #   wtforms
 mdurl==0.1.2
     # via markdown-it-py
-msgspec==0.21.0
+msgspec==0.21.1
     # via flask-session
 multidict==6.7.1
     # via
@@ -125,7 +125,7 @@ oauthlib==3.3.1
     # via requests-oauthlib
 ordered-set==4.1.0
     # via flask-limiter
-packaging==26.0
+packaging==26.1
     # via
     #   limits
     #   pallets-sphinx-themes
@@ -140,9 +140,9 @@ propcache==0.4.1
     #   yarl
 pycparser==3.0
     # via cffi
-pydantic==2.12.5
+pydantic==2.13.2
     # via rstcheck-core
-pydantic-core==2.41.5
+pydantic-core==2.46.2
     # via pydantic
 pygments==2.20.0
     # via
@@ -176,7 +176,7 @@ requests==2.33.1
     #   sphinx
 requests-oauthlib==2.0.0
     # via kubernetes
-rich==14.3.4
+rich==15.0.0
     # via typer
 roman-numerals==4.1.0
     # via sphinx
@@ -188,7 +188,7 @@ rstcheck==6.2.5
     # via -r requirements/docs.in
 rstcheck-core==1.2.2
     # via rstcheck
-sentry-sdk[flask]==2.57.0
+sentry-sdk[flask]==2.58.0
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
