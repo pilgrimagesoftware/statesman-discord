@@ -29,7 +29,7 @@ blinker==1.9.0
     #   sentry-sdk
 cachelib==0.13.0
     # via flask-session
-certifi==2026.2.25
+certifi==2026.4.22
     # via
     #   kubernetes
     #   requests
@@ -38,7 +38,7 @@ cffi==2.0.0
     # via pynacl
 charset-normalizer==3.4.7
     # via requests
-click==8.3.2
+click==8.3.3
     # via
     #   flask
     #   typer
@@ -84,7 +84,7 @@ frozenlist==1.8.0
     #   aiosignal
 future==1.0.0
     # via flask-inputs
-idna==3.11
+idna==3.13
     # via
     #   requests
     #   yarl
@@ -125,7 +125,7 @@ oauthlib==3.3.1
     # via requests-oauthlib
 ordered-set==4.1.0
     # via flask-limiter
-packaging==26.1
+packaging==26.2
     # via
     #   limits
     #   pallets-sphinx-themes
@@ -140,9 +140,9 @@ propcache==0.4.1
     #   yarl
 pycparser==3.0
     # via cffi
-pydantic==2.13.2
+pydantic==2.13.3
     # via rstcheck-core
-pydantic-core==2.46.2
+pydantic-core==2.46.3
     # via pydantic
 pygments==2.20.0
     # via
@@ -226,7 +226,7 @@ sphinxcontrib-qthelp==2.0.0
     # via sphinx
 sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
-typer==0.24.1
+typer==0.24.2
     # via rstcheck
 typing-extensions==4.15.0
     # via

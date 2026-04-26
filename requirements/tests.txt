@@ -24,9 +24,9 @@ blinker==1.9.0
     #   sentry-sdk
 cachelib==0.13.0
     # via flask-session
-cachetools==7.0.5
+cachetools==7.0.6
     # via tox
-certifi==2026.2.25
+certifi==2026.4.22
     # via
     #   kubernetes
     #   requests
@@ -35,7 +35,7 @@ cffi==2.0.0
     # via pynacl
 charset-normalizer==3.4.7
     # via requests
-click==8.3.2
+click==8.3.3
     # via flask
 colorama==0.4.6
     # via tox
@@ -53,7 +53,7 @@ distlib==0.4.0
     # via virtualenv
 durationpy==0.10
     # via kubernetes
-filelock==3.28.0
+filelock==3.29.0
     # via
     #   python-discovery
     #   tox
@@ -89,7 +89,7 @@ frozenlist==1.8.0
     #   aiosignal
 future==1.0.0
     # via flask-inputs
-idna==3.11
+idna==3.13
     # via
     #   requests
     #   yarl
@@ -124,7 +124,7 @@ oauthlib==3.3.1
     # via requests-oauthlib
 ordered-set==4.1.0
     # via flask-limiter
-packaging==26.1
+packaging==26.2
     # via
     #   limits
     #   pyproject-api
