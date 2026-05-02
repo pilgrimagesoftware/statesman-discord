@@ -24,7 +24,7 @@ blinker==1.9.0
     #   sentry-sdk
 cachelib==0.13.0
     # via flask-session
-cachetools==7.0.6
+cachetools==7.1.0
     # via tox
 certifi==2026.4.22
     # via
@@ -200,7 +200,7 @@ six==1.17.0
     #   python-dateutil
 tomli-w==1.2.0
     # via tox
-tox==4.53.0
+tox==4.53.1
     # via -r requirements/tests.in
 typing-extensions==4.15.0
     # via
@@ -215,7 +215,7 @@ urllib3==2.6.3
     #   sentry-sdk
 uwsgi==2.0.31
     # via -r requirements/app.in
-virtualenv==21.2.4
+virtualenv==21.3.0
     # via tox
 websocket-client==1.9.0
     # via kubernetes
