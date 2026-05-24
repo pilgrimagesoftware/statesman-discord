@@ -4,10 +4,12 @@
 #
 #    pip-compile requirements/docs.in
 #
-aiohappyeyeballs==2.6.1
+aiohappyeyeballs==2.6.2
     # via aiohttp
 aiohttp==3.13.5
-    # via discord-py
+    # via
+    #   discord-py
+    #   kubernetes
 aiosignal==1.4.0
     # via aiohttp
 alabaster==1.0.0
@@ -29,7 +31,7 @@ blinker==1.9.0
     #   sentry-sdk
 cachelib==0.14.0
     # via flask-session
-certifi==2026.4.22
+certifi==2026.5.20
     # via
     #   kubernetes
     #   requests
@@ -38,7 +40,7 @@ cffi==2.0.0
     # via pynacl
 charset-normalizer==3.4.7
     # via requests
-click==8.4.0
+click==8.4.1
     # via
     #   flask
     #   typer
@@ -84,7 +86,7 @@ frozenlist==1.8.0
     #   aiosignal
 future==1.0.0
     # via flask-inputs
-idna==3.15
+idna==3.16
     # via
     #   requests
     #   yarl
@@ -100,7 +102,7 @@ jsonschema==4.26.0
     # via -r requirements/app.in
 jsonschema-specifications==2025.9.1
     # via jsonschema
-kubernetes==35.0.0
+kubernetes==36.0.0
     # via -r requirements/app.in
 limits[redis]==5.8.0
     # via flask-limiter
@@ -132,7 +134,7 @@ packaging==26.2
     #   sphinx
 pallets-sphinx-themes==2.5.0
     # via -r requirements/docs.in
-pika==1.4.0
+pika==1.4.1
     # via -r requirements/app.in
 propcache==0.5.2
     # via
@@ -250,9 +252,9 @@ websocket-client==1.9.0
     # via kubernetes
 werkzeug==3.1.8
     # via flask
-wrapt==2.1.2
+wrapt==2.2.1
     # via deprecated
 wtforms==3.2.2
     # via flask-inputs
-yarl==1.23.0
+yarl==1.24.2
     # via aiohttp
