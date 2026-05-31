@@ -41,9 +41,7 @@ cffi==2.0.0
 charset-normalizer==3.4.7
     # via requests
 click==8.4.1
-    # via
-    #   flask
-    #   typer
+    # via flask
 deprecated==1.3.1
     # via limits
 discord-py==2.7.1
@@ -86,7 +84,7 @@ frozenlist==1.8.0
     #   aiosignal
 future==1.0.0
     # via flask-inputs
-idna==3.16
+idna==3.17
     # via
     #   requests
     #   yarl
@@ -102,7 +100,7 @@ jsonschema==4.26.0
     # via -r requirements/app.in
 jsonschema-specifications==2025.9.1
     # via jsonschema
-kubernetes==36.0.0
+kubernetes==36.0.1
     # via -r requirements/app.in
 limits[redis]==5.8.0
     # via flask-limiter
@@ -182,7 +180,7 @@ rich==15.0.0
     # via typer
 roman-numerals==4.1.0
     # via sphinx
-rpds-py==0.30.0
+rpds-py==2026.5.1
     # via
     #   jsonschema
     #   referencing
@@ -190,7 +188,7 @@ rstcheck==6.2.5
     # via -r requirements/docs.in
 rstcheck-core==1.3.0
     # via rstcheck
-sentry-sdk[flask]==2.60.0
+sentry-sdk[flask]==2.61.0
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
@@ -198,7 +196,7 @@ six==1.17.0
     # via
     #   kubernetes
     #   python-dateutil
-snowballstemmer==3.0.1
+snowballstemmer==3.1.0
     # via sphinx
 sphinx==9.0.4
     # via
@@ -228,7 +226,7 @@ sphinxcontrib-qthelp==2.0.0
     # via sphinx
 sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
-typer==0.25.1
+typer==0.26.4
     # via rstcheck
 typing-extensions==4.15.0
     # via

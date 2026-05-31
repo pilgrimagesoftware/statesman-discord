@@ -71,7 +71,7 @@ frozenlist==1.8.0
     #   aiosignal
 future==1.0.0
     # via flask-inputs
-idna==3.16
+idna==3.17
     # via
     #   requests
     #   yarl
@@ -83,7 +83,7 @@ jsonschema==4.26.0
     # via -r requirements/app.in
 jsonschema-specifications==2025.9.1
     # via jsonschema
-kubernetes==36.0.0
+kubernetes==36.0.1
     # via -r requirements/app.in
 limits[redis]==5.8.0
     # via flask-limiter
@@ -140,11 +140,11 @@ requests==2.34.2
     #   requests-oauthlib
 requests-oauthlib==2.0.0
     # via kubernetes
-rpds-py==0.30.0
+rpds-py==2026.5.1
     # via
     #   jsonschema
     #   referencing
-sentry-sdk[flask]==2.60.0
+sentry-sdk[flask]==2.61.0
     # via -r requirements/app.in
 six==1.17.0
     # via
