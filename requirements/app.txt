@@ -83,7 +83,7 @@ jsonschema==4.26.0
     # via -r requirements/app.in
 jsonschema-specifications==2025.9.1
     # via jsonschema
-kubernetes==36.0.1
+kubernetes==36.0.2
     # via -r requirements/app.in
 limits[redis]==5.8.0
     # via flask-limiter
