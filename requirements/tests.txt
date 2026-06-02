@@ -194,7 +194,7 @@ rpds-py==2026.5.1
     # via
     #   jsonschema
     #   referencing
-sentry-sdk[flask]==2.61.0
+sentry-sdk[flask]==2.61.1
     # via -r requirements/app.in
 six==1.17.0
     # via
