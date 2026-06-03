@@ -6,7 +6,7 @@
 #
 aiohappyeyeballs==2.6.2
     # via aiohttp
-aiohttp==3.13.5
+aiohttp==3.14.0
     # via
     #   discord-py
     #   kubernetes
@@ -19,7 +19,7 @@ annotated-doc==0.0.4
 annotated-types==0.7.0
     # via pydantic
 asgiref==3.11.1
-    # via -r requirements/tests.in
+    # via -r tests.in
 attrs==26.1.0
     # via
     #   aiohttp
@@ -28,10 +28,10 @@ attrs==26.1.0
 babel==2.18.0
     # via sphinx
 black==26.5.1
-    # via -r requirements/dev.in
+    # via -r dev.in
 blinker==1.9.0
     # via
-    #   -r requirements/tests.in
+    #   -r tests.in
     #   flask
     #   sentry-sdk
 build==1.5.0
@@ -61,11 +61,11 @@ coverage[toml]==7.14.1
     #   coverage-badge
     #   pytest-cov
 coverage-badge==1.1.2
-    # via -r requirements/tests.in
+    # via -r tests.in
 deprecated==1.3.1
     # via limits
 discord-py==2.7.1
-    # via -r requirements/app.in
+    # via -r app.in
 distlib==0.4.0
     # via virtualenv
 docutils==0.22.4
@@ -82,7 +82,7 @@ filelock==3.29.0
     #   virtualenv
 flask==3.1.3
     # via
-    #   -r requirements/app.in
+    #   -r app.in
     #   flask-dotenv
     #   flask-executor
     #   flask-inputs
@@ -92,19 +92,19 @@ flask==3.1.3
     #   flask-session
     #   sentry-sdk
 flask-dotenv==0.1.2
-    # via -r requirements/app.in
+    # via -r app.in
 flask-executor==1.0.0
-    # via -r requirements/app.in
+    # via -r app.in
 flask-inputs==1.0.0
-    # via -r requirements/app.in
+    # via -r app.in
 flask-limiter[redis]==4.1.1
-    # via -r requirements/app.in
+    # via -r app.in
 flask-redis==0.4.0
-    # via -r requirements/app.in
+    # via -r app.in
 flask-script==2.0.6
-    # via -r requirements/app.in
+    # via -r app.in
 flask-session==0.8.0
-    # via -r requirements/app.in
+    # via -r app.in
 frozenlist==1.8.0
     # via
     #   aiohttp
@@ -126,11 +126,11 @@ jinja2==3.1.6
     #   flask
     #   sphinx
 jsonschema==4.26.0
-    # via -r requirements/app.in
+    # via -r app.in
 jsonschema-specifications==2025.9.1
     # via jsonschema
 kubernetes==36.0.1
-    # via -r requirements/app.in
+    # via -r app.in
 limits[redis]==5.8.0
     # via flask-limiter
 markdown-it-py==4.2.0
@@ -168,13 +168,13 @@ packaging==26.2
     #   tox
     #   wheel
 pallets-sphinx-themes==2.5.0
-    # via -r requirements/docs.in
+    # via -r docs.in
 pathspec==1.1.1
     # via black
 pika==1.4.1
-    # via -r requirements/app.in
+    # via -r app.in
 pip-tools==7.5.3
-    # via -r requirements/dev.in
+    # via -r dev.in
 platformdirs==4.10.0
     # via
     #   black
@@ -203,7 +203,7 @@ pygments==2.20.0
     #   sphinx
     #   sphinx-tabs
 pynacl==1.6.2
-    # via -r requirements/app.in
+    # via -r app.in
 pyproject-api==1.10.1
     # via tox
 pyproject-hooks==1.2.0
@@ -212,10 +212,10 @@ pyproject-hooks==1.2.0
     #   pip-tools
 pytest==9.0.3
     # via
-    #   -r requirements/tests.in
+    #   -r tests.in
     #   pytest-cov
 pytest-cov==7.1.0
-    # via -r requirements/tests.in
+    # via -r tests.in
 python-dateutil==2.9.0.post0
     # via kubernetes
 python-discovery==1.4.0
@@ -223,16 +223,16 @@ python-discovery==1.4.0
     #   tox
     #   virtualenv
 python-dotenv==1.2.2
-    # via -r requirements/app.in
+    # via -r app.in
 pytokens==0.4.1
     # via black
 pyyaml==6.0.3
     # via
-    #   -r requirements/app.in
+    #   -r app.in
     #   kubernetes
 redis==7.4.0
     # via
-    #   -r requirements/app.in
+    #   -r app.in
     #   flask-redis
     #   limits
 referencing==0.37.0
@@ -241,7 +241,7 @@ referencing==0.37.0
     #   jsonschema-specifications
 requests==2.34.2
     # via
-    #   -r requirements/app.in
+    #   -r app.in
     #   kubernetes
     #   requests-oauthlib
     #   sphinx
@@ -256,11 +256,11 @@ rpds-py==2026.5.1
     #   jsonschema
     #   referencing
 rstcheck==6.2.5
-    # via -r requirements/docs.in
+    # via -r docs.in
 rstcheck-core==1.3.0
     # via rstcheck
 sentry-sdk[flask]==2.61.0
-    # via -r requirements/app.in
+    # via -r app.in
 shellingham==1.5.4
     # via typer
 six==1.17.0
@@ -271,18 +271,18 @@ snowballstemmer==3.1.0
     # via sphinx
 sphinx==9.0.4
     # via
-    #   -r requirements/docs.in
+    #   -r docs.in
     #   pallets-sphinx-themes
     #   sphinx-issues
     #   sphinx-notfound-page
     #   sphinx-tabs
     #   sphinxcontrib-log-cabinet
 sphinx-issues==6.0.0
-    # via -r requirements/docs.in
+    # via -r docs.in
 sphinx-notfound-page==1.1.0
     # via pallets-sphinx-themes
 sphinx-tabs==3.5.0
-    # via -r requirements/docs.in
+    # via -r docs.in
 sphinxcontrib-applehelp==2.0.0
     # via sphinx
 sphinxcontrib-devhelp==2.0.0
@@ -292,7 +292,7 @@ sphinxcontrib-htmlhelp==2.1.0
 sphinxcontrib-jsmath==1.0.1
     # via sphinx
 sphinxcontrib-log-cabinet==1.0.1
-    # via -r requirements/docs.in
+    # via -r docs.in
 sphinxcontrib-qthelp==2.0.0
     # via sphinx
 sphinxcontrib-serializinghtml==2.0.0
@@ -300,11 +300,12 @@ sphinxcontrib-serializinghtml==2.0.0
 tomli-w==1.2.0
     # via tox
 tox==4.55.0
-    # via -r requirements/tests.in
+    # via -r tests.in
 typer==0.26.4
     # via rstcheck
 typing-extensions==4.15.0
     # via
+    #   aiohttp
     #   aiosignal
     #   flask-limiter
     #   limits
@@ -320,7 +321,7 @@ urllib3==2.7.0
     #   requests
     #   sentry-sdk
 uwsgi==2.0.31
-    # via -r requirements/app.in
+    # via -r app.in
 virtualenv==21.4.1
     # via tox
 websocket-client==1.9.0
