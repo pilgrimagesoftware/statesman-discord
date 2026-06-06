@@ -6,7 +6,7 @@
 #
 aiohappyeyeballs==2.6.2
     # via aiohttp
-aiohttp==3.13.5
+aiohttp==3.14.0
     # via
     #   discord-py
     #   kubernetes
@@ -71,7 +71,7 @@ frozenlist==1.8.0
     #   aiosignal
 future==1.0.0
     # via flask-inputs
-idna==3.17
+idna==3.18
     # via
     #   requests
     #   yarl
@@ -124,7 +124,7 @@ pyyaml==6.0.3
     # via
     #   -r requirements/app.in
     #   kubernetes
-redis==7.4.0
+redis==7.4.1
     # via
     #   -r requirements/app.in
     #   flask-redis
@@ -152,6 +152,7 @@ six==1.17.0
     #   python-dateutil
 typing-extensions==4.15.0
     # via
+    #   aiohttp
     #   aiosignal
     #   flask-limiter
     #   limits
