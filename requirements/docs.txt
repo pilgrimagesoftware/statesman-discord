@@ -31,7 +31,7 @@ blinker==1.9.0
     #   sentry-sdk
 cachelib==0.14.0
     # via flask-session
-certifi==2026.5.20
+certifi==2026.6.17
     # via
     #   kubernetes
     #   requests
@@ -188,7 +188,7 @@ rstcheck==6.2.5
     # via -r requirements/docs.in
 rstcheck-core==1.3.0
     # via rstcheck
-sentry-sdk[flask]==2.62.0
+sentry-sdk[flask]==2.63.0
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
@@ -251,7 +251,7 @@ websocket-client==1.9.0
     # via kubernetes
 werkzeug==3.1.8
     # via flask
-wrapt==2.2.1
+wrapt==2.2.2
     # via deprecated
 wtforms==3.2.2
     # via flask-inputs
