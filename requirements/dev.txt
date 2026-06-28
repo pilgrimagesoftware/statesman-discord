@@ -49,14 +49,14 @@ cffi==2.0.0
     # via pynacl
 charset-normalizer==3.4.7
     # via requests
-click==8.4.1
+click==8.4.2
     # via
     #   black
     #   flask
     #   pip-tools
 colorama==0.4.6
     # via tox
-coverage[toml]==7.14.2
+coverage[toml]==7.14.3
     # via
     #   coverage-badge
     #   pytest-cov
@@ -299,9 +299,9 @@ sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
 tomli-w==1.2.0
     # via tox
-tox==4.55.1
+tox==4.56.1
     # via -r requirements/tests.in
-typer==0.26.7
+typer==0.26.8
     # via rstcheck
 typing-extensions==4.15.0
     # via
