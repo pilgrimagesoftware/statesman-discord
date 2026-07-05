@@ -4,7 +4,7 @@
 #
 #    pip-compile requirements/dev.in
 #
-aiohappyeyeballs==2.6.2
+aiohappyeyeballs==2.7.1
     # via aiohttp
 aiohttp==3.14.1
     # via
@@ -56,7 +56,7 @@ click==8.4.2
     #   pip-tools
 colorama==0.4.6
     # via tox
-coverage[toml]==7.14.3
+coverage[toml]==7.15.0
     # via
     #   coverage-badge
     #   pytest-cov
@@ -75,7 +75,7 @@ docutils==0.22.4
     #   sphinx-tabs
 durationpy==0.10
     # via kubernetes
-filelock==3.29.4
+filelock==3.29.5
     # via
     #   python-discovery
     #   tox
@@ -218,7 +218,7 @@ pytest-cov==7.1.0
     # via -r requirements/tests.in
 python-dateutil==2.9.0.post0
     # via kubernetes
-python-discovery==1.4.2
+python-discovery==1.4.3
     # via
     #   tox
     #   virtualenv
@@ -251,7 +251,7 @@ rich==15.0.0
     # via typer
 roman-numerals==4.1.0
     # via sphinx
-rpds-py==2026.5.1
+rpds-py==2026.6.3
     # via
     #   jsonschema
     #   referencing
@@ -259,7 +259,7 @@ rstcheck==6.2.5
     # via -r requirements/docs.in
 rstcheck-core==1.3.0
     # via rstcheck
-sentry-sdk[flask]==2.63.0
+sentry-sdk[flask]==2.64.0
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
@@ -303,7 +303,7 @@ tox==4.56.1
     # via -r requirements/tests.in
 typer==0.26.8
     # via rstcheck
-typing-extensions==4.15.0
+typing-extensions==4.16.0
     # via
     #   aiohttp
     #   aiosignal
