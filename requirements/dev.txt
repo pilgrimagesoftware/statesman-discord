@@ -34,7 +34,7 @@ blinker==1.9.0
     #   -r requirements/tests.in
     #   flask
     #   sentry-sdk
-build==1.5.0
+build==1.5.1
     # via pip-tools
 cachelib==0.14.0
     # via flask-session
@@ -45,9 +45,9 @@ certifi==2026.6.17
     #   kubernetes
     #   requests
     #   sentry-sdk
-cffi==2.0.0
+cffi==2.1.0
     # via pynacl
-charset-normalizer==3.4.7
+charset-normalizer==3.4.9
     # via requests
 click==8.4.2
     # via
@@ -75,7 +75,7 @@ docutils==0.22.4
     #   sphinx-tabs
 durationpy==0.10
     # via kubernetes
-filelock==3.29.5
+filelock==3.29.7
     # via
     #   python-discovery
     #   tox
@@ -218,7 +218,7 @@ pytest-cov==7.1.0
     # via -r requirements/tests.in
 python-dateutil==2.9.0.post0
     # via kubernetes
-python-discovery==1.4.3
+python-discovery==1.4.4
     # via
     #   tox
     #   virtualenv
@@ -299,7 +299,7 @@ sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
 tomli-w==1.2.0
     # via tox
-tox==4.56.1
+tox==4.56.4
     # via -r requirements/tests.in
 typer==0.26.8
     # via rstcheck
@@ -322,7 +322,7 @@ urllib3==2.7.0
     #   sentry-sdk
 uwsgi==2.0.31
     # via -r requirements/app.in
-virtualenv==21.5.1
+virtualenv==21.6.1
     # via tox
 websocket-client==1.9.0
     # via kubernetes
