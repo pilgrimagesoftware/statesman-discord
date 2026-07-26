@@ -6,7 +6,7 @@
 #
 aiohappyeyeballs==2.7.1
     # via aiohttp
-aiohttp==3.14.1
+aiohttp==3.14.3
     # via
     #   discord-py
     #   kubernetes
@@ -16,7 +16,7 @@ alabaster==1.0.0
     # via sphinx
 annotated-doc==0.0.4
     # via typer
-annotated-types==0.7.0
+annotated-types==0.8.0
     # via pydantic
 attrs==26.1.0
     # via
@@ -31,7 +31,7 @@ blinker==1.9.0
     #   sentry-sdk
 cachelib==0.14.0
     # via flask-session
-certifi==2026.6.17
+certifi==2026.7.22
     # via
     #   kubernetes
     #   requests
@@ -132,7 +132,7 @@ packaging==26.2
     #   sphinx
 pallets-sphinx-themes==2.5.0
     # via -r requirements/docs.in
-pika==1.4.1
+pika==1.4.2
     # via -r requirements/app.in
 propcache==0.5.2
     # via
@@ -188,7 +188,7 @@ rstcheck==6.2.5
     # via -r requirements/docs.in
 rstcheck-core==1.3.0
     # via rstcheck
-sentry-sdk[flask]==2.66.0
+sentry-sdk[flask]==2.66.1
     # via -r requirements/app.in
 shellingham==1.5.4
     # via typer
@@ -255,5 +255,5 @@ wrapt==2.2.2
     # via deprecated
 wtforms==3.2.2
     # via flask-inputs
-yarl==1.24.2
+yarl==1.24.5
     # via aiohttp
