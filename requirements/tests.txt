@@ -24,9 +24,9 @@ blinker==1.9.0
     #   -r requirements/tests.in
     #   flask
     #   sentry-sdk
-cachelib==0.14.0
+cachelib==0.15.0
     # via flask-session
-cachetools==7.1.6
+cachetools==7.1.7
     # via tox
 certifi==2026.7.22
     # via
@@ -55,7 +55,7 @@ distlib==0.4.3
     # via virtualenv
 durationpy==0.10
     # via kubernetes
-filelock==3.32.0
+filelock==3.32.2
     # via
     #   python-discovery
     #   tox
@@ -136,7 +136,6 @@ pika==1.4.2
     # via -r requirements/app.in
 platformdirs==4.11.0
     # via
-    #   python-discovery
     #   tox
     #   virtualenv
 pluggy==1.6.0
@@ -164,7 +163,7 @@ pytest-cov==7.1.0
     # via -r requirements/tests.in
 python-dateutil==2.9.0.post0
     # via kubernetes
-python-discovery==1.5.0
+python-discovery==1.5.1
     # via
     #   tox
     #   virtualenv
@@ -218,13 +217,13 @@ urllib3==2.7.0
     #   sentry-sdk
 uwsgi==2.0.31
     # via -r requirements/app.in
-virtualenv==21.7.0
+virtualenv==21.7.1
     # via tox
 websocket-client==1.9.0
     # via kubernetes
 werkzeug==3.1.8
     # via flask
-wrapt==2.2.2
+wrapt==2.3.0
     # via deprecated
 wtforms==3.2.2
     # via flask-inputs
