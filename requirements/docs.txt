@@ -29,7 +29,7 @@ blinker==1.9.0
     # via
     #   flask
     #   sentry-sdk
-cachelib==0.15.4
+cachelib==0.16.1
     # via flask-session
 certifi==2026.7.22
     # via
@@ -84,7 +84,7 @@ frozenlist==1.8.0
     #   aiosignal
 future==1.0.0
     # via flask-inputs
-idna==3.18
+idna==3.19
     # via
     #   requests
     #   yarl
@@ -144,7 +144,7 @@ pydantic==2.13.4
     # via rstcheck-core
 pydantic-core==2.46.4
     # via pydantic
-pygments==2.20.0
+pygments==2.21.0
     # via
     #   rich
     #   sphinx
@@ -153,7 +153,7 @@ pynacl==1.6.2
     # via -r requirements/app.in
 python-dateutil==2.9.0.post0
     # via kubernetes
-python-dotenv==1.2.2
+python-dotenv==1.2.3
     # via -r requirements/app.in
 pyyaml==6.0.3
     # via

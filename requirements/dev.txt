@@ -36,7 +36,7 @@ blinker==1.9.0
     #   sentry-sdk
 build==1.5.0
     # via pip-tools
-cachelib==0.15.4
+cachelib==0.16.1
     # via flask-session
 cachetools==7.1.7
     # via tox
@@ -111,7 +111,7 @@ frozenlist==1.8.0
     #   aiosignal
 future==1.0.0
     # via flask-inputs
-idna==3.18
+idna==3.19
     # via
     #   requests
     #   yarl
@@ -195,7 +195,7 @@ pydantic==2.13.4
     # via rstcheck-core
 pydantic-core==2.46.4
     # via pydantic
-pygments==2.20.0
+pygments==2.21.0
     # via
     #   pytest
     #   rich
@@ -221,7 +221,7 @@ python-discovery==1.5.2
     # via
     #   tox
     #   virtualenv
-python-dotenv==1.2.2
+python-dotenv==1.2.3
     # via -r requirements/app.in
 pytokens==0.4.1
     # via black
