@@ -96,7 +96,7 @@ markupsafe==3.0.3
     #   wtforms
 msgspec==0.21.1
     # via flask-session
-multidict==6.7.1
+multidict==6.8.0
     # via
     #   aiohttp
     #   yarl
@@ -144,7 +144,7 @@ rpds-py==2026.6.3
     # via
     #   jsonschema
     #   referencing
-sentry-sdk[flask]==2.68.1
+sentry-sdk[flask]==2.69.1
     # via -r requirements/app.in
 six==1.17.0
     # via
@@ -168,7 +168,7 @@ websocket-client==1.9.2
     # via kubernetes
 werkzeug==3.1.8
     # via flask
-wrapt==2.4.0
+wrapt==2.4.1
     # via deprecated
 wtforms==3.2.2
     # via flask-inputs

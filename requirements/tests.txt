@@ -55,7 +55,7 @@ distlib==0.4.3
     # via virtualenv
 durationpy==0.11
     # via kubernetes
-filelock==3.32.5
+filelock==3.32.6
     # via
     #   python-discovery
     #   tox
@@ -118,7 +118,7 @@ markupsafe==3.0.3
     #   wtforms
 msgspec==0.21.1
     # via flask-session
-multidict==6.7.1
+multidict==6.8.0
     # via
     #   aiohttp
     #   yarl
@@ -134,7 +134,7 @@ packaging==26.3
     #   tox
 pika==1.4.4
     # via -r requirements/app.in
-platformdirs==4.11.7
+platformdirs==4.11.8
     # via
     #   tox
     #   virtualenv
@@ -193,7 +193,7 @@ rpds-py==2026.6.3
     # via
     #   jsonschema
     #   referencing
-sentry-sdk[flask]==2.68.1
+sentry-sdk[flask]==2.69.1
     # via -r requirements/app.in
 six==1.17.0
     # via
@@ -201,7 +201,7 @@ six==1.17.0
     #   python-dateutil
 tomli-w==1.2.0
     # via tox
-tox==4.61.2
+tox==4.61.4
     # via -r requirements/tests.in
 typing-extensions==4.16.0
     # via
@@ -218,13 +218,13 @@ urllib3==2.7.0
     #   sentry-sdk
 uwsgi==2.0.31
     # via -r requirements/app.in
-virtualenv==21.7.8
+virtualenv==21.7.9
     # via tox
 websocket-client==1.9.2
     # via kubernetes
 werkzeug==3.1.8
     # via flask
-wrapt==2.4.0
+wrapt==2.4.1
     # via deprecated
 wtforms==3.2.2
     # via flask-inputs
